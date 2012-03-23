@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SSH Tunnel Script Generator</title>
+
+    <style type="text/css">
+    	#description {
+    		width: 550px;
+    		background: #eee;
+    		font-size: 16px;
+    		line-height: 1.5em;
+    		padding: 5px 10px;
+    	}
+
+    	#description p {
+    		font-weight: bold;
+    	}
+
+    	#result {
+    		font-size: 16px;
+			background: #eee;
+			float: left;
+			padding: 0px 15px;
+			margin-top: 10px;
+			border: 1px solid #aaa;
+			visibility: hidden;
+    	}
+
+    	#generate {
+    		background: #ddd;
+    		border: none;
+    		padding: 5px 10px;
+    		font-weight: bold;
+    		text-shadow: 0px 1px 1px #fff;
+    		border-radius: 4px;
+    	}
+
+    	#generate:hover {
+    		background: #ccc;
+    		box-shadow: 0 0 5px #555;
+    	}
+
+    	#generate:active {
+    		background: #ddd;
+    	}
+
+    	#remote_type {
+    		display: none;
+    	}
+
+    	.error {
+    		color: red;
+    	}
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    	function change_type() {
+    		var tunnelType = document.getElementById('tunnel_type').value;
+    		var local = document.getElementById('local_type');
+    		var remote = document.getElementById('remote_type');
+
+    		if(tunnelType == 'forward') {
+    			local.style.display = 'inline';
+    			remote.style.display = 'none';
+    		} else {
+    			local.style.display = 'none';
+    			remote.style.display = 'inline';
+    		}
+    	}
+
+    	function generate() {
+    		var resultDiv = document.getElementById('result');
+    		var tool = document.getElementById('tool').value;
+    		var tunnelType = document.getElementById('tunnel_type').value;
+    		var localPort = document.getElementById('local_port').value;
+    		var remoteServer = document.getElementById('remote_server').value;
+    		var remotePort = document.getElementById('remote_port').value;
+    		var proxyServer = document.getElementById('proxy_server').value;
+    		var proxyUser = document.getElementById('proxy_user').value;
+
+    		if(tunnelType == 'forward') {
+
+    			if(localPort.length == 0 || remoteServer.length == 0 || remotePort.length == 0 ||
+	    		 proxyServer.length == 0 || proxyUser.length == 0) {
+	    		 	resultDiv.innerHTML = '<pre class="error">All fields must be filled</pre>';
+	    		 	resultDiv.style.visibility = 'visible';
+	    		 	return;
+	    		 }
+    			
+    			//plink -N -L 3307:192.89.122.14:3306 miasoan@192.89.122.14
+
+    			var line = '<pre>';
+    			line += tool
+    			line += ' -N -L ';
+    			line += localPort;
+    			line += ':';
+    			line += remoteServer;
+    			line += ':';
+    			line += remotePort;
+    			line += ' ';
+    			line += proxyUser;
+    			line += '@';
+    			line += proxyServer;
+    			line += '</pre>'
+
+    			resultDiv.innerHTML = line;
+    			resultDiv.style.visibility = 'visible';
+    		}
+    	}
+    </script>
+</head>
+
+<body>
+
+<h2>What's this for?</h2>
+
+<div id="description">
+	I will assume that you already know what an SSH tunnel is if you're here and want to use it.
+	This is a script that helps you with SSH tunnel setup. It generates a command line you would
+	execute to create a tunnel to a server that you cannot reach from you machine, but you know
+	is accessible through another one. It's assumed that you have access to the latter. If you're
+	on a Windows machine you'll probably want to use
+	<a href="http://the.earth.li/~sgtatham/putty/latest/x86/plink.exe">plink</a>.
+
+	<p>Usage:</p>
+	Fill out the fields below, click the generate button and copy-paste the resulting line to your console.
+</div>
+
+<h2>Choose what you want to do</h2>
+<div id="container">
+	Use
+	<select id="tool">
+		<option value="ssh">SSH</option>
+		<option value="plink">Plink</option>
+	</select>
+	
+	to create a
+	<select id="tunnel_type" onChange="change_type()">
+		<option value="forward">forward tunnel</option>
+		<option value="reverse">reverse tunnel</option>
+	</select>
+
+	<span id="local_type">
+	from local port
+	<input type="text" id="local_port" size="4">
+	
+	to server
+	<input type="text" id="remote_server">
+
+	port
+	<input type="text" id="remote_port" size="4">
+	
+	via server
+	<input type="text" id="proxy_server">
+	
+	authenticating with user
+	<input type="text" id="proxy_user">
+	</span>
+
+	<span id="remote_type">
+	remote
+	</span>
+
+	<br>
+	<br>
+	<input type="button" id="generate" value="Generate" onclick="generate()">
+</div>
+
+<div id="result">
+	
+</div>
+
+</body>
+</html>

@@ -61,20 +61,6 @@
     <![endif]-->
 
     <script type="text/javascript">
-    	function change_type() {
-    		var tunnelType = document.getElementById('tunnel_type').value;
-    		var local = document.getElementById('local_type');
-    		var remote = document.getElementById('remote_type');
-
-    		if(tunnelType == 'forward') {
-    			local.style.display = 'inline';
-    			remote.style.display = 'none';
-    		} else {
-    			local.style.display = 'none';
-    			remote.style.display = 'inline';
-    		}
-    	}
-
     	function generate() {
     		var resultDiv = document.getElementById('result');
     		var tool = document.getElementById('tool').value;
@@ -94,8 +80,6 @@
 	    		 	return;
 	    		 }
     			
-    			//plink -N -L 3307:192.89.122.14:3306 miasoan@192.89.122.14
-
     			var line = '<pre>';
     			line += tool
     			line += ' -N -L ';
@@ -144,7 +128,7 @@
 	to create a
 	<select id="tunnel_type" onChange="change_type()">
 		<option value="forward">forward tunnel</option>
-		<option value="reverse">reverse tunnel</option>
+		<!-- <option value="reverse">reverse tunnel</option> -->
 	</select>
 
 	<span id="local_type">

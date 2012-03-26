@@ -7,6 +7,25 @@
     <title>SSH Tunnel Script Generator</title>
 
     <style type="text/css">
+        #main {
+            background: white;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 30px;
+            overflow: hidden;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            box-shadow: 0 0 4px black;
+            -moz-box-shadow: 0 0 4px black;
+            -webkit-box-shadow: 0 0 4px black;
+        }
+
+        body {
+            background: #ddd;
+        }
+
     	#description {
     		width: 550px;
     		background: #f5f5f5;
@@ -61,24 +80,39 @@
     <![endif]-->
 
     <script type="text/javascript">
+        function change_type() {
+            var tunnelType = document.getElementById('tunnel_type').value;
+            var localType = document.getElementById('local_type');
+            var remoteType = document.getElementById('remote_type');
+
+            if(tunnelType == 'local') {
+                localType.style.display = 'inline';
+                remoteType.style.display = 'none';
+            } else {
+                localType.style.display = 'none';
+                remoteType.style.display = 'inline';
+            }
+        }
+
     	function generate() {
     		var resultDiv = document.getElementById('result');
     		var tool = document.getElementById('tool').value;
     		var tunnelType = document.getElementById('tunnel_type').value;
-    		var localPort = document.getElementById('local_port').value;
-    		var remoteServer = document.getElementById('remote_server').value;
-    		var remotePort = document.getElementById('remote_port').value;
-    		var proxyServer = document.getElementById('proxy_server').value;
-    		var proxyUser = document.getElementById('proxy_user').value;
+    		
+    		if(tunnelType == 'local') {
 
-    		if(tunnelType == 'forward') {
+                var localPort = document.getElementById('local_port').value;
+                var remoteServer = document.getElementById('remote_server').value;
+                var remotePort = document.getElementById('remote_port').value;
+                var proxyServer = document.getElementById('proxy_server').value;
+                var proxyUser = document.getElementById('proxy_user').value;
 
     			if(localPort.length == 0 || remoteServer.length == 0 || remotePort.length == 0 ||
 	    		 proxyServer.length == 0 || proxyUser.length == 0) {
 	    		 	resultDiv.innerHTML = '<pre class="error">All fields must be filled</pre>';
 	    		 	resultDiv.style.visibility = 'visible';
 	    		 	return;
-	    		 }
+	    		}
     			
     			var line = '<pre>';
     			line += tool
@@ -97,24 +131,58 @@
     			resultDiv.innerHTML = line;
     			resultDiv.style.visibility = 'visible';
     		}
+
+            if(tunnelType == 'remote') {
+
+                var remotePort = document.getElementById('r_remote_port').value;
+                var remoteServer = document.getElementById('r_remote_server').value;
+                var targetPort = document.getElementById('r_target_port').value;
+                var targetServer = document.getElementById('r_target_server').value;
+                var proxyUser = document.getElementById('r_user').value;
+
+                if(remotePort.length == 0 || remoteServer.length == 0 || targetPort.length == 0 ||
+                 targetServer.length == 0 || proxyUser.length == 0) {
+                    resultDiv.innerHTML = '<pre class="error">All fields must be filled</pre>';
+                    resultDiv.style.visibility = 'visible';
+                    return;
+                }
+                
+                var line = '<pre>';
+                line += tool
+                line += ' -N -R ';
+                line += remotePort;
+                line += ':';
+                line += targetServer;
+                line += ':';
+                line += targetPort;
+                line += ' ';
+                line += proxyUser;
+                line += '@';
+                line += remoteServer;
+                line += '</pre>'
+
+                resultDiv.innerHTML = line;
+                resultDiv.style.visibility = 'visible';
+            }
     	}
     </script>
 </head>
 
 <body>
 
+<div id="main">
+
 <h2>What's this for?</h2>
 
 <div id="description">
 	I will assume that you already know what an SSH tunnel is if you're here and want to use it.
 	This is a script that helps you with SSH tunnel setup. It generates a command line you would
-	execute to create a tunnel to a server that you cannot reach from you machine, but you know
-	is accessible through another one. It's assumed that you have access to the latter. If you're
-	on a Windows machine you'll probably want to use
+	execute to create a local or a remote tunnel by asking you to specify some info about the servers.
+    If you're on a Windows machine and don't have SSH client set up, you can download
 	<a href="http://the.earth.li/~sgtatham/putty/latest/x86/plink.exe">plink</a>.
 
 	<p>Usage:</p>
-	Fill out the fields below, click the generate button and copy-paste the resulting line to your console.
+	Fill out the fields below, click the generate button and copy-paste the resul to your console.
 </div>
 
 <h2>Choose what you want to do</h2>
@@ -127,8 +195,8 @@
 	
 	to create a
 	<select id="tunnel_type" onChange="change_type()">
-		<option value="forward">forward tunnel</option>
-		<!-- <option value="reverse">reverse tunnel</option> -->
+		<option value="local">local tunnel</option>
+		<option value="remote">remote tunnel</option>
 	</select>
 
 	<span id="local_type">
@@ -149,7 +217,20 @@
 	</span>
 
 	<span id="remote_type">
-	remote
+	from remote port
+    <input type="text" id="r_remote_port" size="4">
+    
+    on server
+    <input type="text" id="r_remote_server">
+
+    to port
+    <input type="text" id="r_target_port" size="4">
+    
+    on server
+    <input type="text" id="r_target_server">
+    
+    authenticating with user
+    <input type="text" id="r_user">
 	</span>
 
 	<br>
@@ -159,6 +240,8 @@
 
 <div id="result">
 	
+</div>
+
 </div>
 
 </body>

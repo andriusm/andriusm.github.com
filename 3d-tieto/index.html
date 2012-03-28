@@ -16,8 +16,8 @@
     varying vec4 vColor;
 
     void main(void) {
-        //gl_FragColor = vColor;
-        gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+        gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+        //gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
     }
 </script>
 
@@ -276,8 +276,8 @@
         initShaders()
         initBuffers();
 
-        //gl.clearColor(0.0, 0.0, 0.0, 1.0);
-        gl.clearColor(1.0, 1.0, 1.0, 1.0);
+        gl.clearColor(0.0, 0.0, 0.0, 1.0);
+        //gl.clearColor(1.0, 1.0, 1.0, 1.0);
         gl.enable(gl.DEPTH_TEST);
 
         tick();

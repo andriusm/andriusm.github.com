@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8"/>
 	<title>Bookmarklets</title>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/gstyle_buttons.css" type="text/css" media="screen">
+
+	<style>
+		a {
+			text-decoration: none;			
+		}
+		body {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+			font-weight: 300;
+		}
+		.buttons {
+			background: #F1F1F1;
+			padding: 11px;
+			border: 1px solid #D2D2D2;
+			width: 840px;
+			margin-bottom: 20px;
+		}
+		#markletname {
+			width: 858px;
+			font-size: 1.2em;
+		}
+		#jscriptcode {
+			font-family: 'PT Mono', sans-serif;
+			font-size: 1em;
+			width: 858px;
+		}
+		#result {
+			font-weight: bold;
+			display: none;
+		}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#clrbutton').click(function() {
+				$('#result').hide();
+				$('#markletname').val('');
+				$('#jscriptcode').val('');
+			});
+
+			$('#bmbutton').click(function() {
+				var preset = "if (!($ = window.jQuery)) { script = document.createElement( 'script' ); script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'; script.onload=bmarklet; document.body.appendChild(script); } else { bmarklet(); } function bmarklet() { ##CODE## }";
+
+				var code = $('#jscriptcode').val();
+				if (code && code.length > 0) {
+					code = code.replace(/[\r\n]/g, '');
+					code = code.replace(/\t/g,' ');
+					code = code.replace(/\s+/g,' ');
+					code = preset.replace('##CODE##', code);
+				}
+
+				var name = $('#markletname').val();
+				if (!name || name.length == 0) {
+					name = 'Your bookmarklet';
+				}
+
+				var html = '<a href="javascript:'+ code +'">'+ name +'</a>';
+				$('#bmresult').html(html);
+				$('#result').show();
+			})
+		})
+	</script>
 </head>
 <body>
 
 <div id="main">
 
-	<h2>What's this for?</h2>
-	<div id="description">
-		Lorem ipsum
+	<div id="result">
+		<span>Drag this onto your bookmark bar:</span>
+		<span id="bmresult"></span>
 	</div>
 
-	<h2>Paste in your javascript code</h2>
+	<h2>Name your bookmarklet</h2>
+	<input type="text" id="markletname">
+
+	<h2>Put your javascript code here</h2>
 	<div id="container">
-		<textarea id="jscriptcode" cols="100" rows="30"></textarea>
+		<textarea id="jscriptcode" cols="80" rows="20"></textarea>
 		<br>
-		<input type="button" value="Make bookmarklet">
+		<div class="buttons">
+			<button id="bmbutton" class="action greenbtn"><span class="label">Make bookmarklet</span></button>
+			<button id="clrbutton" class="action redbtn"><span class="label">Clear</span></button>
+		</div>
 	</div>
-
-	<div id="result">		
-	</div>
-
+	
 </div>
 
 </body>

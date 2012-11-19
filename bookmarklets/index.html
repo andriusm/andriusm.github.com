@@ -53,6 +53,7 @@
 					code = code.replace(/[\r\n]/g, '');
 					code = code.replace(/\t/g,' ');
 					code = code.replace(/\s+/g,' ');
+					code = escape(code);
 					code = preset.replace('##CODE##', code);
 				}
 

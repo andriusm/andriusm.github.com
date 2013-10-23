@@ -11,13 +11,11 @@
 <script type="text/javascript" src="webgl-utils.js"></script>
 
 <script id="shader-fs" type="x-shader/x-fragment">
-    precision mediump float;
 
-    varying vec4 vColor;
+    varying lowp vec4 vColor;
 
     void main(void) {
         gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
-        //gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
     }
 </script>
 
@@ -27,9 +25,8 @@
 
     uniform mat4 uMVMatrix;
     uniform mat4 uPMatrix;
+    varying lowp vec4 vColor;
     uniform float uTimeVar;
-
-    varying vec4 vColor;
 
     float rand(vec2 co){
         return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
@@ -37,15 +34,23 @@
 
     void main(void) {
         
-        float x = aVertexPosition.x + sin((aVertexPosition.y + uTimeVar) * 50.0 ) * 1.2;
-        float y = aVertexPosition.y + sin((aVertexPosition.x + uTimeVar) * 50.0 ) * 1.2;
-        //float z = sin((aVertexPosition.y * uTimeVar) * 50.0 ) * 1.2;
+        //float x = aVertexPosition.x + sin((aVertexPosition.y + uTimeVar) * 50.0 ) * 1.2;
+        //float y = aVertexPosition.y + sin((aVertexPosition.x + uTimeVar) * 50.0 ) * 1.2;
+        //float t = mod(uTimeVar, 10.0);
+        //float z = cos((aVertexPosition.x + aVertexPosition.y) * t);
 
         //float x = aVertexPosition.x;
         //float y = aVertexPosition.y;
-        float z = aVertexPosition.z;
+        //float z = aVertexPosition.z;
 
+
+        float x = aVertexPosition.x;
+        float y = aVertexPosition.y;
+        float z =  ( sin(uTimeVar * aVertexPosition.z * 10.0) * sin(aVertexPosition.x  + aVertexPosition.y) * 5.0 );
+
+        gl_PointSize = 2.0;
         gl_Position = uPMatrix * uMVMatrix * vec4(x, y, z, 1.0);
+
         vColor = aVertexColor;
     }
 </script>
@@ -204,18 +209,24 @@
         logoVertexPositionBuffer.itemSize = 3;
         logoVertexPositionBuffer.numItems = vertices.length / logoVertexPositionBuffer.itemSize;
 
-        console.log(logoVertexPositionBuffer);
-
         //colors
         logoVertexColorBuffer = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, logoVertexColorBuffer);
 
-        var colorNum = (vertices.length / logoVertexPositionBuffer.itemSize) * 4;
+        var colorComponents = 4;
+        var colorNum = logoVertexPositionBuffer.numItems * colorComponents;
         var colors = new Array(colorNum);
-        for(i=0;i<colorNum;i++) colors[i] = 1.0;
+
+        for(i=0;i<logoVertexPositionBuffer.numItems;i++) {
+            colors[i*colorComponents] = 1.0;
+            colors[i*colorComponents+1] = 1.0; // - Math.cos(i);
+            colors[i*colorComponents+2] = 0.0;
+            colors[i*colorComponents+3] = 1.0;
+        }
+
 
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
-        logoVertexColorBuffer.itemSize = 4;
+        logoVertexColorBuffer.itemSize = colorComponents;
         logoVertexColorBuffer.numItems = colorNum;
     }
 
@@ -232,7 +243,7 @@
         mat4.translate(mvMatrix, [0.0, 0.0, -200.0]);
 
         mvPushMatrix();
-        mat4.rotate(mvMatrix, degToRad(rLogo), [0.0, 0.1, 0.0]);
+        //mat4.rotate(mvMatrix, degToRad(rLogo), [0.0, 0.1, 0.0]);
 
         gl.bindBuffer(gl.ARRAY_BUFFER, logoVertexPositionBuffer);
         gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, logoVertexPositionBuffer.itemSize, gl.FLOAT, false, 0, 0);
@@ -287,8 +298,10 @@
 
 
 </head>
-<body onload="webGLStart();">
-    <canvas id="canvas" style="border: none;" width="800" height="600"></canvas>
+<body onload="webGLStart();" style="background: black;">
+    <div style=" margin: auto; width: 640px; height: 480px;">
+        <canvas id="canvas" style="border: none;" width="640" height="480"></canvas>
+    </div>
 </body>
 </html>
 

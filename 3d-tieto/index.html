@@ -33,28 +33,44 @@
     }
 
     void main(void) {
-        
-        //float x = aVertexPosition.x + sin((aVertexPosition.y + uTimeVar) * 50.0 ) * 1.2;
-        //float y = aVertexPosition.y + sin((aVertexPosition.x + uTimeVar) * 50.0 ) * 1.2;
-        //float t = mod(uTimeVar, 10.0);
-        //float z = cos((aVertexPosition.x + aVertexPosition.y) * t);
-
-        //float x = aVertexPosition.x;
-        //float y = aVertexPosition.y;
-        //float z = aVertexPosition.z;
-
 
         float x = aVertexPosition.x;
         float y = aVertexPosition.y;
         float z =  ( sin(uTimeVar * aVertexPosition.z * 10.0) * sin(aVertexPosition.x  + aVertexPosition.y) * 5.0 );
 
-        gl_PointSize = 2.0;
+        gl_PointSize = 1.0;
         gl_Position = uPMatrix * uMVMatrix * vec4(x, y, z, 1.0);
 
         vColor = aVertexColor;
     }
 </script>
 
+
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    window.onload = function () {
+        var canvasHeight = getParameterByName('h');
+        if (typeof canvasHeight === 'undefined' || canvasHeight == 0) canvasHeight = 480;
+        var canvasWidth = canvasHeight * 4 / 3;
+
+        var canvas = document.getElementsByTagName('canvas')[0];
+        console.log(canvas);
+        canvas.setAttribute('width', canvasWidth);
+        canvas.setAttribute('height', canvasHeight);
+
+        document.getElementsByTagName('div')[0].style.width = canvasWidth + 'px';
+        document.getElementsByTagName('div')[0].style.height = canvasHeight + 'px';
+
+        webGLStart();
+    };
+
+</script>
 
 <script type="text/javascript">
 
@@ -298,9 +314,9 @@
 
 
 </head>
-<body onload="webGLStart();" style="background: black;">
+<body style="background: black;">
     <div style=" margin: auto; width: 640px; height: 480px;">
-        <canvas id="canvas" style="border: none;" width="640" height="480"></canvas>
+        <canvas id="canvas" style="margin:auto; border: none;" width="640" height="480"></canvas>
     </div>
 </body>
 </html>

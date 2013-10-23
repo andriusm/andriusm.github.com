@@ -48,8 +48,8 @@
         float y = aVertexPosition.y;
         //float y = aVertexPosition.y + cos((aVertexPosition.x + aVertexPosition.z + uTimeVar) * 25.0 ) * 1.0;
         
-        //float z = aVertexPosition.z + cos((aVertexPosition.x + aVertexPosition.y + uTimeVar) * 25.0 ) * 10.0;
-        float z = aVertexPosition.z;
+        float z = aVertexPosition.z + cos((aVertexPosition.x + aVertexPosition.y + uTimeVar) * 25.0 ) * 10.0;
+        //float z = aVertexPosition.z;
 
         gl_PointSize = 3.0;
         gl_Position = uPMatrix * uMVMatrix * vec4(x, y, z, 1.0);
@@ -895,7 +895,7 @@
         mat4.translate(mvMatrix, [0.0, 0.0, -200.0]);
 
         mvPushMatrix();
-        mat4.rotate(mvMatrix, degToRad(rLogo), [0.0, 0.1, 0.0]);
+        //mat4.rotate(mvMatrix, degToRad(rLogo), [0.0, 0.1, 0.0]);
 
         gl.bindBuffer(gl.ARRAY_BUFFER, logoVertexPositionBuffer);
         gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, logoVertexPositionBuffer.itemSize, gl.FLOAT, false, 0, 0);

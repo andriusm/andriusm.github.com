@@ -36,7 +36,8 @@
 
         float x = aVertexPosition.x;
         float y = aVertexPosition.y;
-        float z =  ( sin(uTimeVar * aVertexPosition.z * 10.0) * sin(aVertexPosition.x  + aVertexPosition.y) * 5.0 );
+        //float z =  ( sin(uTimeVar * aVertexPosition.z * 10.0) * sin(aVertexPosition.x  + aVertexPosition.y) * 5.0 );
+        float z = aVertexPosition.z + cos((aVertexPosition.x + aVertexPosition.y + uTimeVar) * 25.0 ) * 10.0;
 
         gl_PointSize = 1.0;
         gl_Position = uPMatrix * uMVMatrix * vec4(x, y, z, 1.0);

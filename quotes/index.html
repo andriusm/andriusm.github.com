@@ -14,6 +14,7 @@
 
 	body {
 		background: #f7f7f7;
+		background: -webkit-radial-gradient(center, circle cover, #f7f7f7 0%, hsl(0, 0%, 65%) 100%);
 		color: #474747;
 	}
 	h1 {
@@ -32,6 +33,14 @@
 	}
 	</style>
 	<script type="text/javascript">
+
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
 	function Quote(quote, description) {
 		this.quote = quote;
 		this.description = description;
@@ -111,8 +120,17 @@
 	];
 
 	function randomQuote() {
-		var rnd = Math.floor(Math.random() * quotes.length);
-		var q = quotes[rnd];
+		var quoteNumber = getParameterByName("q");
+		
+		if (quoteNumber.length == 0) {
+			quoteNumber = Math.floor(Math.random() * quotes.length);
+		}
+
+		if(quoteNumber >= quotes.length) {
+			quoteNumber = quotes.length - 1;
+		}
+
+		var q = quotes[quoteNumber];
 		var h1 = document.getElementsByTagName("h1")[0];
 		var h2 = document.getElementsByTagName("h2")[0];
 		h1.textContent = q.quote;

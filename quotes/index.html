@@ -134,7 +134,9 @@
 		var h1 = document.getElementsByTagName("h1")[0];
 		var h2 = document.getElementsByTagName("h2")[0];
 		h1.textContent = q.quote;
-		h2.textContent = q.description;
+        h2.textContent = q.description;
+
+        setTimeout(function(){ window.location.reload(1); }, 60000);
 	}
 	</script>
 </head>

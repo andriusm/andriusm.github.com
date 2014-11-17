@@ -12,18 +12,17 @@
 <script id="shader-fs" type="x-shader/x-fragment">
 	precision mediump float;
 
-    varying lowp vec4 vColor;
+    varying mediump vec4 vColor;
 
     void main(void) {
         
 		
-		float alpha = 1.0-length((gl_PointCoord-0.5)*2.0);
-		gl_FragColor = vColor;
-		gl_FragColor.a = alpha;
-		//gl_FragColor = vec4(1.0, 1.0, 1.0, alpha);
+		float alpha = 2.0 - length((gl_PointCoord - 0.5) * 4.0);
+        //float alpha = 4.0 - length((gl_PointCoord - 0.5) * 8.0);
 
-        //gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
-        //gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+		gl_FragColor = vColor / (vColor.a / 50.0);
+        gl_FragColor = gl_FragColor * 1.2;
+		gl_FragColor.a = alpha;
     }
 </script>
 
@@ -37,7 +36,7 @@
     uniform mat4 uMVMatrix;
     uniform mat4 uPMatrix;
     
-    varying lowp vec4 vColor;
+    varying mediump vec4 vColor;
 
     uniform float uTimeVar;
 
@@ -56,10 +55,10 @@
         float z = aVertexPosition.z + cos((aVertexPosition.x + aVertexPosition.y + uTimeVar) * 25.0 ) * 10.0;
         //float z = aVertexPosition.z;
 
-        gl_PointSize = 8.0;
+        gl_PointSize = rand(vec2(aVertexPosition.x, aVertexPosition.y)) * 15.0;
         gl_Position = uPMatrix * uMVMatrix * vec4(x, y, z, 1.0);
         
-        vColor = vec4(sin(aVertexColor.x * 2.0 + uTimeVar), cos(aVertexColor.y), sin(aVertexColor.z), 1.0);
+        vColor = vec4(sin(aVertexColor.x * 2.0 + uTimeVar), cos(aVertexColor.y), sin(aVertexColor.z), gl_Position.z);
     }
 </script>
 

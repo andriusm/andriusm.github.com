@@ -12,17 +12,23 @@
       <md-tab id="bookmarklet" md-label="Bookmarklet">
         <bookmarklet></bookmarklet>
       </md-tab>
+
+      <md-tab id="sshtunnel" md-label="SSH tunnel script">
+        <SSHtunnel></SSHtunnel>
+      </md-tab>
     </md-tabs>
   </div>
 </template>
 
 <script>
 import Bookmarklet from './components/Bookmarklet'
+import SSHtunnel from './components/SSHtunnel'
 
 export default {
   name: 'app',
   components: {
-    Bookmarklet
+    Bookmarklet,
+    SSHtunnel
   }
 }
 </script>

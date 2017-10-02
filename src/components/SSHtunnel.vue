@@ -157,6 +157,7 @@ export default {
 }
 .result {
   background: #f0f0f0;
+  padding: 10px;
   height: 5em;
 }
 </style>

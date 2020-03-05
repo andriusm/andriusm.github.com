@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on Blog</title>
+    <link>https://miasnikovas.lt/tags/music/</link>
+    <description>Recent content in music on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 05 May 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Free stuff and some R&amp;R music</title>
+      <link>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</guid>
+      <description>As always there are too many ideas in my head, stuff I want to learn, books and blogs I want to read, things I want to share with others. When there&amp;rsquo;s too much going on it becomes more difficult to write about any of those, but I&amp;rsquo;m trying to become more organized so I&amp;rsquo;ll do my best to post regularly and more often, whenever I have something to say.
+I&amp;rsquo;ve found some really cool free online magazines about BSD operating systems and hacking:</description>
+    </item>
+    
+  </channel>
+</rss>

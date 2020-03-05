@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation on Blog</title>
+    <link>https://miasnikovas.lt/tags/automation/</link>
+    <description>Recent content in automation on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Mon, 22 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Task automation and ultimate control over Windows</title>
+      <link>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+    </item>
+    
+  </channel>
+</rss>

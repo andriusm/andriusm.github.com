@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configuration on Blog</title>
+    <link>https://miasnikovas.lt/tags/configuration/</link>
+    <description>Recent content in configuration on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 16 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring Apache Server Load Balancing for Multiple Virtual Hosts</title>
+      <link>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</guid>
+      <description>Another day – another lesson learned. Today I tried to optimize Apache HTTP server configuration in a sense to write less configuration to achieve the same result. Of course I messed up the first few times since I&amp;rsquo;m not really an admin and don&amp;rsquo;t have that much experience doing that. Typically relying on short configuration samples and snippets does the trick, but it&amp;rsquo;s not always the best way to do things.</description>
+    </item>
+    
+    <item>
+      <title>Maven profiles.xml issue (MNG-3933)</title>
+      <link>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</guid>
+      <description>If you&amp;rsquo;re using a profiles.xml file to store your profiles and want to migrate from Maven 2.0.x to Maven 2.1.x or later chances are you&amp;rsquo;ll run into a build failure. In my case the error message was “Reason: Failed to activate local (project-level) build profiles: Cannot parse profiles.xml resource from directory: …”
+The root cause of this from the stack trace might look like this:
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Expected root element &amp;#39;profilesXml&amp;#39; but found &amp;#39;profiles&amp;#39; (position: START_TAG seen &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Profiling Firefox</title>
+      <link>https://miasnikovas.lt/2008/11/profiling-firefox/</link>
+      <pubDate>Sat, 15 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/11/profiling-firefox/</guid>
+      <description>OK, this is a simple one, but I sometimes forget, because usually you do it once on any computer and then don&amp;rsquo;t think about it. Firefox is a great browser and what&amp;rsquo;s even more great is that it allows you to create different profiles so you can have different configurations/add-ons/layouts for general browsing, web development, extension development, etc. The first step is to create a new profile which can be done by typing</description>
+    </item>
+    
+  </channel>
+</rss>

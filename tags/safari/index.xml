@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>safari on Blog</title>
+    <link>https://miasnikovas.lt/tags/safari/</link>
+    <description>Recent content in safari on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 18 Apr 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/safari/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Safari popups in new tab</title>
+      <link>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</guid>
+      <description>One of the browsers I&amp;rsquo;m using on Windows is Safari and I found an interesting tweak for it, that makes popup links open in a new tab instead of a new window. Now I can&amp;rsquo;t credit the person who discovered this, because I lost the link, but here&amp;rsquo;s what you do.
+Go to C:\Documents and Settings\User\Application Data\Apple Computer\Safari\Preferences\
+where User is your Windows username. Open the file com.apple.Safari.plist for modification and insert the lines below somewhere within the tag.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtual host on Blog</title>
+    <link>https://miasnikovas.lt/tags/virtual-host/</link>
+    <description>Recent content in virtual host on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 16 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/virtual-host/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring Apache Server Load Balancing for Multiple Virtual Hosts</title>
+      <link>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</guid>
+      <description>Another day – another lesson learned. Today I tried to optimize Apache HTTP server configuration in a sense to write less configuration to achieve the same result. Of course I messed up the first few times since I&amp;rsquo;m not really an admin and don&amp;rsquo;t have that much experience doing that. Typically relying on short configuration samples and snippets does the trick, but it&amp;rsquo;s not always the best way to do things.</description>
+    </item>
+    
+  </channel>
+</rss>

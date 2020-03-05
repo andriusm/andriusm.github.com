@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code; Tools; Thoughts on Blog</title>
+    <link>https://miasnikovas.lt/</link>
+    <description>Recent content in Code; Tools; Thoughts on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Email Attachment Detacher</title>
+      <link>https://miasnikovas.lt/2017/03/email-attachment-detacher/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2017/03/email-attachment-detacher/</guid>
+      <description>Recently I was cleaning out my GMail mailbox. Yes, yes I know they give you lots of space and you can even buy more if you need it, but I kind of wanted to leave fewer old emails hanging around. I don&amp;rsquo;t know, we&amp;rsquo;ll call it &amp;ldquo;spring cleaning&amp;rdquo;. Though not all old emails are useless, some of them I actually wanted to keep and archive offline. For the most part things went smoothly, I made good use of Google Takeout service by downloading labeled emails as sepparate chunks.</description>
+    </item>
+    
+    <item>
+      <title>Quick Glimpse at Go 1.5</title>
+      <link>https://miasnikovas.lt/2015/07/quick-glimpse-at-golang-15/</link>
+      <pubDate>Tue, 14 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/07/quick-glimpse-at-golang-15/</guid>
+      <description>I&amp;rsquo;ve been playing around with Golang for a few months now and I have to conclude that it is indeed a practical, well thought out language that is also fun to use. If you haven&amp;rsquo;t heard about or tried it yet, head over to tour.golang.org right now. There you can try the language right inside your browser, hassle free, no installation required. Though there&amp;rsquo;s something compelling about compiling things on your own machine.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Exporting PuTTY Sessions</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-exporting-putty-sessions/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-exporting-putty-sessions/</guid>
+      <description>Here&amp;rsquo;s a really quick tip. If you&amp;rsquo;re running Windows and are using PuTTY to manage your unix servers, chances are you have a lot of saved sessions i.e. information on how to connect to your server, what font type and size to use, etc. And if you ever tried copying them to another machine you noticed that PuTTY doesn&amp;rsquo;t have a user-friendly export/import sessions button. But there&amp;rsquo;s a way to perform a saved sessions export manually.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Fun with JavaScript Console in Browsers</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</guid>
+      <description>All modern browsers nowadays have integrated development tools among which there&amp;rsquo;s a JavaScript console where you can type in some JavaScript and test your ideas, debug your code or see output from your script&amp;rsquo;s previous events. But the console is capable of so much more. Well, actually IE&amp;rsquo;s console is somewhat more limited than others, but the rest of them are pretty cool. To get an idea of the possibilities visit the chrome developer tips and tricks page to learn more.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Easy Time Lapse Videos with FFmpeg</title>
+      <link>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</link>
+      <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</guid>
+      <description>In this tip I want to share with you a quick and easy way of creating your own time lapse videos using your webcam and a tool called FFmpeg. I just recently discovered this command line tool myself and can think of various cool uses for it e.g. connecting a webcam to a Raspberry Pi and leaving it somewhere to take snapshots on certain events, or stream video of some place you want to monitor.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Velocity Template Debugging</title>
+      <link>https://miasnikovas.lt/2012/04/quick-tip-velocity-template-debugging/</link>
+      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/04/quick-tip-velocity-template-debugging/</guid>
+      <description>In this post I&amp;rsquo;ll try to share my recent experience with Velocity template debugging. There are a few ways to debug the templates depending on where you think the problem lies. But at times you have modify templates written by others and that&amp;rsquo;s when you need to do some exploring like finding out what variables are actually passed to the template. This is not always easily found in code, sometimes it&amp;rsquo;s simpler to print this stuff out when you&amp;rsquo;re already in the template.</description>
+    </item>
+    
+    <item>
+      <title>Experimenting with WebGL</title>
+      <link>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</link>
+      <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</guid>
+      <description>I was experimenting with WebGLthe other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logoof the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
+    </item>
+    
+    <item>
+      <title>SSH tunneling simplified (I think)</title>
+      <link>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</link>
+      <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</guid>
+      <description>It&amp;rsquo;s been quite a while since my last post so I&amp;rsquo;ll try to ease back into blogging. For now I&amp;rsquo;ll just share a little something I created for myself to help with the SSH tunnels that I need to create on a seemingly regular basis. Sometimes I forget or mix up the parameters that need to be passed to SSH client, especially when interconnecting these tunnels. In this simple tool you can enter the missing info to form a logical sentence in English language and when you click the generate button you get a command line for the SSH client.</description>
+    </item>
+    
+    <item>
+      <title>A Story of Switching from Java to Developing for Mac OS X</title>
+      <link>https://miasnikovas.lt/2011/07/a-story-of-switching-from-java-to-developing-for-mac-os-x/</link>
+      <pubDate>Thu, 28 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/07/a-story-of-switching-from-java-to-developing-for-mac-os-x/</guid>
+      <description>A couple of months ago I&amp;rsquo;ve switched from Java development to developing for Mac OS X. Let me tell you, it&amp;rsquo;s a completely different world, but that was to be expected. The first thing is to get acquainted with the OS and it&amp;rsquo;s features. That actually didn&amp;rsquo;t take too long. I&amp;rsquo;m really pleased with the availability of a full-fledged UNIX console in the OS, so I&amp;rsquo;m able to leverage all of my linux knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Introductory PhoneGap Tutorial for Android</title>
+      <link>https://miasnikovas.lt/2011/07/introductory-phonegap-tutorial-for-android/</link>
+      <pubDate>Wed, 27 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/07/introductory-phonegap-tutorial-for-android/</guid>
+      <description>I haven&amp;rsquo;t posted in quite a while. Been busy with all the job switching, getting used to Mac things and such. On another topic while cleaning up my hard drive I&amp;rsquo;m finding various neat stuff, that I forgot about. Will try and share some of it with the rest of you. These are mostly things that you either need or don&amp;rsquo;t care about at all. One of those things is a screencast that I&amp;rsquo;ve forgotten I made.</description>
+    </item>
+    
+    <item>
+      <title>Automatic Web Server Monitoring</title>
+      <link>https://miasnikovas.lt/2011/02/automatic-web-server-monitoring/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/02/automatic-web-server-monitoring/</guid>
+      <description>Hi there! Here&amp;rsquo;s another quick suggestion for all of you out there who have to deal with a lot of web server environments and need to make sure that they&amp;rsquo;re all alive and responsive. Sure there are all sorts of tools for server monitoring and performance tracking, but I found that most of the time you just need to know if the server is up &amp;amp; running. And of course you should be notified if it&amp;rsquo;s not.</description>
+    </item>
+    
+    <item>
+      <title>Search for Files on Remote FTP Server</title>
+      <link>https://miasnikovas.lt/2011/02/search-for-files-on-remote-ftp-server/</link>
+      <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/02/search-for-files-on-remote-ftp-server/</guid>
+      <description>I&amp;rsquo;ll keep this one short. Don&amp;rsquo;t know about you, but I&amp;rsquo;ve always been frustrated about how most FTP clients won&amp;rsquo;t let you search for files on a remote FTP server. I remember I used some client that had this functionality, but this was quite a while ago so I can&amp;rsquo;t even remember the name of it. If someone else knows any lightweight tools that let you do that, please leave a comment.</description>
+    </item>
+    
+    <item>
+      <title>Modifying Treepie To Display File Count</title>
+      <link>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</link>
+      <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</guid>
+      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&amp;rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.</description>
+    </item>
+    
+    <item>
+      <title>Online Tools That Make My Life Easier</title>
+      <link>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</link>
+      <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</guid>
+      <description>Imagine a situation where you&amp;rsquo;re sitting in front of a colleague&amp;rsquo;s computer or one that is publicly used. By definition you&amp;rsquo;re missing all your favorite tools that you&amp;rsquo;re used to and you can&amp;rsquo;t install them even if you wanted to. Here&amp;rsquo;s a short list of online tools that help me a lot when I&amp;rsquo;m using a computer other than my own. These do not fully replace the desktop equivalents, but they&amp;rsquo;re good enough.</description>
+    </item>
+    
+    <item>
+      <title>Private Key PFX to/from JKS Conversion Using OpenSSL and Jetty</title>
+      <link>https://miasnikovas.lt/2010/10/private-key-pfx-jks-conversion-using-openssl-and-jetty/</link>
+      <pubDate>Thu, 21 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/10/private-key-pfx-jks-conversion-using-openssl-and-jetty/</guid>
+      <description>Recently I&amp;rsquo;ve been watching quite a few screencasts which seem to be a really fun way to learn something. This made me want to create something of my own. So for this blog post I&amp;rsquo;m putting up my first attempts at creating screencasts while trying to explain something useful.
+When dealing with PKI based application security, one usually encounters different systems on different platforms and making sure they can interact with each other can be quite a hassle.</description>
+    </item>
+    
+    <item>
+      <title>What’s New in Tomcat 7</title>
+      <link>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</guid>
+      <description>Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.</description>
+    </item>
+    
+    <item>
+      <title>CIS Security Benchmarks</title>
+      <link>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</guid>
+      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Securityspecifically their resources downloadpage. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
+    </item>
+    
+    <item>
+      <title>Improving Architecture with Structure 101</title>
+      <link>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Apache Server Load Balancing for Multiple Virtual Hosts</title>
+      <link>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/configuring-apache-server-load-balancing-for-multiple-virtual-hosts/</guid>
+      <description>Another day – another lesson learned. Today I tried to optimize Apache HTTP server configuration in a sense to write less configuration to achieve the same result. Of course I messed up the first few times since I&amp;rsquo;m not really an admin and don&amp;rsquo;t have that much experience doing that. Typically relying on short configuration samples and snippets does the trick, but it&amp;rsquo;s not always the best way to do things.</description>
+    </item>
+    
+    <item>
+      <title>Fun System Tool for Process Analysis and Debugging</title>
+      <link>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</link>
+      <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Integrated PDF Support</title>
+      <link>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</link>
+      <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</guid>
+      <description>If you&amp;rsquo;re using Google Chrome browserfrom the so-called developer channel(i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
+    </item>
+    
+    <item>
+      <title>Linux GUI on Your Windows Desktop Through the Magic of Xming</title>
+      <link>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Apache httpd from Sources</title>
+      <link>https://miasnikovas.lt/2010/05/compiling-apache-httpd-from-sources/</link>
+      <pubDate>Mon, 17 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/compiling-apache-httpd-from-sources/</guid>
+      <description>This is yet another post on Apache httpd server installation and configuration. I say another because I&amp;rsquo;ve already written about how to install the packaged version of Apachefor two specific linux distros. This time I&amp;rsquo;ll quickly jot down how I configured and compiled Apache for my needs. There are a few reasons to do this. One of the more important ones being to have a newer version of Apache. It seems that prepackaged Apache versions for some linux distributions can be quite out of date.</description>
+    </item>
+    
+    <item>
+      <title>Free stuff and some R&amp;R music</title>
+      <link>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</guid>
+      <description>As always there are too many ideas in my head, stuff I want to learn, books and blogs I want to read, things I want to share with others. When there&amp;rsquo;s too much going on it becomes more difficult to write about any of those, but I&amp;rsquo;m trying to become more organized so I&amp;rsquo;ll do my best to post regularly and more often, whenever I have something to say.
+I&amp;rsquo;ve found some really cool free online magazines about BSD operating systems and hacking:</description>
+    </item>
+    
+    <item>
+      <title>Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</title>
+      <link>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</link>
+      <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+    </item>
+    
+    <item>
+      <title>Mouse click experiment</title>
+      <link>https://miasnikovas.lt/2010/04/mouse-click-experiment/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/mouse-click-experiment/</guid>
+      <description>&lt;p&gt;After writing about keyboard oriented software I&amp;rsquo;ve been doing a little experiment for a few weeks now and I thought I&amp;rsquo;d share the results. I&amp;rsquo;ve been using a little program called &lt;!-- raw HTML omitted --&gt;Click Counter&lt;!-- raw HTML omitted --&gt;, well actually it&amp;rsquo;s a compiled AutoHotKey script which I found on &lt;!-- raw HTML omitted --&gt;this forum&lt;!-- raw HTML omitted --&gt;. Source for the script is available if you don&amp;rsquo;t like the idea of using an executable found on some forum. My idea was to track all my mouse clicks throughout the day and see how much I can reduce the amount of times I reach for the roddent. The Click Counter tool only produces data as a text file, but it&amp;rsquo;s way more fun to see some graphical representation of my clicking habits, so I threw together a &lt;a href=&#34;http://andrius.miasnikovas.lt/files/clickchart.zip&#34;&gt;simple Java program&lt;/a&gt; that reads the produced log file from the Click Counter and outputs a nice graph with monthly mean average. It&amp;rsquo;s done with maven and contains .bat files to further simplify the building and running process. So without further ado here are my results&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating thumbnails from photos with Python PIL</title>
+      <link>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</guid>
+      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PILand install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
+    </item>
+    
+    <item>
+      <title>Task automation and ultimate control over Windows</title>
+      <link>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard oriented application launchers</title>
+      <link>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</link>
+      <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</guid>
+      <description>Last week I set out to find the best tools I could to increase my overall productivity when doing my everyday tasks and I want to share my experience. When writing this I quickly realized that putting everything in one chunk would make it quite long and as a fan of blog post brevity I decided to split it into a few posts. This one will cover applications that allow you to quickly launch other programs on your machine.</description>
+    </item>
+    
+    <item>
+      <title>Disk efficiency when dealing with tons of small files</title>
+      <link>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</guid>
+      <description>When dealing with source code from projects of various sizes the disk quickly gets filled up with literally tens or even hundreds of thousands of files. Especially when the project is under source control and has metadata files for each of the project&amp;rsquo;s file. While you may still have a lot of disk space left on the drive I found that this kind of setup is highly inefficient when jumping from file to file in an IDE or doing a full text search.</description>
+    </item>
+    
+    <item>
+      <title>Taking over the Spring context from a neighbouring application on Tomcat</title>
+      <link>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+    </item>
+    
+    <item>
+      <title>Free technical books and resources</title>
+      <link>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</link>
+      <pubDate>Sat, 27 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</guid>
+      <description>Recently I&amp;rsquo;ve been thinking about how quickly technical books go out of date or sometimes just can keep up with the new versions of software constantly being released. I do like holding in my hands a nice printed book and enjoying the process of reading it, but for IT books it&amp;rsquo;s just a whole different story. You don&amp;rsquo;t usually need to read the entire book cover-to-cover, most often these books are used as references to help solve a specific problem.</description>
+    </item>
+    
+    <item>
+      <title>Maven3 alpha and CLI plugin for Maven2</title>
+      <link>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</guid>
+      <description>Today I tried out the new Maven-3.0-alpha-6on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
+    </item>
+    
+    <item>
+      <title>Maven profiles.xml issue (MNG-3933)</title>
+      <link>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</guid>
+      <description>If you&amp;rsquo;re using a profiles.xml file to store your profiles and want to migrate from Maven 2.0.x to Maven 2.1.x or later chances are you&amp;rsquo;ll run into a build failure. In my case the error message was “Reason: Failed to activate local (project-level) build profiles: Cannot parse profiles.xml resource from directory: …”
+The root cause of this from the stack trace might look like this:
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Expected root element &amp;#39;profilesXml&amp;#39; but found &amp;#39;profiles&amp;#39; (position: START_TAG seen &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Maven command-line tips</title>
+      <link>https://miasnikovas.lt/2010/02/maven-command-line-tips/</link>
+      <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-command-line-tips/</guid>
+      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Mavenparameters in case I forget anything.
+This should be run from a parent POM&amp;rsquo;s directory. It lets you view the POM file that would be in effect if you were building the project. The result is a composite POM containing all your child POMs that you defined as modules in the parent POM.</description>
+    </item>
+    
+    <item>
+      <title>Internet TV and video conversion</title>
+      <link>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
+      <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
+The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+    </item>
+    
+    <item>
+      <title>Everyday tools</title>
+      <link>https://miasnikovas.lt/2010/01/everyday-tools/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/everyday-tools/</guid>
+      <description>In this post I want to share with you a few tools which in my opinion are really useful. A while ago I found this page called FileHippo that contains a lot of free software and they even maintain older versions which is great for when you&amp;rsquo;re searching for a particular version of some tool and can&amp;rsquo;t find anywhere else. But the really nice thing is that now they have this program called Update Cheker which you can download and install on you machine and it will analyze the software that you have installed and present you with a list of possible updates including the beta versions as a separate section.</description>
+    </item>
+    
+    <item>
+      <title>Firefox extension compatibility</title>
+      <link>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</guid>
+      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspidertests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
+    </item>
+    
+    <item>
+      <title>SSH with Java</title>
+      <link>https://miasnikovas.lt/2009/07/ssh-with-java/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+    </item>
+    
+    <item>
+      <title>Firefox add-ons</title>
+      <link>https://miasnikovas.lt/2008/12/firefox-add-ons/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/12/firefox-add-ons/</guid>
+      <description>Here I&amp;rsquo;ll just put my most used Firefox add-on list. Actually two lists – one for web development related add-ons and the other for general surfing and enjoying the web.
+Developer&amp;rsquo;s add-ons
+ Web Developer Firebug Firecookie YSlow iMacros PageDiff Tamper Data Greasemonkey DOM Inspector InspectThis  Surfing add-ons
+ StumbleUpon Delicious Bookmarks Adblock Plus Fire.fm Video DownloadHelper Cooliris Clipmarks Rikaichan Screengrab TwitterFox  There&amp;rsquo;s also this more official list of add-ons for Firefox categorized by the things you do on the web.</description>
+    </item>
+    
+    <item>
+      <title>Profiling Firefox</title>
+      <link>https://miasnikovas.lt/2008/11/profiling-firefox/</link>
+      <pubDate>Sat, 15 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/11/profiling-firefox/</guid>
+      <description>OK, this is a simple one, but I sometimes forget, because usually you do it once on any computer and then don&amp;rsquo;t think about it. Firefox is a great browser and what&amp;rsquo;s even more great is that it allows you to create different profiles so you can have different configurations/add-ons/layouts for general browsing, web development, extension development, etc. The first step is to create a new profile which can be done by typing</description>
+    </item>
+    
+    <item>
+      <title>Certificate Generation with Java Tools</title>
+      <link>https://miasnikovas.lt/2008/09/certificate-generation/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/certificate-generation/</guid>
+      <description>Java has a useful tool for generating private-public key pair, it&amp;rsquo;s called keytool and is located in your jdk/bin directory. Here&amp;rsquo;s a command line that I often use to generate keys and self-signed certificates for testing.
+$ keytool -genkey -keyalg RSA -validity 365 -alias MyKey -keystore new_keystore.jks -dname &amp;#34;CN=SubjectName, OU=My Department, O=My Company, L=Vilnius, S=Vilnius, C=LT&amp;#34; Also it is sometimes needed to generate a request to get a signed certificate. Having created a keystore as shown above, it is easily done with the following line.</description>
+    </item>
+    
+    <item>
+      <title>iBatis and Stored Oracle procedures/functions</title>
+      <link>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</guid>
+      <description>This one took me a while to get it right the first time. I won&amp;rsquo;t go into details of configuring iBatis datasources and such, and will go straight to putting some queries in the sqlMap file. Just let me note that I&amp;rsquo;m using iBatis 2.3 for these examples. I&amp;rsquo;ll start off with a procedure call.
+&amp;lt;procedure id=&amp;#34;getUserRoles&amp;#34; parameterMap=&amp;#34;myParamMap&amp;#34;&amp;gt; { call SCHEMA.GET_USERS_ROLES(?, ?) } &amp;lt;/procedure&amp;gt; This one is pretty self-explanatory, just defining a procedure to be called.</description>
+    </item>
+    
+    <item>
+      <title>Firefox 3 Download Day</title>
+      <link>https://miasnikovas.lt/2008/05/firefox-3-download-day/</link>
+      <pubDate>Thu, 29 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/firefox-3-download-day/</guid>
+      <description>Just found out about Firefox 3 Download Day and wanted to do my part by spreading the word. They&amp;rsquo;re trying to set a Guinness World Record for most software downloads in 24 hours. Sounds pretty simple, just download a great browser and help achieve the record.
+You can also follow the Firefox news on twitter.</description>
+    </item>
+    
+    <item>
+      <title>Using maven</title>
+      <link>https://miasnikovas.lt/2008/05/using-maven/</link>
+      <pubDate>Thu, 08 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/using-maven/</guid>
+      <description>Maven is an awesome build tool for JAVA, but it has some long parameter names that I don&amp;rsquo;t like to remember, so I put my often used tasks of maven in batch files.
+install.bat
+mvn install:install-file -Dfile=%1 -DgroupId=%2 -DartifactId=%3 -Dversion=%4 -Dpackaging=pom -DgeneratePom=true This installs the specified .jar file in the local repository located in
+C:\Documents and Settings\*User*\.m2\repository where *User* is your username. Four arguments are required: jar_file, group, artifact and version.</description>
+    </item>
+    
+    <item>
+      <title>tail -f for windows</title>
+      <link>https://miasnikovas.lt/2008/05/tail-f-for-windows/</link>
+      <pubDate>Wed, 07 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/tail-f-for-windows/</guid>
+      <description>Here&amp;rsquo;s a simple implementation of “tail -f” UNIX command equivalent in python. I used it a lot on windows servers to monitor log files. The good thing is that it works over SMB (windows shares).
+#!/usr/bin/env python import sys, os, time def main(argv): if len(argv) &amp;lt; 2: print &amp;#34;Usage: tail filename.log&amp;#34; exit(1) try: fp = open(argv[1], &amp;#34;r&amp;#34;) st_results = os.stat(argv[1]) st_size = st_results[6] fp.seek(st_size) while 1: where = fp.tell() line = fp.</description>
+    </item>
+    
+    <item>
+      <title>A couple of useful resources</title>
+      <link>https://miasnikovas.lt/2008/04/a-couple-of-useful-resources/</link>
+      <pubDate>Sat, 19 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/a-couple-of-useful-resources/</guid>
+      <description>A while ago found this great page that aggregates various posts relevant to developers. Just to remind myself and maybe let others know, if you haven&amp;rsquo;t seen it definitely check it out – http://www.dzone.com
+Recently I had the need to alter an SVG file that was produced by someone else. Now although you can do this by opening it in a text editor and make the changes by hand, but you would need to know the SVG tags, attributes, etc and more complex graphical changes are just too difficult.</description>
+    </item>
+    
+    <item>
+      <title>Javascript introspection</title>
+      <link>https://miasnikovas.lt/2008/04/javascript-introspection/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/javascript-introspection/</guid>
+      <description>Very basic, but sometimes useful javascript object introspection
+&amp;lt;img id=&amp;#34;test&amp;#34;&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; language=&amp;#34;JavaScript&amp;#34;&amp;gt; el = document.getElementById(&amp;#39;test&amp;#39;); str = &amp;#39;&amp;#39;; for (i in el) str += i+&amp;#39;; &amp;#39;; alert(str); &amp;lt;/script&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Safari popups in new tab</title>
+      <link>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</guid>
+      <description>One of the browsers I&amp;rsquo;m using on Windows is Safari and I found an interesting tweak for it, that makes popup links open in a new tab instead of a new window. Now I can&amp;rsquo;t credit the person who discovered this, because I lost the link, but here&amp;rsquo;s what you do.
+Go to C:\Documents and Settings\User\Application Data\Apple Computer\Safari\Preferences\
+where User is your Windows username. Open the file com.apple.Safari.plist for modification and insert the lines below somewhere within the tag.</description>
+    </item>
+    
+    <item>
+      <title>Strings in JAVA</title>
+      <link>https://miasnikovas.lt/2008/04/strings-in-java/</link>
+      <pubDate>Thu, 17 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/strings-in-java/</guid>
+      <description>A few days ago I needed to extract all strings from .java files and also thought that it would be a good idea to keep count how many times a string is used. So I came up with this simple python script. It&amp;rsquo;s kind of a quick and dirty solution, but it met my needs for the particular task.
+import sys, os, re from operator import itemgetter files = [] strings = {} exp = re.</description>
+    </item>
+    
+  </channel>
+</rss>

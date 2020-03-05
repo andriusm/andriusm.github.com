@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>free on Blog</title>
+    <link>https://miasnikovas.lt/categories/free/</link>
+    <description>Recent content in free on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 14 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/free/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fun System Tool for Process Analysis and Debugging</title>
+      <link>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</link>
+      <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+    </item>
+    
+    <item>
+      <title>Free stuff and some R&amp;R music</title>
+      <link>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</guid>
+      <description>As always there are too many ideas in my head, stuff I want to learn, books and blogs I want to read, things I want to share with others. When there&amp;rsquo;s too much going on it becomes more difficult to write about any of those, but I&amp;rsquo;m trying to become more organized so I&amp;rsquo;ll do my best to post regularly and more often, whenever I have something to say.
+I&amp;rsquo;ve found some really cool free online magazines about BSD operating systems and hacking:</description>
+    </item>
+    
+  </channel>
+</rss>

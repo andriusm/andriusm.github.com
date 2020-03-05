@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Blog  | Taking over the Spring context from a neighbouring application on Tomcat</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.65.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Taking over the Spring context from a neighbouring application on Tomcat" />
+<meta property="og:description" content="A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&rsquo;t think that minor version number differences would have much of an impact on the technique." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/" />
+<meta property="article:published_time" content="2010-03-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2010-03-05T00:00:00+00:00" />
+<meta itemprop="name" content="Taking over the Spring context from a neighbouring application on Tomcat">
+<meta itemprop="description" content="A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&rsquo;t think that minor version number differences would have much of an impact on the technique.">
+<meta itemprop="datePublished" content="2010-03-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2010-03-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="673">
+
+
+
+<meta itemprop="keywords" content="java,POC,spring,tomcat," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Taking over the Spring context from a neighbouring application on Tomcat"/>
+<meta name="twitter:description" content="A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&rsquo;t think that minor version number differences would have much of an impact on the technique."/>
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12929818-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://miasnikovas.lt/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Blog
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/&amp;text=Taking%20over%20the%20Spring%20context%20from%20a%20neighbouring%20application%20on%20Tomcat" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/&amp;title=Taking%20over%20the%20Spring%20context%20from%20a%20neighbouring%20application%20on%20Tomcat" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Taking over the Spring context from a neighbouring application on Tomcat</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Andrius Miasnikovas
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-03-05T00:00:00Z">March 5, 2010</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l"><p>A little while ago I was developing a small application from which I wanted to reuse the <!-- raw HTML omitted -->Spring<!-- raw HTML omitted --> beans that are defined in a context of another application. I thought this might be useful for someone so here&rsquo;s a short explanation of how I achieved this result. Both applications were deployed on <!-- raw HTML omitted -->Tomcat 6.0.18<!-- raw HTML omitted -->, but I don&rsquo;t think that minor version number differences would have much of an impact on the technique. The core concept is quite simple – I gave one application the ability to access another application&rsquo;s classpath, thus all the classes, Spring context and the beans. Let&rsquo;s call the standard Spring-based application the victim and the application that will take over the context – rogue. There aren&rsquo;t any specific requirements for the victim application, but I did put the context files in the classpath, not just the WEB-INF directory. The rogue application has two context files, one of them loaded by the Spring context listener is just a stub and contains no beans, but the other one tries to include the spring context file which belongs to the victimapplication:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span><span style="color:#f92672">&lt;/div&gt;</span>
+<span style="color:#f92672">&lt;beans</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans&#34;</span> <span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span> <span style="color:#a6e22e">xmlns:context=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/context&#34;</span>
+<span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+</span><span style="color:#e6db74">http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;context:annotation-config</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;import</span> <span style="color:#a6e22e">resource=</span><span style="color:#e6db74">&#34;classpath:application-context.xml&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/beans&gt;</span></code></pre></div>
+<p>We need to delay the loading of the <em>victim</em>‘s application context because we can&rsquo;t access its classpath just yet.  Next it&rsquo;s important to define our own implementation of the context listener in the web.xml file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;listener&gt;</span>
+    <span style="color:#f92672">&lt;listener-class&gt;</span>com.example.rogue.web.ContextListener<span style="color:#f92672">&lt;/listener-class&gt;</span>
+<span style="color:#f92672">&lt;/listener&gt;</span></code></pre></div>
+<p>The rogue application&rsquo;s context listener implementation should look like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ContextListener</span> <span style="color:#66d9ef">implements</span> ServletContextListener <span style="color:#f92672">{</span>
+
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">contextInitialized</span><span style="color:#f92672">(</span>ServletContextEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    String springConfig <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;classpath:rogue-context.xml&#34;</span><span style="color:#f92672">;</span>
+    ServletContext servletContext <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span><span style="color:#a6e22e">getServletContext</span><span style="color:#f92672">();</span>
+    WebApplicationContext webContext <span style="color:#f92672">=</span>
+      WebApplicationContextUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">getWebApplicationContext</span><span style="color:#f92672">(</span>servletContext<span style="color:#f92672">);</span>
+
+    ClassPathXmlApplicationContext context <span style="color:#f92672">=</span>
+      <span style="color:#66d9ef">new</span> ClassPathXmlApplicationContext<span style="color:#f92672">(</span>webContext<span style="color:#f92672">);</span>
+    context<span style="color:#f92672">.</span><span style="color:#a6e22e">setClassLoader</span><span style="color:#f92672">(</span>getModifiedClassLoader<span style="color:#f92672">());</span>
+    context<span style="color:#f92672">.</span><span style="color:#a6e22e">setAllowBeanDefinitionOverriding</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+    context<span style="color:#f92672">.</span><span style="color:#a6e22e">setConfigLocation</span><span style="color:#f92672">(</span>springConfig<span style="color:#f92672">);</span>
+    context<span style="color:#f92672">.</span><span style="color:#a6e22e">refresh</span><span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">contextDestroyed</span><span style="color:#f92672">(</span>ServletContextEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    Model<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">destroy</span><span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * Scans the lib directory of victim application and adds all
+</span><span style="color:#75715e">     * the jar files as valid repositories for the current application
+</span><span style="color:#75715e">     */</span>
+    <span style="color:#66d9ef">private</span> WebappClassLoader <span style="color:#a6e22e">getModifiedClassLoader</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+      WebappClassLoader classLoader <span style="color:#f92672">=</span>
+        <span style="color:#f92672">(</span>WebappClassLoader<span style="color:#f92672">)</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getClass</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getClassLoader</span><span style="color:#f92672">();</span>
+
+      String tmp <span style="color:#f92672">=</span> classLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">getURLs</span><span style="color:#f92672">()[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">getPath</span><span style="color:#f92672">();</span>
+      String appDir <span style="color:#f92672">=</span> tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/webapps/&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">+</span> 8<span style="color:#f92672">);</span>
+      String classesDir <span style="color:#f92672">=</span> appDir <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/victim/WEB-INF/classes/&#34;</span><span style="color:#f92672">;</span>
+      String libDir <span style="color:#f92672">=</span> appDir <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/victim/WEB-INF/lib/&#34;</span><span style="color:#f92672">;</span>
+
+      classLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">addRepository</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;file:/&#34;</span><span style="color:#f92672">+</span>classesDir<span style="color:#f92672">);</span>
+      File dir <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>libDir<span style="color:#f92672">);</span>
+      <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String file <span style="color:#f92672">:</span> dir<span style="color:#f92672">.</span><span style="color:#a6e22e">list</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file<span style="color:#f92672">.</span><span style="color:#a6e22e">endsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.jar&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+          classLoader<span style="color:#f92672">.</span><span style="color:#a6e22e">addRepository</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;file:/&#34;</span> <span style="color:#f92672">+</span> libDir <span style="color:#f92672">+</span> file<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+      <span style="color:#f92672">}</span>
+      <span style="color:#66d9ef">return</span> classLoader<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span></code></pre></div>
+<p>Note that in the getModifiedClassLoader() method we&rsquo;re casting the class loader to the WebappClassLoader class which is a class loader for Tomcat hosted web applications so this line would probably fail on other servlet containers, though I didn&rsquo;t actually tried it. The directories for the victim application&rsquo;s classpath are hardcoded here, so make sure you change them if you&rsquo;ll try to play around with a different application. The actual payload here is the Spring application context named context in the contextInitialized() method so make sure you save it somewhere. A good choice might be to save it as a servlet context attribute or in a singleton object so you&rsquo;ll be able to retrieve it later when you actually need it.</p>
+<p>Now the fun part – using the Spring beans of another application.  If you have access to the interfaces or classes of the beans that you want to call you could add them as libraries for the rogue application, but to avoid any dependency on the victim application I&rsquo;m using the reflective method invocation here.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CallerController</span> <span style="color:#66d9ef">implements</span> Controller <span style="color:#f92672">{</span>
+
+  <span style="color:#66d9ef">public</span> ModelAndView <span style="color:#a6e22e">handleRequest</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">,</span>
+                                    HttpServletResponse response<span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">throws</span> ServletException<span style="color:#f92672">,</span> IOException <span style="color:#f92672">{</span>
+
+    ClassPathXmlApplicationContext rogueCtx <span style="color:#f92672">=</span>
+      Model<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getAppContext</span><span style="color:#f92672">();</span>
+    Object o <span style="color:#f92672">=</span> rogueCtx<span style="color:#f92672">.</span><span style="color:#a6e22e">getBean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;importantService&#34;</span><span style="color:#f92672">);</span>
+
+    <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Method method <span style="color:#f92672">:</span> o<span style="color:#f92672">.</span><span style="color:#a6e22e">getClass</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getMethods</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>method<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">().</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;doSeriousWork&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+          Object result <span style="color:#f92672">=</span> method<span style="color:#f92672">.</span><span style="color:#a6e22e">invoke</span><span style="color:#f92672">(</span>o<span style="color:#f92672">);</span>
+          request<span style="color:#f92672">.</span><span style="color:#a6e22e">getSession</span><span style="color:#f92672">().</span><span style="color:#a6e22e">setAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;result&#34;</span><span style="color:#f92672">,</span> result<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+          e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+      <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> ModelAndView<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;caller.jsp&#34;</span><span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Such usage requires you to know the Spring bean names, method names and the parameter types, but if you&rsquo;re able to deploy your application next to the victim, you can figure those out. I was trying to keep the post short so I&rsquo;m not sure if I explained the details well enough. If you have any thoughts on this leave a comment and you can download two <!-- raw HTML omitted --><!-- raw HTML omitted -->proof of concept applications<!-- raw HTML omitted --><!-- raw HTML omitted --> and play around with them if you like.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/poc" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">POC</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/spring" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">spring</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/tomcat" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tomcat</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "andriusm" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/02/maven3-alpha-and-cli-plugin-for-maven2/">Maven3 alpha and CLI plugin for Maven2</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/maven-profiles-xml-issue-mng-3933/">Maven profiles.xml issue (MNG-3933)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/maven-command-line-tips/">Maven command-line tips</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/07/ssh-with-java/">SSH with Java</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/09/certificate-generation/">Certificate Generation with Java Tools</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/09/ibatis-and-stored-oracle-proceduresfunctions/">iBatis and Stored Oracle procedures/functions</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/05/using-maven/">Using maven</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
+    &copy;  Andrius Miasnikovas 2020 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

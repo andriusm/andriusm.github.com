@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool on Blog</title>
+    <link>https://miasnikovas.lt/tags/tool/</link>
+    <description>Recent content in tool on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Sun, 18 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Task automation and ultimate control over Windows</title>
+      <link>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard oriented application launchers</title>
+      <link>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</link>
+      <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</guid>
+      <description>Last week I set out to find the best tools I could to increase my overall productivity when doing my everyday tasks and I want to share my experience. When writing this I quickly realized that putting everything in one chunk would make it quite long and as a fan of blog post brevity I decided to split it into a few posts. This one will cover applications that allow you to quickly launch other programs on your machine.</description>
+    </item>
+    
+    <item>
+      <title>Disk efficiency when dealing with tons of small files</title>
+      <link>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</guid>
+      <description>When dealing with source code from projects of various sizes the disk quickly gets filled up with literally tens or even hundreds of thousands of files. Especially when the project is under source control and has metadata files for each of the project&amp;rsquo;s file. While you may still have a lot of disk space left on the drive I found that this kind of setup is highly inefficient when jumping from file to file in an IDE or doing a full text search.</description>
+    </item>
+    
+    <item>
+      <title>Maven3 alpha and CLI plugin for Maven2</title>
+      <link>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</guid>
+      <description>Today I tried out the new Maven-3.0-alpha-6on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
+    </item>
+    
+    <item>
+      <title>Maven command-line tips</title>
+      <link>https://miasnikovas.lt/2010/02/maven-command-line-tips/</link>
+      <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-command-line-tips/</guid>
+      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Mavenparameters in case I forget anything.
+This should be run from a parent POM&amp;rsquo;s directory. It lets you view the POM file that would be in effect if you were building the project. The result is a composite POM containing all your child POMs that you defined as modules in the parent POM.</description>
+    </item>
+    
+    <item>
+      <title>Internet TV and video conversion</title>
+      <link>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
+      <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
+The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+    </item>
+    
+    <item>
+      <title>Everyday tools</title>
+      <link>https://miasnikovas.lt/2010/01/everyday-tools/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/everyday-tools/</guid>
+      <description>In this post I want to share with you a few tools which in my opinion are really useful. A while ago I found this page called FileHippo that contains a lot of free software and they even maintain older versions which is great for when you&amp;rsquo;re searching for a particular version of some tool and can&amp;rsquo;t find anywhere else. But the really nice thing is that now they have this program called Update Cheker which you can download and install on you machine and it will analyze the software that you have installed and present you with a list of possible updates including the beta versions as a separate section.</description>
+    </item>
+    
+    <item>
+      <title>Certificate Generation with Java Tools</title>
+      <link>https://miasnikovas.lt/2008/09/certificate-generation/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/certificate-generation/</guid>
+      <description>Java has a useful tool for generating private-public key pair, it&amp;rsquo;s called keytool and is located in your jdk/bin directory. Here&amp;rsquo;s a command line that I often use to generate keys and self-signed certificates for testing.
+$ keytool -genkey -keyalg RSA -validity 365 -alias MyKey -keystore new_keystore.jks -dname &amp;#34;CN=SubjectName, OU=My Department, O=My Company, L=Vilnius, S=Vilnius, C=LT&amp;#34; Also it is sometimes needed to generate a request to get a signed certificate. Having created a keystore as shown above, it is easily done with the following line.</description>
+    </item>
+    
+    <item>
+      <title>tail -f for windows</title>
+      <link>https://miasnikovas.lt/2008/05/tail-f-for-windows/</link>
+      <pubDate>Wed, 07 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/tail-f-for-windows/</guid>
+      <description>Here&amp;rsquo;s a simple implementation of “tail -f” UNIX command equivalent in python. I used it a lot on windows servers to monitor log files. The good thing is that it works over SMB (windows shares).
+#!/usr/bin/env python import sys, os, time def main(argv): if len(argv) &amp;lt; 2: print &amp;#34;Usage: tail filename.log&amp;#34; exit(1) try: fp = open(argv[1], &amp;#34;r&amp;#34;) st_results = os.stat(argv[1]) st_size = st_results[6] fp.seek(st_size) while 1: where = fp.tell() line = fp.</description>
+    </item>
+    
+    <item>
+      <title>Strings in JAVA</title>
+      <link>https://miasnikovas.lt/2008/04/strings-in-java/</link>
+      <pubDate>Thu, 17 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/strings-in-java/</guid>
+      <description>A few days ago I needed to extract all strings from .java files and also thought that it would be a good idea to keep count how many times a string is used. So I came up with this simple python script. It&amp;rsquo;s kind of a quick and dirty solution, but it met my needs for the particular task.
+import sys, os, re from operator import itemgetter files = [] strings = {} exp = re.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Blog</title>
+    <link>https://miasnikovas.lt/tags/java/</link>
+    <description>Recent content in java on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 21 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What’s New in Tomcat 7</title>
+      <link>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</guid>
+      <description>Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.</description>
+    </item>
+    
+    <item>
+      <title>Improving Architecture with Structure 101</title>
+      <link>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+    </item>
+    
+    <item>
+      <title>Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</title>
+      <link>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</link>
+      <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+    </item>
+    
+    <item>
+      <title>Taking over the Spring context from a neighbouring application on Tomcat</title>
+      <link>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+    </item>
+    
+    <item>
+      <title>Maven3 alpha and CLI plugin for Maven2</title>
+      <link>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</guid>
+      <description>Today I tried out the new Maven-3.0-alpha-6on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
+    </item>
+    
+    <item>
+      <title>Maven profiles.xml issue (MNG-3933)</title>
+      <link>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-profiles-xml-issue-mng-3933/</guid>
+      <description>If you&amp;rsquo;re using a profiles.xml file to store your profiles and want to migrate from Maven 2.0.x to Maven 2.1.x or later chances are you&amp;rsquo;ll run into a build failure. In my case the error message was “Reason: Failed to activate local (project-level) build profiles: Cannot parse profiles.xml resource from directory: …”
+The root cause of this from the stack trace might look like this:
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Expected root element &amp;#39;profilesXml&amp;#39; but found &amp;#39;profiles&amp;#39; (position: START_TAG seen &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Maven command-line tips</title>
+      <link>https://miasnikovas.lt/2010/02/maven-command-line-tips/</link>
+      <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/maven-command-line-tips/</guid>
+      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Mavenparameters in case I forget anything.
+This should be run from a parent POM&amp;rsquo;s directory. It lets you view the POM file that would be in effect if you were building the project. The result is a composite POM containing all your child POMs that you defined as modules in the parent POM.</description>
+    </item>
+    
+    <item>
+      <title>SSH with Java</title>
+      <link>https://miasnikovas.lt/2009/07/ssh-with-java/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+    </item>
+    
+    <item>
+      <title>Certificate Generation with Java Tools</title>
+      <link>https://miasnikovas.lt/2008/09/certificate-generation/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/certificate-generation/</guid>
+      <description>Java has a useful tool for generating private-public key pair, it&amp;rsquo;s called keytool and is located in your jdk/bin directory. Here&amp;rsquo;s a command line that I often use to generate keys and self-signed certificates for testing.
+$ keytool -genkey -keyalg RSA -validity 365 -alias MyKey -keystore new_keystore.jks -dname &amp;#34;CN=SubjectName, OU=My Department, O=My Company, L=Vilnius, S=Vilnius, C=LT&amp;#34; Also it is sometimes needed to generate a request to get a signed certificate. Having created a keystore as shown above, it is easily done with the following line.</description>
+    </item>
+    
+    <item>
+      <title>iBatis and Stored Oracle procedures/functions</title>
+      <link>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</guid>
+      <description>This one took me a while to get it right the first time. I won&amp;rsquo;t go into details of configuring iBatis datasources and such, and will go straight to putting some queries in the sqlMap file. Just let me note that I&amp;rsquo;m using iBatis 2.3 for these examples. I&amp;rsquo;ll start off with a procedure call.
+&amp;lt;procedure id=&amp;#34;getUserRoles&amp;#34; parameterMap=&amp;#34;myParamMap&amp;#34;&amp;gt; { call SCHEMA.GET_USERS_ROLES(?, ?) } &amp;lt;/procedure&amp;gt; This one is pretty self-explanatory, just defining a procedure to be called.</description>
+    </item>
+    
+    <item>
+      <title>Using maven</title>
+      <link>https://miasnikovas.lt/2008/05/using-maven/</link>
+      <pubDate>Thu, 08 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/using-maven/</guid>
+      <description>Maven is an awesome build tool for JAVA, but it has some long parameter names that I don&amp;rsquo;t like to remember, so I put my often used tasks of maven in batch files.
+install.bat
+mvn install:install-file -Dfile=%1 -DgroupId=%2 -DartifactId=%3 -Dversion=%4 -Dpackaging=pom -DgeneratePom=true This installs the specified .jar file in the local repository located in
+C:\Documents and Settings\*User*\.m2\repository where *User* is your username. Four arguments are required: jar_file, group, artifact and version.</description>
+    </item>
+    
+  </channel>
+</rss>

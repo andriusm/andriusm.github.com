@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>efficiency on Blog</title>
+    <link>https://miasnikovas.lt/tags/efficiency/</link>
+    <description>Recent content in efficiency on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 12 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/efficiency/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disk efficiency when dealing with tons of small files</title>
+      <link>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</guid>
+      <description>When dealing with source code from projects of various sizes the disk quickly gets filled up with literally tens or even hundreds of thousands of files. Especially when the project is under source control and has metadata files for each of the project&amp;rsquo;s file. While you may still have a lot of disk space left on the drive I found that this kind of setup is highly inefficient when jumping from file to file in an IDE or doing a full text search.</description>
+    </item>
+    
+  </channel>
+</rss>

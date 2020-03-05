@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on Blog</title>
+    <link>https://miasnikovas.lt/tags/firefox/</link>
+    <description>Recent content in firefox on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Tue, 10 Nov 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefox extension compatibility</title>
+      <link>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</guid>
+      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspidertests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
+    </item>
+    
+    <item>
+      <title>Firefox add-ons</title>
+      <link>https://miasnikovas.lt/2008/12/firefox-add-ons/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/12/firefox-add-ons/</guid>
+      <description>Here I&amp;rsquo;ll just put my most used Firefox add-on list. Actually two lists – one for web development related add-ons and the other for general surfing and enjoying the web.
+Developer&amp;rsquo;s add-ons
+ Web Developer Firebug Firecookie YSlow iMacros PageDiff Tamper Data Greasemonkey DOM Inspector InspectThis  Surfing add-ons
+ StumbleUpon Delicious Bookmarks Adblock Plus Fire.fm Video DownloadHelper Cooliris Clipmarks Rikaichan Screengrab TwitterFox  There&amp;rsquo;s also this more official list of add-ons for Firefox categorized by the things you do on the web.</description>
+    </item>
+    
+    <item>
+      <title>Profiling Firefox</title>
+      <link>https://miasnikovas.lt/2008/11/profiling-firefox/</link>
+      <pubDate>Sat, 15 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/11/profiling-firefox/</guid>
+      <description>OK, this is a simple one, but I sometimes forget, because usually you do it once on any computer and then don&amp;rsquo;t think about it. Firefox is a great browser and what&amp;rsquo;s even more great is that it allows you to create different profiles so you can have different configurations/add-ons/layouts for general browsing, web development, extension development, etc. The first step is to create a new profile which can be done by typing</description>
+    </item>
+    
+    <item>
+      <title>Firefox 3 Download Day</title>
+      <link>https://miasnikovas.lt/2008/05/firefox-3-download-day/</link>
+      <pubDate>Thu, 29 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/firefox-3-download-day/</guid>
+      <description>Just found out about Firefox 3 Download Day and wanted to do my part by spreading the word. They&amp;rsquo;re trying to set a Guinness World Record for most software downloads in 24 hours. Sounds pretty simple, just download a great browser and help achieve the record.
+You can also follow the Firefox news on twitter.</description>
+    </item>
+    
+  </channel>
+</rss>

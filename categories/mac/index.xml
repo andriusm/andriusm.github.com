@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on Blog</title>
+    <link>https://miasnikovas.lt/categories/mac/</link>
+    <description>Recent content in mac on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 28 Jul 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Story of Switching from Java to Developing for Mac OS X</title>
+      <link>https://miasnikovas.lt/2011/07/a-story-of-switching-from-java-to-developing-for-mac-os-x/</link>
+      <pubDate>Thu, 28 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/07/a-story-of-switching-from-java-to-developing-for-mac-os-x/</guid>
+      <description>A couple of months ago I&amp;rsquo;ve switched from Java development to developing for Mac OS X. Let me tell you, it&amp;rsquo;s a completely different world, but that was to be expected. The first thing is to get acquainted with the OS and it&amp;rsquo;s features. That actually didn&amp;rsquo;t take too long. I&amp;rsquo;m really pleased with the availability of a full-fledged UNIX console in the OS, so I&amp;rsquo;m able to leverage all of my linux knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resources on Blog</title>
+    <link>https://miasnikovas.lt/categories/resources/</link>
+    <description>Recent content in resources on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 25 Nov 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Online Tools That Make My Life Easier</title>
+      <link>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</link>
+      <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</guid>
+      <description>Imagine a situation where you&amp;rsquo;re sitting in front of a colleague&amp;rsquo;s computer or one that is publicly used. By definition you&amp;rsquo;re missing all your favorite tools that you&amp;rsquo;re used to and you can&amp;rsquo;t install them even if you wanted to. Here&amp;rsquo;s a short list of online tools that help me a lot when I&amp;rsquo;m using a computer other than my own. These do not fully replace the desktop equivalents, but they&amp;rsquo;re good enough.</description>
+    </item>
+    
+    <item>
+      <title>CIS Security Benchmarks</title>
+      <link>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</guid>
+      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Securityspecifically their resources downloadpage. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
+    </item>
+    
+    <item>
+      <title>Free stuff and some R&amp;R music</title>
+      <link>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/free-stuff-and-some-rr/</guid>
+      <description>As always there are too many ideas in my head, stuff I want to learn, books and blogs I want to read, things I want to share with others. When there&amp;rsquo;s too much going on it becomes more difficult to write about any of those, but I&amp;rsquo;m trying to become more organized so I&amp;rsquo;ll do my best to post regularly and more often, whenever I have something to say.
+I&amp;rsquo;ve found some really cool free online magazines about BSD operating systems and hacking:</description>
+    </item>
+    
+    <item>
+      <title>Free technical books and resources</title>
+      <link>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</link>
+      <pubDate>Sat, 27 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</guid>
+      <description>Recently I&amp;rsquo;ve been thinking about how quickly technical books go out of date or sometimes just can keep up with the new versions of software constantly being released. I do like holding in my hands a nice printed book and enjoying the process of reading it, but for IT books it&amp;rsquo;s just a whole different story. You don&amp;rsquo;t usually need to read the entire book cover-to-cover, most often these books are used as references to help solve a specific problem.</description>
+    </item>
+    
+    <item>
+      <title>A couple of useful resources</title>
+      <link>https://miasnikovas.lt/2008/04/a-couple-of-useful-resources/</link>
+      <pubDate>Sat, 19 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/a-couple-of-useful-resources/</guid>
+      <description>A while ago found this great page that aggregates various posts relevant to developers. Just to remind myself and maybe let others know, if you haven&amp;rsquo;t seen it definitely check it out – http://www.dzone.com
+Recently I had the need to alter an SVG file that was produced by someone else. Now although you can do this by opening it in a text editor and make the changes by hand, but you would need to know the SVG tags, attributes, etc and more complex graphical changes are just too difficult.</description>
+    </item>
+    
+  </channel>
+</rss>

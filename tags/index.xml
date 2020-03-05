@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Blog</title>
+    <link>https://miasnikovas.lt/tags/</link>
+    <description>Recent content in Tags on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 21 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>java</title>
+      <link>https://miasnikovas.lt/tags/java/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jsp</title>
+      <link>https://miasnikovas.lt/tags/jsp/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/jsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>servlet</title>
+      <link>https://miasnikovas.lt/tags/servlet/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/servlet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sever</title>
+      <link>https://miasnikovas.lt/tags/sever/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/sever/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomcat</title>
+      <link>https://miasnikovas.lt/tags/tomcat/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/tomcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cis</title>
+      <link>https://miasnikovas.lt/tags/cis/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/cis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf</title>
+      <link>https://miasnikovas.lt/tags/pdf/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resources</title>
+      <link>https://miasnikovas.lt/tags/resources/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://miasnikovas.lt/tags/security/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.net</title>
+      <link>https://miasnikovas.lt/tags/.net/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>https://miasnikovas.lt/tags/architecture/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>https://miasnikovas.lt/tags/tool/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://miasnikovas.lt/tags/tools/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache</title>
+      <link>https://miasnikovas.lt/tags/apache/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>https://miasnikovas.lt/tags/configuration/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>http</title>
+      <link>https://miasnikovas.lt/tags/http/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>load balancer</title>
+      <link>https://miasnikovas.lt/tags/load-balancer/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/load-balancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtual host</title>
+      <link>https://miasnikovas.lt/tags/virtual-host/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/virtual-host/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chrome</title>
+      <link>https://miasnikovas.lt/tags/chrome/</link>
+      <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://miasnikovas.lt/tags/linux/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://miasnikovas.lt/tags/ssh/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X11</title>
+      <link>https://miasnikovas.lt/tags/x11/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/x11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xming</title>
+      <link>https://miasnikovas.lt/tags/xming/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/xming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xwindows</title>
+      <link>https://miasnikovas.lt/tags/xwindows/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/xwindows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>httpd</title>
+      <link>https://miasnikovas.lt/tags/httpd/</link>
+      <pubDate>Mon, 17 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/httpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>free</title>
+      <link>https://miasnikovas.lt/tags/free/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>https://miasnikovas.lt/tags/music/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://miasnikovas.lt/tags/server/</link>
+      <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://miasnikovas.lt/tags/virtualization/</link>
+      <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>experiment</title>
+      <link>https://miasnikovas.lt/tags/experiment/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/experiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>https://miasnikovas.lt/tags/keyboard/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mouse</title>
+      <link>https://miasnikovas.lt/tags/mouse/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/mouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image</title>
+      <link>https://miasnikovas.lt/tags/image/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>images</title>
+      <link>https://miasnikovas.lt/tags/images/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://miasnikovas.lt/tags/python/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://miasnikovas.lt/tags/automation/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>launcher</title>
+      <link>https://miasnikovas.lt/tags/launcher/</link>
+      <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/launcher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>defragmentation</title>
+      <link>https://miasnikovas.lt/tags/defragmentation/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/defragmentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>efficiency</title>
+      <link>https://miasnikovas.lt/tags/efficiency/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/efficiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>viewer</title>
+      <link>https://miasnikovas.lt/tags/viewer/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/viewer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POC</title>
+      <link>https://miasnikovas.lt/tags/poc/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/poc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>https://miasnikovas.lt/tags/spring/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>https://miasnikovas.lt/tags/books/</link>
+      <pubDate>Sat, 27 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>https://miasnikovas.lt/tags/maven/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin</title>
+      <link>https://miasnikovas.lt/tags/plugin/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/plugin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugins</title>
+      <link>https://miasnikovas.lt/tags/plugins/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/plugins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://miasnikovas.lt/tags/tips/</link>
+      <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>player</title>
+      <link>https://miasnikovas.lt/tags/player/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/player/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://miasnikovas.lt/tags/video/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compatibility</title>
+      <link>https://miasnikovas.lt/tags/compatibility/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/compatibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firefox</title>
+      <link>https://miasnikovas.lt/tags/firefox/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>example</title>
+      <link>https://miasnikovas.lt/tags/example/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>library</title>
+      <link>https://miasnikovas.lt/tags/library/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>source code</title>
+      <link>https://miasnikovas.lt/tags/source-code/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/source-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>certificate</title>
+      <link>https://miasnikovas.lt/tags/certificate/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/certificate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ibatis</title>
+      <link>https://miasnikovas.lt/tags/ibatis/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/ibatis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://miasnikovas.lt/tags/javascript/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>safari</title>
+      <link>https://miasnikovas.lt/tags/safari/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/safari/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

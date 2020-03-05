@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Blog</title>
+    <link>https://miasnikovas.lt/tags/python/</link>
+    <description>Recent content in python on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 08 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating thumbnails from photos with Python PIL</title>
+      <link>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</guid>
+      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PILand install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
+    </item>
+    
+    <item>
+      <title>tail -f for windows</title>
+      <link>https://miasnikovas.lt/2008/05/tail-f-for-windows/</link>
+      <pubDate>Wed, 07 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/tail-f-for-windows/</guid>
+      <description>Here&amp;rsquo;s a simple implementation of “tail -f” UNIX command equivalent in python. I used it a lot on windows servers to monitor log files. The good thing is that it works over SMB (windows shares).
+#!/usr/bin/env python import sys, os, time def main(argv): if len(argv) &amp;lt; 2: print &amp;#34;Usage: tail filename.log&amp;#34; exit(1) try: fp = open(argv[1], &amp;#34;r&amp;#34;) st_results = os.stat(argv[1]) st_size = st_results[6] fp.seek(st_size) while 1: where = fp.tell() line = fp.</description>
+    </item>
+    
+    <item>
+      <title>Strings in JAVA</title>
+      <link>https://miasnikovas.lt/2008/04/strings-in-java/</link>
+      <pubDate>Thu, 17 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/strings-in-java/</guid>
+      <description>A few days ago I needed to extract all strings from .java files and also thought that it would be a good idea to keep count how many times a string is used. So I came up with this simple python script. It&amp;rsquo;s kind of a quick and dirty solution, but it met my needs for the particular task.
+import sys, os, re from operator import itemgetter files = [] strings = {} exp = re.</description>
+    </item>
+    
+  </channel>
+</rss>

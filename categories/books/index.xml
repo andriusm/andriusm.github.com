@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>books on Blog</title>
+    <link>https://miasnikovas.lt/categories/books/</link>
+    <description>Recent content in books on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Sat, 27 Feb 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Free technical books and resources</title>
+      <link>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</link>
+      <pubDate>Sat, 27 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/02/free-technical-books-and-resources/</guid>
+      <description>Recently I&amp;rsquo;ve been thinking about how quickly technical books go out of date or sometimes just can keep up with the new versions of software constantly being released. I do like holding in my hands a nice printed book and enjoying the process of reading it, but for IT books it&amp;rsquo;s just a whole different story. You don&amp;rsquo;t usually need to read the entire book cover-to-cover, most often these books are used as references to help solve a specific problem.</description>
+    </item>
+    
+  </channel>
+</rss>

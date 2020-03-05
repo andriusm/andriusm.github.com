@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>browsers on Blog</title>
+    <link>https://miasnikovas.lt/categories/browsers/</link>
+    <description>Recent content in browsers on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 07 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/browsers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Tip: Fun with JavaScript Console in Browsers</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</guid>
+      <description>All modern browsers nowadays have integrated development tools among which there&amp;rsquo;s a JavaScript console where you can type in some JavaScript and test your ideas, debug your code or see output from your script&amp;rsquo;s previous events. But the console is capable of so much more. Well, actually IE&amp;rsquo;s console is somewhat more limited than others, but the rest of them are pretty cool. To get an idea of the possibilities visit the chrome developer tips and tricks page to learn more.</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Integrated PDF Support</title>
+      <link>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</link>
+      <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</guid>
+      <description>If you&amp;rsquo;re using Google Chrome browserfrom the so-called developer channel(i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
+    </item>
+    
+    <item>
+      <title>Firefox extension compatibility</title>
+      <link>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</guid>
+      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspidertests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
+    </item>
+    
+    <item>
+      <title>Firefox add-ons</title>
+      <link>https://miasnikovas.lt/2008/12/firefox-add-ons/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/12/firefox-add-ons/</guid>
+      <description>Here I&amp;rsquo;ll just put my most used Firefox add-on list. Actually two lists – one for web development related add-ons and the other for general surfing and enjoying the web.
+Developer&amp;rsquo;s add-ons
+ Web Developer Firebug Firecookie YSlow iMacros PageDiff Tamper Data Greasemonkey DOM Inspector InspectThis  Surfing add-ons
+ StumbleUpon Delicious Bookmarks Adblock Plus Fire.fm Video DownloadHelper Cooliris Clipmarks Rikaichan Screengrab TwitterFox  There&amp;rsquo;s also this more official list of add-ons for Firefox categorized by the things you do on the web.</description>
+    </item>
+    
+    <item>
+      <title>Profiling Firefox</title>
+      <link>https://miasnikovas.lt/2008/11/profiling-firefox/</link>
+      <pubDate>Sat, 15 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/11/profiling-firefox/</guid>
+      <description>OK, this is a simple one, but I sometimes forget, because usually you do it once on any computer and then don&amp;rsquo;t think about it. Firefox is a great browser and what&amp;rsquo;s even more great is that it allows you to create different profiles so you can have different configurations/add-ons/layouts for general browsing, web development, extension development, etc. The first step is to create a new profile which can be done by typing</description>
+    </item>
+    
+    <item>
+      <title>Firefox 3 Download Day</title>
+      <link>https://miasnikovas.lt/2008/05/firefox-3-download-day/</link>
+      <pubDate>Thu, 29 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/firefox-3-download-day/</guid>
+      <description>Just found out about Firefox 3 Download Day and wanted to do my part by spreading the word. They&amp;rsquo;re trying to set a Guinness World Record for most software downloads in 24 hours. Sounds pretty simple, just download a great browser and help achieve the record.
+You can also follow the Firefox news on twitter.</description>
+    </item>
+    
+    <item>
+      <title>Safari popups in new tab</title>
+      <link>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/safari-popups-in-new-tab/</guid>
+      <description>One of the browsers I&amp;rsquo;m using on Windows is Safari and I found an interesting tweak for it, that makes popup links open in a new tab instead of a new window. Now I can&amp;rsquo;t credit the person who discovered this, because I lost the link, but here&amp;rsquo;s what you do.
+Go to C:\Documents and Settings\User\Application Data\Apple Computer\Safari\Preferences\
+where User is your Windows username. Open the file com.apple.Safari.plist for modification and insert the lines below somewhere within the tag.</description>
+    </item>
+    
+  </channel>
+</rss>

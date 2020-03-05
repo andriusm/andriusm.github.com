@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Blog</title>
+    <link>https://miasnikovas.lt/categories/</link>
+    <description>Recent content in Categories on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Tue, 13 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>quick-tip</title>
+      <link>https://miasnikovas.lt/categories/quick-tip/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/quick-tip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browsers</title>
+      <link>https://miasnikovas.lt/categories/browsers/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/browsers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://miasnikovas.lt/categories/java/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://miasnikovas.lt/categories/javascript/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://miasnikovas.lt/categories/tools/</link>
+      <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>experiments</title>
+      <link>https://miasnikovas.lt/categories/experiments/</link>
+      <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/experiments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://miasnikovas.lt/categories/mac/</link>
+      <pubDate>Thu, 28 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xcode 4</title>
+      <link>https://miasnikovas.lt/categories/xcode-4/</link>
+      <pubDate>Thu, 28 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/xcode-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://miasnikovas.lt/categories/android/</link>
+      <pubDate>Wed, 27 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>screencast</title>
+      <link>https://miasnikovas.lt/categories/screencast/</link>
+      <pubDate>Wed, 27 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/screencast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://miasnikovas.lt/categories/linux/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://miasnikovas.lt/categories/python/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://miasnikovas.lt/categories/github/</link>
+      <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resources</title>
+      <link>https://miasnikovas.lt/categories/resources/</link>
+      <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://miasnikovas.lt/categories/security/</link>
+      <pubDate>Thu, 21 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomcat</title>
+      <link>https://miasnikovas.lt/categories/tomcat/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/tomcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>https://miasnikovas.lt/categories/architecture/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache httpd</title>
+      <link>https://miasnikovas.lt/categories/apache-httpd/</link>
+      <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/apache-httpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>free</title>
+      <link>https://miasnikovas.lt/categories/free/</link>
+      <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf</title>
+      <link>https://miasnikovas.lt/categories/pdf/</link>
+      <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://miasnikovas.lt/categories/ssh/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>https://miasnikovas.lt/categories/spring/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>https://miasnikovas.lt/categories/books/</link>
+      <pubDate>Sat, 27 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>https://miasnikovas.lt/categories/maven/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://miasnikovas.lt/categories/video/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/categories/video/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

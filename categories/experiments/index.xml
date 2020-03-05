@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>experiments on Blog</title>
+    <link>https://miasnikovas.lt/categories/experiments/</link>
+    <description>Recent content in experiments on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 28 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/experiments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experimenting with WebGL</title>
+      <link>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</link>
+      <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</guid>
+      <description>I was experimenting with WebGLthe other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logoof the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
+    </item>
+    
+    <item>
+      <title>SSH tunneling simplified (I think)</title>
+      <link>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</link>
+      <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</guid>
+      <description>It&amp;rsquo;s been quite a while since my last post so I&amp;rsquo;ll try to ease back into blogging. For now I&amp;rsquo;ll just share a little something I created for myself to help with the SSH tunnels that I need to create on a seemingly regular basis. Sometimes I forget or mix up the parameters that need to be passed to SSH client, especially when interconnecting these tunnels. In this simple tool you can enter the missing info to form a logical sentence in English language and when you click the generate button you get a command line for the SSH client.</description>
+    </item>
+    
+    <item>
+      <title>Mouse click experiment</title>
+      <link>https://miasnikovas.lt/2010/04/mouse-click-experiment/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/mouse-click-experiment/</guid>
+      <description>&lt;p&gt;After writing about keyboard oriented software I&amp;rsquo;ve been doing a little experiment for a few weeks now and I thought I&amp;rsquo;d share the results. I&amp;rsquo;ve been using a little program called &lt;!-- raw HTML omitted --&gt;Click Counter&lt;!-- raw HTML omitted --&gt;, well actually it&amp;rsquo;s a compiled AutoHotKey script which I found on &lt;!-- raw HTML omitted --&gt;this forum&lt;!-- raw HTML omitted --&gt;. Source for the script is available if you don&amp;rsquo;t like the idea of using an executable found on some forum. My idea was to track all my mouse clicks throughout the day and see how much I can reduce the amount of times I reach for the roddent. The Click Counter tool only produces data as a text file, but it&amp;rsquo;s way more fun to see some graphical representation of my clicking habits, so I threw together a &lt;a href=&#34;http://andrius.miasnikovas.lt/files/clickchart.zip&#34;&gt;simple Java program&lt;/a&gt; that reads the produced log file from the Click Counter and outputs a nice graph with monthly mean average. It&amp;rsquo;s done with maven and contains .bat files to further simplify the building and running process. So without further ado here are my results&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

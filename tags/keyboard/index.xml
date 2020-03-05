@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keyboard on Blog</title>
+    <link>https://miasnikovas.lt/tags/keyboard/</link>
+    <description>Recent content in keyboard on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 15 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mouse click experiment</title>
+      <link>https://miasnikovas.lt/2010/04/mouse-click-experiment/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/mouse-click-experiment/</guid>
+      <description>&lt;p&gt;After writing about keyboard oriented software I&amp;rsquo;ve been doing a little experiment for a few weeks now and I thought I&amp;rsquo;d share the results. I&amp;rsquo;ve been using a little program called &lt;!-- raw HTML omitted --&gt;Click Counter&lt;!-- raw HTML omitted --&gt;, well actually it&amp;rsquo;s a compiled AutoHotKey script which I found on &lt;!-- raw HTML omitted --&gt;this forum&lt;!-- raw HTML omitted --&gt;. Source for the script is available if you don&amp;rsquo;t like the idea of using an executable found on some forum. My idea was to track all my mouse clicks throughout the day and see how much I can reduce the amount of times I reach for the roddent. The Click Counter tool only produces data as a text file, but it&amp;rsquo;s way more fun to see some graphical representation of my clicking habits, so I threw together a &lt;a href=&#34;http://andrius.miasnikovas.lt/files/clickchart.zip&#34;&gt;simple Java program&lt;/a&gt; that reads the produced log file from the Click Counter and outputs a nice graph with monthly mean average. It&amp;rsquo;s done with maven and contains .bat files to further simplify the building and running process. So without further ado here are my results&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Task automation and ultimate control over Windows</title>
+      <link>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard oriented application launchers</title>
+      <link>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</link>
+      <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</guid>
+      <description>Last week I set out to find the best tools I could to increase my overall productivity when doing my everyday tasks and I want to share my experience. When writing this I quickly realized that putting everything in one chunk would make it quite long and as a fan of blog post brevity I decided to split it into a few posts. This one will cover applications that allow you to quickly launch other programs on your machine.</description>
+    </item>
+    
+  </channel>
+</rss>

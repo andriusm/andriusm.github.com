@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mouse on Blog</title>
+    <link>https://miasnikovas.lt/tags/mouse/</link>
+    <description>Recent content in mouse on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 15 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/mouse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mouse click experiment</title>
+      <link>https://miasnikovas.lt/2010/04/mouse-click-experiment/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/mouse-click-experiment/</guid>
+      <description>&lt;p&gt;After writing about keyboard oriented software I&amp;rsquo;ve been doing a little experiment for a few weeks now and I thought I&amp;rsquo;d share the results. I&amp;rsquo;ve been using a little program called &lt;!-- raw HTML omitted --&gt;Click Counter&lt;!-- raw HTML omitted --&gt;, well actually it&amp;rsquo;s a compiled AutoHotKey script which I found on &lt;!-- raw HTML omitted --&gt;this forum&lt;!-- raw HTML omitted --&gt;. Source for the script is available if you don&amp;rsquo;t like the idea of using an executable found on some forum. My idea was to track all my mouse clicks throughout the day and see how much I can reduce the amount of times I reach for the roddent. The Click Counter tool only produces data as a text file, but it&amp;rsquo;s way more fun to see some graphical representation of my clicking habits, so I threw together a &lt;a href=&#34;http://andrius.miasnikovas.lt/files/clickchart.zip&#34;&gt;simple Java program&lt;/a&gt; that reads the produced log file from the Click Counter and outputs a nice graph with monthly mean average. It&amp;rsquo;s done with maven and contains .bat files to further simplify the building and running process. So without further ado here are my results&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

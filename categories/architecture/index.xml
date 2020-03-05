@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architecture on Blog</title>
+    <link>https://miasnikovas.lt/categories/architecture/</link>
+    <description>Recent content in architecture on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Sun, 18 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improving Architecture with Structure 101</title>
+      <link>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+    </item>
+    
+  </channel>
+</rss>

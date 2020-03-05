@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Blog  | Modifying Treepie To Display File Count</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.65.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Modifying Treepie To Display File Count" />
+<meta property="og:description" content="I&rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/" />
+<meta property="article:published_time" content="2011-01-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2011-01-25T00:00:00+00:00" />
+<meta itemprop="name" content="Modifying Treepie To Display File Count">
+<meta itemprop="description" content="I&rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.">
+<meta itemprop="datePublished" content="2011-01-25T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2011-01-25T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="685">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Modifying Treepie To Display File Count"/>
+<meta name="twitter:description" content="I&rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i."/>
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12929818-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://miasnikovas.lt/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Blog
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/&amp;text=Modifying%20Treepie%20To%20Display%20File%20Count" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/&amp;title=Modifying%20Treepie%20To%20Display%20File%20Count" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Modifying Treepie To Display File Count</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Andrius Miasnikovas
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2011-01-25T00:00:00Z">January 25, 2011</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l"><p>I&rsquo;ve already talked a bit about managing large amounts of files in my post <!-- raw HTML omitted -->Disk efficiency when dealing with tons of small files<!-- raw HTML omitted --> so you can kind of tell that I&rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&rsquo;m using this program called Everything by <!-- raw HTML omitted -->David Carpenter<!-- raw HTML omitted --> and I suggest you check it out if you don&rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.e. your hard disk drives, flash drives, cd/dvd-roms, etc. And it tracks the changes so this index is always up-to-date allowing you very fast access to ANY FILE on your computer. The thing is that it indexes all the files on startup so the more files you have the longer it takes. To illustrate another reason why too many files aren&rsquo;t great see the picture below.</p>
+<p><!-- raw HTML omitted --></p>
+<p>Notice how the actual size of the files is about 806KB while because there are so many files (4422 to be exact) and the cluster size for my disk is 4KB the actual space occupied on the drive totals up to almost 18MB. We can do the math to better understand what happened:</p>
+<p><code>cluster size: 4KB = 4096 Bytes</code></p>
+<p><code>number of files: 4422</code></p>
+<p>so even if each file contained only a single character i.e. file size of 1 Byte it would occupy the whole cluster and take up 4KB of disk space. Which means that the absolute minimum of disk space consumed by these files is 4422 x 4096 = 18112512 Bytes ~= 17.27 MB</p>
+<p>And of course if the files are larger they will take up even more space. Hopefully I convinced you that you should remove any and all unnecessary files that you&rsquo;re not using and don&rsquo;t just let them hinder your drive&rsquo;s performance. This is the part where we have to find a way to locate directories containing the most files so that we could decide whether we actually need them or not. In the past I&rsquo;ve been using a program called <!-- raw HTML omitted -->TreePie<!-- raw HTML omitted --> to find which directories occupy the most space on disk. It looks something like this:</p>
+<p><!-- raw HTML omitted --></p>
+<p>Unfortunately it displays the folders proportional only to the space occupied on disk. On the other hand the project is open source so I can modify it&rsquo;s behavior and so I did. Here&rsquo;s the patch file with my changes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">Index: AllDir.cpp
+===================================================================
+<span style="color:#f92672">--- AllDir.cpp  (revision 16)
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ AllDir.cpp  (working copy)
+</span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -64,7 +64,7 @@
+</span><span style="color:#75715e"></span> {
+    HANDLE hFirst;
+    WIN32_FIND_DATA hFind;
+<span style="color:#f92672">-   INT64 nSize =;
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+   INT64 nSize = -2;
+</span><span style="color:#a6e22e"></span>
+    char sCompleteFile[MAX_PATH];
+    char sListFile[MAX_PATH];
+<span style="color:#75715e">@@ -131,7 +131,7 @@
+</span><span style="color:#75715e"></span>            if (hFind.nFileSizeHigh!=-858993460 ) //// ARRRGH!(system information folder)
+            {
+                //grandezza del file (aritmetica a 64 bit)
+<span style="color:#f92672">-               nSize += (INT64)hFind.nFileSizeHigh * ((INT64)MAXDWORD+1) + hFind.nFileSizeLow ;
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+               nSize ++;
+</span><span style="color:#a6e22e"></span>                //if (nSize &gt; MAXDWORD){
+                //  mb_log(&#34;ListAllDir: nSize sorpassa MAXDWORD&#34;);
+                //}
+Index: displayer.cpp
+===================================================================
+<span style="color:#f92672">--- displayer.cpp   (revision 16)
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ displayer.cpp   (working copy)
+</span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -62,11 +62,7 @@
+</span><span style="color:#75715e"></span>                glLoadIdentity();
+
+                glRasterPos2f(5.0f , rect.bottom - 20.0f );
+<span style="color:#f92672">-               if (iv_nSize &gt; 1073741824 )
+</span><span style="color:#f92672">-                   glPrint(&#34;%d GB  &#34;,iv_nSize/1073741824);
+</span><span style="color:#f92672">-               else
+</span><span style="color:#f92672">-                   glPrint(&#34;%d MB  &#34;,iv_nSize/1048576);
+</span><span style="color:#f92672">-               glPrint(&#34;(%d KB  )&#34;,iv_nSize/1024);
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+               glPrint(&#34;%d files&#34;,iv_nSize);
+</span><span style="color:#a6e22e"></span>
+                glRasterPos2f(rect.right/2.0f , rect.bottom - 20.0f );
+                glPrint(sBuffer);
+</code></pre></div>
+<p>Pretty simple, huh? These changes are enough to get TreePie to start displaying the file count instead of the file size. Though I have to admit that I was unable to open and compile it with Microsoft&rsquo;s Visual Studio Express. I&rsquo;m still not sure if it was something with included project files or was it something with my machine&rsquo;s configuration. I solved it by using an IDE that I have more experience with – <!-- raw HTML omitted -->CodeBlocks<!-- raw HTML omitted -->. I created a new project, copied over the files and soon I had my own modified version of TreePie. Which I&rsquo;m happy to share with you all. Here&rsquo;s an archive containing the <!-- raw HTML omitted --><!-- raw HTML omitted -->modified Treepie<!-- raw HTML omitted --> <!-- raw HTML omitted -->version as a CodeBlocks project and includes a compiled version if you don&rsquo;t have this IDE or don&rsquo;t want to install it. I&rsquo;m considering forking this project, cleaning up the code a little bit and maybe throwing in a few new features.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "andriusm" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
+    &copy;  Andrius Miasnikovas 2020 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

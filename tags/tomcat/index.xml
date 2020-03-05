@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tomcat on Blog</title>
+    <link>https://miasnikovas.lt/tags/tomcat/</link>
+    <description>Recent content in tomcat on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 21 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What’s New in Tomcat 7</title>
+      <link>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</guid>
+      <description>Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.</description>
+    </item>
+    
+    <item>
+      <title>Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</title>
+      <link>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</link>
+      <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+    </item>
+    
+    <item>
+      <title>Taking over the Spring context from a neighbouring application on Tomcat</title>
+      <link>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>player on Blog</title>
+    <link>https://miasnikovas.lt/tags/player/</link>
+    <description>Recent content in player on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 22 Jan 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/player/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internet TV and video conversion</title>
+      <link>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
+      <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
+The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+    </item>
+    
+  </channel>
+</rss>

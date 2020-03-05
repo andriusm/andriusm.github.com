@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Blog  | What’s New in Tomcat 7</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.65.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="What’s New in Tomcat 7" />
+<meta property="og:description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/" />
+<meta property="article:published_time" content="2010-07-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2010-07-21T00:00:00+00:00" />
+<meta itemprop="name" content="What’s New in Tomcat 7">
+<meta itemprop="description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.">
+<meta itemprop="datePublished" content="2010-07-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2010-07-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="995">
+
+
+
+<meta itemprop="keywords" content="java,jsp,servlet,sever,tomcat," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What’s New in Tomcat 7"/>
+<meta name="twitter:description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
+ asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web."/>
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12929818-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://miasnikovas.lt/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Blog
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/&amp;text=What%e2%80%99s%20New%20in%20Tomcat%207" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/&amp;title=What%e2%80%99s%20New%20in%20Tomcat%207" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">What’s New in Tomcat 7</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Andrius Miasnikovas
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-07-21T00:00:00Z">July 21, 2010</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l"><p>Recently I watched this webinar about <!-- raw HTML omitted -->Tomcat 7<!-- raw HTML omitted --> presented by <!-- raw HTML omitted -->Mark Thomas<!-- raw HTML omitted --> and would like to share my thoughts on the subject and what I&rsquo;ve learned.</p>
+<h3 id="servlet-30">Servlet 3.0</h3>
+<p>The most prominent change is the support of Servlet 3.0 specification which supports such great features as</p>
+<ul>
+<li>asynchronous servlets – not used by default</li>
+<li>web-fragment.xml –  you can specify parts of the configuration in your libraries which you plan to reuse</li>
+</ul>
+<p>The effective deployment descriptor (web.xml) now is the sum total of all the fragment configurations contained in the application&rsquo;s libraries. This means that you need to be more careful when using 3rd party libraries because they can contain some configuration portion that will prevent your application from working like you expected. But to my understanding you can fixate the effective web.xml used and prevent tomcat from scanning all the libraries for configuration fragments. Now deployment descriptors support programmatic configuration i.e. you can decide how to configure an application at startup by considering the environment the server is in and other variables.</p>
+<p>Another interesting thing to note is that before the Servlet 3.0 specification implementation tomcat used two methods of session tracking: cookies and rewriting the URL with the JSESSIONID parameter. The latter in tomcat was mandatory meaning you could not easily switch it off. I actually tried some workarounds, but they produced some side-effects. If anyone knows a proper method to avoid ever seeing the JSESSIONID parameter in Tomcat 6 please let me know. In Tomcat 7 the URL rewriting method is no longer mandatory and a new session tracking method was added based on SSL session. It is more secure, but I believe it needs two-way SSL configured. Don&rsquo;t quote me on this, because I might be wrong about the two-way SSL, will have to check it. While we&rsquo;re at it I can mention that now there&rsquo;s the ability to change the session cookie&rsquo;s default name, domain and path.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;session-config&gt;</span>
+   <span style="color:#f92672">&lt;tracking-mode&gt;</span>COOKIE<span style="color:#f92672">&lt;/tracking-mode&gt;</span>
+<span style="color:#f92672">&lt;/session-config&gt;</span></code></pre></div>
+<h3 id="jsp-22">JSP 2.2</h3>
+<p>Not much to talk about other than saying that Tomcat 7 supports it. And maybe worth mentioning that you can now specify the defaults for the content type you&rsquo;re returning and the buffer size. Also there&rsquo;s a nice configuration option  added called <em>error-on-undeclared-namespace</em> which quoting the documentation does the following:</p>
+<blockquote>
+<p>The default behavior when a tag with unknown namespace is used in a JSP page (regular syntax) is to silently ignore it.  If set to true, then an error must be raised during the translation time when an undeclared tag is used in a JSP page.  Disabled (false) by default.</p>
+</blockquote>
+<p>And here&rsquo;s an example of how you would use this option</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;jsp-config&gt;</span>
+    <span style="color:#f92672">&lt;jsp-property-group&gt;</span>
+        <span style="color:#f92672">&lt;url-pattern&gt;</span>*.jsp<span style="color:#f92672">&lt;/url-pattern&gt;</span>
+        <span style="color:#f92672">&lt;error-on-undeclared-namespace&gt;</span>true<span style="color:#f92672">&lt;/error-on-undeclared-namespace&gt;</span>
+    <span style="color:#f92672">&lt;/jsp-property-group&gt;</span>
+<span style="color:#f92672">&lt;/jsp-config&gt;</span></code></pre></div>
+<p>Also note that Tomcat 7 implements EL 2.2 and now is much stricter about the EL specifications, but according to Mark it&rsquo;s unlikely to affect many users unless of course you&rsquo;re doing some kind of hack with it.</p>
+<h3 id="memory-leak-protection">Memory leak protection</h3>
+<p>This is a nice new feature in Tomcat 7 which has been backported to Tomcat 6 and if you&rsquo;re using version 6.0.24 or later, you can enjoy the benefits. It&rsquo;s implemented as a listener which tries to detect and fix the possible memory leaks whenever it can. These are the leak cases that it tries to prevent:</p>
+<ul>
+<li><strong>JDBC drivers</strong> – they should be de-registered upon application stop</li>
+<li><strong>ThreadLocals</strong> – if you create it when processing the request, you must set it to null before completing the response</li>
+<li><strong>Threads</strong> – if a webapp starts a thread (e.g. scheduler) it must stop it, Tomcat doesn&rsquo;t do that for you because it might crash the JVM, but it does report the problem in the log files</li>
+<li><strong>ResouceBundle</strong> – Tomcat automatically fixes this one, but if you want some details turn on debug logging</li>
+</ul>
+<h3 id="alias-support">Alias support</h3>
+<p>This is said to be a much requested feature which allows you to map a <em>.war</em> file or a directory with static content that you could for example share among other applications deployed on that server. The main advantage over using symlinks is that when using a symlink Tomcat follows it and undeploys the content along with the application. This is done by specifying the attribute alias in the <em><!-- raw HTML omitted --></em> tag that looks something like this <code>alias=&quot;/aliasPath=docBase&quot;</code> and remember to use the absolute path when specifying the content location.</p>
+<h3 id="even-more-changes">Even more changes</h3>
+<p>There are more changes like the ones in the <em>manager application</em> or the <em>jdbc-pool</em> library, but I won&rsquo;t try to review them here. Other ones include embedding improvements which allow you to easily embed Tomcat using the class <em>org.apache.catalina.startup.Tomcat</em> and then do programmatic configuration of the server. This seems extremely useful for things like integration tests and in fact most of Tomcat 7 unit tests use embeded Tomcat. Tomcat 7 prevents session fixation attacks by default by changing session ID on authentication. Internal changes include switching from <em>Valves</em> to <em>Filters</em>. This change is ongoing and should eventually replace all <em>Valves</em>. And one thing you might notice when running the new Tomcat is that access log valve is enabled by default. This means that you&rsquo;ll get another file in your logs directory which will log all access to Tomcat server. It&rsquo;s formatted just like the Apache HTTP server&rsquo;s access log and is useful in a number of situations.</p>
+<p>I am using Tomcat 6 and 7 side by side for my current needs and can say that Tomcat 7 with all it&rsquo;s nice features does contain a few bugs so don&rsquo;t rush into using it for any environments that need stability. I&rsquo;m still playing with the new Tomcat&rsquo;s features and maybe will write another post regarding that.</p>
+<p><strong>UPDATE (2011-07-30)</strong></p>
+<p>Since this post is still relevant and gets a reasonable amount of traffic I decided to update it by putting a link to Mark Thomas&rsquo;s recent presentation on <!-- raw HTML omitted -->What&rsquo;s New in Tomcat 7<!-- raw HTML omitted -->, so that you would get the information straight from the source. The sound quality isn&rsquo;t that great, but it&rsquo;s worth watching/listening if you&rsquo;re interested and have a half an hour to spare.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/jsp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">jsp</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/servlet" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">servlet</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/sever" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">sever</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/tomcat" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tomcat</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "andriusm" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/">Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/">Taking over the Spring context from a neighbouring application on Tomcat</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/07/improving-architecture-with-structure-101/">Improving Architecture with Structure 101</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/maven3-alpha-and-cli-plugin-for-maven2/">Maven3 alpha and CLI plugin for Maven2</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/maven-profiles-xml-issue-mng-3933/">Maven profiles.xml issue (MNG-3933)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/maven-command-line-tips/">Maven command-line tips</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/07/ssh-with-java/">SSH with Java</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/09/certificate-generation/">Certificate Generation with Java Tools</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/09/ibatis-and-stored-oracle-proceduresfunctions/">iBatis and Stored Oracle procedures/functions</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/05/using-maven/">Using maven</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
+    &copy;  Andrius Miasnikovas 2020 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/andriusms" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

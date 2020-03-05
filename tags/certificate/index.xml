@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>certificate on Blog</title>
+    <link>https://miasnikovas.lt/tags/certificate/</link>
+    <description>Recent content in certificate on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Mon, 01 Sep 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certificate Generation with Java Tools</title>
+      <link>https://miasnikovas.lt/2008/09/certificate-generation/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/certificate-generation/</guid>
+      <description>Java has a useful tool for generating private-public key pair, it&amp;rsquo;s called keytool and is located in your jdk/bin directory. Here&amp;rsquo;s a command line that I often use to generate keys and self-signed certificates for testing.
+$ keytool -genkey -keyalg RSA -validity 365 -alias MyKey -keystore new_keystore.jks -dname &amp;#34;CN=SubjectName, OU=My Department, O=My Company, L=Vilnius, S=Vilnius, C=LT&amp;#34; Also it is sometimes needed to generate a request to get a signed certificate. Having created a keystore as shown above, it is easily done with the following line.</description>
+    </item>
+    
+  </channel>
+</rss>

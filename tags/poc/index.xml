@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>POC on Blog</title>
+    <link>https://miasnikovas.lt/tags/poc/</link>
+    <description>Recent content in POC on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Fri, 05 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/poc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Taking over the Spring context from a neighbouring application on Tomcat</title>
+      <link>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</link>
+      <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>library on Blog</title>
+    <link>https://miasnikovas.lt/tags/library/</link>
+    <description>Recent content in library on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 08 Jul 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH with Java</title>
+      <link>https://miasnikovas.lt/2009/07/ssh-with-java/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+    </item>
+    
+    <item>
+      <title>iBatis and Stored Oracle procedures/functions</title>
+      <link>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</guid>
+      <description>This one took me a while to get it right the first time. I won&amp;rsquo;t go into details of configuring iBatis datasources and such, and will go straight to putting some queries in the sqlMap file. Just let me note that I&amp;rsquo;m using iBatis 2.3 for these examples. I&amp;rsquo;ll start off with a procedure call.
+&amp;lt;procedure id=&amp;#34;getUserRoles&amp;#34; parameterMap=&amp;#34;myParamMap&amp;#34;&amp;gt; { call SCHEMA.GET_USERS_ROLES(?, ?) } &amp;lt;/procedure&amp;gt; This one is pretty self-explanatory, just defining a procedure to be called.</description>
+    </item>
+    
+    <item>
+      <title>Using maven</title>
+      <link>https://miasnikovas.lt/2008/05/using-maven/</link>
+      <pubDate>Thu, 08 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/using-maven/</guid>
+      <description>Maven is an awesome build tool for JAVA, but it has some long parameter names that I don&amp;rsquo;t like to remember, so I put my often used tasks of maven in batch files.
+install.bat
+mvn install:install-file -Dfile=%1 -DgroupId=%2 -DartifactId=%3 -Dversion=%4 -Dpackaging=pom -DgeneratePom=true This installs the specified .jar file in the local repository located in
+C:\Documents and Settings\*User*\.m2\repository where *User* is your username. Four arguments are required: jar_file, group, artifact and version.</description>
+    </item>
+    
+  </channel>
+</rss>

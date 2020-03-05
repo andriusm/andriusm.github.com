@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Blog</title>
+    <link>https://miasnikovas.lt/categories/javascript/</link>
+    <description>Recent content in javascript on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 07 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Tip: Fun with JavaScript Console in Browsers</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</guid>
+      <description>All modern browsers nowadays have integrated development tools among which there&amp;rsquo;s a JavaScript console where you can type in some JavaScript and test your ideas, debug your code or see output from your script&amp;rsquo;s previous events. But the console is capable of so much more. Well, actually IE&amp;rsquo;s console is somewhat more limited than others, but the rest of them are pretty cool. To get an idea of the possibilities visit the chrome developer tips and tricks page to learn more.</description>
+    </item>
+    
+    <item>
+      <title>Javascript introspection</title>
+      <link>https://miasnikovas.lt/2008/04/javascript-introspection/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/javascript-introspection/</guid>
+      <description>Very basic, but sometimes useful javascript object introspection
+&amp;lt;img id=&amp;#34;test&amp;#34;&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; language=&amp;#34;JavaScript&amp;#34;&amp;gt; el = document.getElementById(&amp;#39;test&amp;#39;); str = &amp;#39;&amp;#39;; for (i in el) str += i+&amp;#39;; &amp;#39;; alert(str); &amp;lt;/script&amp;gt; </description>
+    </item>
+    
+  </channel>
+</rss>

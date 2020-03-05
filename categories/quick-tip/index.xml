@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quick-tip on Blog</title>
+    <link>https://miasnikovas.lt/categories/quick-tip/</link>
+    <description>Recent content in quick-tip on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Tue, 13 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/quick-tip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Tip: Exporting PuTTY Sessions</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-exporting-putty-sessions/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-exporting-putty-sessions/</guid>
+      <description>Here&amp;rsquo;s a really quick tip. If you&amp;rsquo;re running Windows and are using PuTTY to manage your unix servers, chances are you have a lot of saved sessions i.e. information on how to connect to your server, what font type and size to use, etc. And if you ever tried copying them to another machine you noticed that PuTTY doesn&amp;rsquo;t have a user-friendly export/import sessions button. But there&amp;rsquo;s a way to perform a saved sessions export manually.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Fun with JavaScript Console in Browsers</title>
+      <link>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2015/01/quick-tip-fun-with-javascript-console-in-browsers/</guid>
+      <description>All modern browsers nowadays have integrated development tools among which there&amp;rsquo;s a JavaScript console where you can type in some JavaScript and test your ideas, debug your code or see output from your script&amp;rsquo;s previous events. But the console is capable of so much more. Well, actually IE&amp;rsquo;s console is somewhat more limited than others, but the rest of them are pretty cool. To get an idea of the possibilities visit the chrome developer tips and tricks page to learn more.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Easy Time Lapse Videos with FFmpeg</title>
+      <link>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</link>
+      <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</guid>
+      <description>In this tip I want to share with you a quick and easy way of creating your own time lapse videos using your webcam and a tool called FFmpeg. I just recently discovered this command line tool myself and can think of various cool uses for it e.g. connecting a webcam to a Raspberry Pi and leaving it somewhere to take snapshots on certain events, or stream video of some place you want to monitor.</description>
+    </item>
+    
+    <item>
+      <title>Quick Tip: Velocity Template Debugging</title>
+      <link>https://miasnikovas.lt/2012/04/quick-tip-velocity-template-debugging/</link>
+      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/04/quick-tip-velocity-template-debugging/</guid>
+      <description>In this post I&amp;rsquo;ll try to share my recent experience with Velocity template debugging. There are a few ways to debug the templates depending on where you think the problem lies. But at times you have modify templates written by others and that&amp;rsquo;s when you need to do some exploring like finding out what variables are actually passed to the template. This is not always easily found in code, sometimes it&amp;rsquo;s simpler to print this stuff out when you&amp;rsquo;re already in the template.</description>
+    </item>
+    
+  </channel>
+</rss>

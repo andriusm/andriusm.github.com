@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Blog</title>
+    <link>https://miasnikovas.lt/categories/tools/</link>
+    <description>Recent content in tools on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Thu, 31 Jan 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Tip: Easy Time Lapse Videos with FFmpeg</title>
+      <link>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</link>
+      <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</guid>
+      <description>In this tip I want to share with you a quick and easy way of creating your own time lapse videos using your webcam and a tool called FFmpeg. I just recently discovered this command line tool myself and can think of various cool uses for it e.g. connecting a webcam to a Raspberry Pi and leaving it somewhere to take snapshots on certain events, or stream video of some place you want to monitor.</description>
+    </item>
+    
+    <item>
+      <title>SSH tunneling simplified (I think)</title>
+      <link>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</link>
+      <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2012/03/ssh-tunneling-simplified-i-think/</guid>
+      <description>It&amp;rsquo;s been quite a while since my last post so I&amp;rsquo;ll try to ease back into blogging. For now I&amp;rsquo;ll just share a little something I created for myself to help with the SSH tunnels that I need to create on a seemingly regular basis. Sometimes I forget or mix up the parameters that need to be passed to SSH client, especially when interconnecting these tunnels. In this simple tool you can enter the missing info to form a logical sentence in English language and when you click the generate button you get a command line for the SSH client.</description>
+    </item>
+    
+    <item>
+      <title>Automatic Web Server Monitoring</title>
+      <link>https://miasnikovas.lt/2011/02/automatic-web-server-monitoring/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/02/automatic-web-server-monitoring/</guid>
+      <description>Hi there! Here&amp;rsquo;s another quick suggestion for all of you out there who have to deal with a lot of web server environments and need to make sure that they&amp;rsquo;re all alive and responsive. Sure there are all sorts of tools for server monitoring and performance tracking, but I found that most of the time you just need to know if the server is up &amp;amp; running. And of course you should be notified if it&amp;rsquo;s not.</description>
+    </item>
+    
+    <item>
+      <title>Search for Files on Remote FTP Server</title>
+      <link>https://miasnikovas.lt/2011/02/search-for-files-on-remote-ftp-server/</link>
+      <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/02/search-for-files-on-remote-ftp-server/</guid>
+      <description>I&amp;rsquo;ll keep this one short. Don&amp;rsquo;t know about you, but I&amp;rsquo;ve always been frustrated about how most FTP clients won&amp;rsquo;t let you search for files on a remote FTP server. I remember I used some client that had this functionality, but this was quite a while ago so I can&amp;rsquo;t even remember the name of it. If someone else knows any lightweight tools that let you do that, please leave a comment.</description>
+    </item>
+    
+    <item>
+      <title>Modifying Treepie To Display File Count</title>
+      <link>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</link>
+      <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</guid>
+      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&amp;rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.</description>
+    </item>
+    
+    <item>
+      <title>Online Tools That Make My Life Easier</title>
+      <link>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</link>
+      <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/11/online-tools-that-make-my-life-easier/</guid>
+      <description>Imagine a situation where you&amp;rsquo;re sitting in front of a colleague&amp;rsquo;s computer or one that is publicly used. By definition you&amp;rsquo;re missing all your favorite tools that you&amp;rsquo;re used to and you can&amp;rsquo;t install them even if you wanted to. Here&amp;rsquo;s a short list of online tools that help me a lot when I&amp;rsquo;m using a computer other than my own. These do not fully replace the desktop equivalents, but they&amp;rsquo;re good enough.</description>
+    </item>
+    
+    <item>
+      <title>Improving Architecture with Structure 101</title>
+      <link>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</link>
+      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+    </item>
+    
+    <item>
+      <title>Fun System Tool for Process Analysis and Debugging</title>
+      <link>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</link>
+      <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+    </item>
+    
+    <item>
+      <title>Linux GUI on Your Windows Desktop Through the Magic of Xming</title>
+      <link>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</link>
+      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+    </item>
+    
+    <item>
+      <title>Task automation and ultimate control over Windows</title>
+      <link>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard oriented application launchers</title>
+      <link>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</link>
+      <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/keyboard-oriented-application-launchers/</guid>
+      <description>Last week I set out to find the best tools I could to increase my overall productivity when doing my everyday tasks and I want to share my experience. When writing this I quickly realized that putting everything in one chunk would make it quite long and as a fan of blog post brevity I decided to split it into a few posts. This one will cover applications that allow you to quickly launch other programs on your machine.</description>
+    </item>
+    
+    <item>
+      <title>Disk efficiency when dealing with tons of small files</title>
+      <link>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/03/disk-efficiency-when-dealing-with-tons-of-small-files/</guid>
+      <description>When dealing with source code from projects of various sizes the disk quickly gets filled up with literally tens or even hundreds of thousands of files. Especially when the project is under source control and has metadata files for each of the project&amp;rsquo;s file. While you may still have a lot of disk space left on the drive I found that this kind of setup is highly inefficient when jumping from file to file in an IDE or doing a full text search.</description>
+    </item>
+    
+    <item>
+      <title>Internet TV and video conversion</title>
+      <link>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</link>
+      <pubDate>Fri, 22 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
+      <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
+The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+    </item>
+    
+    <item>
+      <title>Everyday tools</title>
+      <link>https://miasnikovas.lt/2010/01/everyday-tools/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2010/01/everyday-tools/</guid>
+      <description>In this post I want to share with you a few tools which in my opinion are really useful. A while ago I found this page called FileHippo that contains a lot of free software and they even maintain older versions which is great for when you&amp;rsquo;re searching for a particular version of some tool and can&amp;rsquo;t find anywhere else. But the really nice thing is that now they have this program called Update Cheker which you can download and install on you machine and it will analyze the software that you have installed and present you with a list of possible updates including the beta versions as a separate section.</description>
+    </item>
+    
+  </channel>
+</rss>

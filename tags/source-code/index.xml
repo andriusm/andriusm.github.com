@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>source code on Blog</title>
+    <link>https://miasnikovas.lt/tags/source-code/</link>
+    <description>Recent content in source code on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Andrius Miasnikovas</copyright>
+    <lastBuildDate>Wed, 08 Jul 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://miasnikovas.lt/tags/source-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH with Java</title>
+      <link>https://miasnikovas.lt/2009/07/ssh-with-java/</link>
+      <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+    </item>
+    
+    <item>
+      <title>iBatis and Stored Oracle procedures/functions</title>
+      <link>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/09/ibatis-and-stored-oracle-proceduresfunctions/</guid>
+      <description>This one took me a while to get it right the first time. I won&amp;rsquo;t go into details of configuring iBatis datasources and such, and will go straight to putting some queries in the sqlMap file. Just let me note that I&amp;rsquo;m using iBatis 2.3 for these examples. I&amp;rsquo;ll start off with a procedure call.
+&amp;lt;procedure id=&amp;#34;getUserRoles&amp;#34; parameterMap=&amp;#34;myParamMap&amp;#34;&amp;gt; { call SCHEMA.GET_USERS_ROLES(?, ?) } &amp;lt;/procedure&amp;gt; This one is pretty self-explanatory, just defining a procedure to be called.</description>
+    </item>
+    
+    <item>
+      <title>tail -f for windows</title>
+      <link>https://miasnikovas.lt/2008/05/tail-f-for-windows/</link>
+      <pubDate>Wed, 07 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/05/tail-f-for-windows/</guid>
+      <description>Here&amp;rsquo;s a simple implementation of “tail -f” UNIX command equivalent in python. I used it a lot on windows servers to monitor log files. The good thing is that it works over SMB (windows shares).
+#!/usr/bin/env python import sys, os, time def main(argv): if len(argv) &amp;lt; 2: print &amp;#34;Usage: tail filename.log&amp;#34; exit(1) try: fp = open(argv[1], &amp;#34;r&amp;#34;) st_results = os.stat(argv[1]) st_size = st_results[6] fp.seek(st_size) while 1: where = fp.tell() line = fp.</description>
+    </item>
+    
+    <item>
+      <title>Javascript introspection</title>
+      <link>https://miasnikovas.lt/2008/04/javascript-introspection/</link>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/javascript-introspection/</guid>
+      <description>Very basic, but sometimes useful javascript object introspection
+&amp;lt;img id=&amp;#34;test&amp;#34;&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; language=&amp;#34;JavaScript&amp;#34;&amp;gt; el = document.getElementById(&amp;#39;test&amp;#39;); str = &amp;#39;&amp;#39;; for (i in el) str += i+&amp;#39;; &amp;#39;; alert(str); &amp;lt;/script&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Strings in JAVA</title>
+      <link>https://miasnikovas.lt/2008/04/strings-in-java/</link>
+      <pubDate>Thu, 17 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/2008/04/strings-in-java/</guid>
+      <description>A few days ago I needed to extract all strings from .java files and also thought that it would be a good idea to keep count how many times a string is used. So I came up with this simple python script. It&amp;rsquo;s kind of a quick and dirty solution, but it met my needs for the particular task.
+import sys, os, re from operator import itemgetter files = [] strings = {} exp = re.</description>
+    </item>
+    
+  </channel>
+</rss>

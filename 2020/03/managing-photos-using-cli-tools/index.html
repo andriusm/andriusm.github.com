@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Blog  | Managing photos using CLI tools</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.65.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Managing photos using CLI tools" />
+<meta property="og:description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
+DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/" />
+<meta property="article:published_time" content="2020-03-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-11T00:00:00+00:00" />
+<meta itemprop="name" content="Managing photos using CLI tools">
+<meta itemprop="description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
+DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly.">
+<meta itemprop="datePublished" content="2020-03-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-03-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1902">
+
+
+
+<meta itemprop="keywords" content="linux,CLI," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Managing photos using CLI tools"/>
+<meta name="twitter:description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
+DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly."/>
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12929818-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://miasnikovas.lt/images/2020-03-11-feature.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://miasnikovas.lt/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Blog
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/andriusm" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Managing photos using CLI tools</h1>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/&amp;text=Managing%20photos%20using%20CLI%20tools" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/&amp;title=Managing%20photos%20using%20CLI%20tools" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Managing photos using CLI tools</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Andrius Miasnikovas
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-03-11T00:00:00Z">March 11, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l"><p>A little while ago I finally got around to bringing order to the mess called my photo
+library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s
+first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect,
+I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.</p>
+<h3 id="disclaimer">DISCLAIMER</h3>
+<pre><code>Some of the tools discussed here can delete/overwrite files you didn't intend when
+used incorrectly. If you don't feel comfortable with these tools, I suggest creating a
+temporary folder with some sample files for practice. And only when you feel you got the
+hang of it, move on to working on more sensitive files. And even then - backup is your best
+friend.
+</code></pre><h2 id="managing-duplicates">Managing duplicates</h2>
+<p>Since I&rsquo;m a responsible computer user, I do have &ldquo;backups&rdquo; well&hellip; they&rsquo;re more
+like copies of unsorted files on multiple disks that I no longer can keep track of. So the
+first thing to address was the duplication issue once I got all the files onto a single
+disk. There&rsquo;s a great CLI tool called <code>fdupes</code> you can install using your package manager:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S fdupes <span style="color:#75715e"># Arch Linux</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install fdupes <span style="color:#75715e"># Ubuntu</span>
+</code></pre></div><p>This tool can scan your files, find duplicates, report the disk space you&rsquo;re wasting due to
+those duplicates and can even remove them for you. And it doesn&rsquo;t just compare dates or
+filenames, but rather if it sees files of the same size no matter the name, it calculates
+MD5 hashes and compares those effectively doing a byte-by-byte comparison. By doing this,
+it&rsquo;s much more reliable in identifying real duplicates.</p>
+<p>Basic usage is pretty simple, you just give it a directory to work on and pass in a few
+params that tells it to check directories recursively and summarize the results</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -mr photos/
+</code></pre></div><p>this will get you an idea of what kind of disk space savings you&rsquo;re looking at</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">11</span> duplicate files <span style="color:#f92672">(</span>in <span style="color:#ae81ff">7</span> sets<span style="color:#f92672">)</span>, occupying 63.2 kilobytes
+</code></pre></div><p>If you&rsquo;d rather see the actual duplicate files do this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rS photos/
+</code></pre></div><p>you&rsquo;ll know which files have duplicates and where this might be a very long list though</p>
+<pre><code>10402 bytes each:
+./.vim/colors/desert.vim
+./.vim/colors/desert2.vim
+./.vim/colors/desert3.vim
+
+29 bytes each:
+./.vim/UltiSnips/notes.snippets
+./.vim/UltiSnips/text.snippets
+</code></pre><p>A couple of useful parameters are <code>-n</code> and <code>-A</code> which exclude zero-length and hidden
+files respectively. Now, let&rsquo;s say you&rsquo;re ready to delete those duplicates, simply add
+a <code>-d</code> parameter like so</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rd photos/
+</code></pre></div><p>this tool will stop and prompt you which file you want to preserve before deleting anything.
+It can be all you need if you don&rsquo;t have too many duplicates and would like a fine-grained
+control over what you remove. Remember that if there are a few duplicates of the same file
+you will be asked only once to choose the file that will be spared.</p>
+<p>Now, this is all fine and good, but in my case, there were just too many duplicates for
+me to sit around and mash Enter, so I added another parameter <code>-N</code>. Be CAREFUL with this one
+and remember to make backups, when working with data you can&rsquo;t afford to lose.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rdN photos/
+</code></pre></div><p>This will not ask you anything. It will scan the directories, find duplicates, choose
+the first file to preserve for each duplicate group and delete the others.</p>
+<h2 id="dealing-with-ifiles">Dealing with iFiles</h2>
+<p>Some of the photos I have were not in the good old <code>JPEG</code> format, but rather <code>.HEIC</code> files
+from an iPhone. I wanted to convert those to JPEGs because the support of <code>HEIC</code> is still rather
+limited and the format itself doesn&rsquo;t seem to get a lot of traction, compare to <code>WebP</code>
+format by Google. Both of these formats want to be the replacement for how we store photos.
+They boast better compression algorithms than <code>JPEG</code>. While some of the claims are true,
+in practice neither format is widespread and is still lacking support in common imaging
+software. Google is pushing its <code>WebP</code> standard in they&rsquo;re browser, Android OS, etc, but <code>HEIC</code>
+format seems to be only found on iDevices (as far as I know). So, I searched around and
+found something called <code>libheif</code> - it&rsquo;s technically just a library, but it has so-called
+example programs like <code>heif-convert</code> which can convert this format to <code>JPEG</code>. So, let&rsquo;s
+install it!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S libheif <span style="color:#75715e"># Arch Linux</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install libheif-examples <span style="color:#75715e"># Ubuntu</span>
+</code></pre></div><p>If you&rsquo;re using another distro try searching for <code>heif</code> related packages or you could
+try to build it from the source - <a href="https://github.com/strukturag/libheif">https://github.com/strukturag/libheif</a></p>
+<p>Once you have the tools, the usage is very straight-forward just specify the input file
+and the output file. You can specify the <code>JPEG</code> output quality by specifying a parameter
+<code>-q XX</code> where <code>XX</code> is a number between 0 and 100. I would recommend using 90
+as it seems to be the perfect balance between perceivable quality and file size. There
+is one caveat - this tool accepts only one file at a time. So we can&rsquo;t specify in the
+parameters multiple files to be converted like <code>*.HEIC</code>, but that&rsquo;s easily fixable with
+just a few lines of shell script:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> fname in *.HEIC
+<span style="color:#66d9ef">do</span>
+  heif-convert -q <span style="color:#ae81ff">90</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">.jpg&#34;</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><p>I&rsquo;m making an assumption here that the current working directory contains the <code>HEIC</code> files.</p>
+<h2 id="unifying-file-extensions">Unifying file extensions</h2>
+<p>Like I mentioned, I gathered my files from different machines. Because files are named
+using a counter (which can be reset) on cameras I was facing an interesting issue. Some
+files had the same filename, but contained completely different photos. And some files had
+uppercase extensions, while other had lowercase ones. Even if I wouldn&rsquo;t find this annoying
+it posed a risk of potential data loss if copied over to a Windows file system. So I
+decided to stick to lowercase extensions and rename all the offending files. That&rsquo;s were
+another great tool comes into play, and you don&rsquo;t even need to install it as it&rsquo;s part
+of the core Linux utils. Its simplicity can be seend even in its name - <code>rename</code>. In
+typical UNIX fashion, it&rsquo;s a very quiet tool so using the <code>-v</code> parameter is suggested to make
+it more verbose and get a better feel of what it&rsquo;s about to do. Besides the file you&rsquo;re
+renaming, it takes an expression or a part of the filename that you want to change and the
+replacement string. If you&rsquo;re not sure you got the pattern and replacement string right,
+you could add option <code>-n</code> which will prevent the renaming from taking place. In combination
+with the verbose option, this allows you to safely test your replacement patterns before
+removing the <code>-n</code> option and performing the action.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rename -vn JPG jpg *.JPG
+</code></pre></div><p>As you can see it&rsquo;s easy to rename things in the current directory by feeding it multiple
+files like the example above. But the tool itself does not support recursion, so for my
+use-case of multiple, poorly structured directories, The solution - find all the offending
+files and apply the <code>rename</code> tool for each case.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;.JPG&#39;</span> <span style="color:#e6db74">&#39;_1.JPG&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;JPG&#39;</span> <span style="color:#e6db74">&#39;jpg&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</code></pre></div><p>Note that I use the case-sensitive parameter <code>-name</code> for finding the files with uppercase
+extensions. I also added the <code>-o</code> parameter to <code>rename</code> which means it will not overwrite
+any files if the resulting filename already exists in that directory, it will simply skip
+it (safety first!). The reason why I do two passes for each file is to first rename them
+to something that hopefully would not clash with other files in the same directory.</p>
+<h2 id="sorting-photos">Sorting photos</h2>
+<p>Now that all the cleanup is done, I was finally able to get to the actual sorting of files
+and putting them in appropriate directories. The idea was simple enough - have all the
+photos in directories according to the year they were taken in, and another layer of
+directories specifying the month they were taken in (I prefer numeric values of the months).
+So the final result should look something like the one below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree -L <span style="color:#ae81ff">2</span>
+
+.
+├── <span style="color:#ae81ff">2008</span>
+│   ├── <span style="color:#ae81ff">02</span>
+│   ├── <span style="color:#ae81ff">03</span>
+│   ├── <span style="color:#ae81ff">05</span>
+│   ├── <span style="color:#ae81ff">06</span>
+│   └── <span style="color:#ae81ff">12</span>
+├── <span style="color:#ae81ff">2009</span>
+│   ├── <span style="color:#ae81ff">04</span>
+│   ├── <span style="color:#ae81ff">05</span>
+│   ├── <span style="color:#ae81ff">06</span>
+│   ├── <span style="color:#ae81ff">07</span>
+...
+</code></pre></div><p>The first thing I need is to be able to extract the EXIF metadata from the files which
+contain the date when the photo was taken. I found that <code>exiv2</code> is a nice little
+tool that does exactly what I need.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S exiv2 <span style="color:#75715e"># Arch Linux</span>
+</code></pre></div><p>Its output is very conveniently laid out for grepping and further processing.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ exiv2 IMG_20190101_141739.jpg 
+
+File name       : IMG_20190103_151833.jpg
+File size       : <span style="color:#ae81ff">2921643</span> Bytes
+MIME type       : image/jpeg
+Image size      : <span style="color:#ae81ff">4048</span> x <span style="color:#ae81ff">3036</span>
+Camera make     : Google
+Camera model    : Pixel
+Image timestamp : 2019:01:01 14:17:39
+...
+</code></pre></div><p>Now I had to create a directory structure and place each file in the correct directory.
+I didn&rsquo;t want to do two passes on a large number of files, so I wrote a script that
+generated a new script for those operations, but I executed them separately as you&rsquo;ll see
+later on. The script <code>exifdata.sh</code> looked like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env sh
+</span><span style="color:#75715e"></span>
+set -euo pipefail
+
+BASE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../sorted&#34;</span>
+T<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>exiv2 <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> 2&gt;/dev/null | tr <span style="color:#e6db74">&#39;\0&#39;</span> <span style="color:#e6db74">&#39;\n&#39;</span> | grep <span style="color:#e6db74">&#39;Image timestamp&#39;</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f 4<span style="color:#e6db74">`</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+<span style="color:#66d9ef">then</span>
+	YEAR<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 1<span style="color:#e6db74">`</span>
+	MONTH<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 2<span style="color:#e6db74">`</span>
+
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$YEAR<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> -a <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$MONTH<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;mkdir -p </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
+    echo <span style="color:#e6db74">&#34;mv -i \&#34;</span>$1<span style="color:#e6db74">\&#34; </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;Could not parse date for </span>$1<span style="color:#e6db74"> : </span>$T<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
+  <span style="color:#66d9ef">fi</span>
+
+<span style="color:#66d9ef">else</span>
+  echo <span style="color:#e6db74">&#34;Could not extract info for </span>$1<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>Then I applied this script for each file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -iname <span style="color:#e6db74">&#39;*.jpg&#39;</span> -exec ./exifdata.sh <span style="color:#e6db74">&#34;{}&#34;</span> <span style="color:#ae81ff">\;</span> &gt; complete.sh
+</code></pre></div><p>This created a large file which contained directory creation and file moving commands.
+But obviously, a lot of directory creation commands are duplicates, because a bunch of
+photos are taken in the same year and same month. So instead of executing this whole
+script, I extracted only <code>mkdir</code> commands sorted and removed duplicates like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep mkdir complete.sh | sort | uniq &gt; dirs.sh
+grep -v mkdir complete.sh &gt; move.sh
+</code></pre></div><p>The final step is to review and execute these two files. First the <code>dirs.sh</code> script
+creates the required directory structure in a directory that is one level above where all
+the files reside and the script is being run. The second one performs the move operation
+on the files. For file moving step I included the <code>-n</code> parameter which prevents file
+overwrite. And that&rsquo;s it! I now have a proper structure for all my photos and no duplicates.
+Throughout all this process I tried to use parameters that should help with keeping the
+data intact, not overwrite anything and only remove things that are 100% duplicate. But as
+with all things on a computer - it will do what you tell it, not what you want. So I
+cannot overstress the importance of having a backup if you&rsquo;re applying these steps to
+files that are important to you.</p>
+<p>That&rsquo;s how I did it, there are of course other ways of achieving the same result or maybe
+do some of those steps more efficiently. Leave a comment if you want to share such ideas
+with others.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">linux</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/cli" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">CLI</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "andriusm" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/">Linux GUI on Your Windows Desktop Through the Magic of Xming</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/05/compiling-apache-httpd-from-sources/">Compiling Apache httpd from Sources</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/">Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
+    &copy;  Andrius Miasnikovas 2020 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/andriusm" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

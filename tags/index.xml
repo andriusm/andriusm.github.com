@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 21 Jul 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://miasnikovas.lt/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CLI</title>
+      <link>https://miasnikovas.lt/tags/cli/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://miasnikovas.lt/tags/linux/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/linux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>java</title>
@@ -180,15 +198,6 @@
       <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/tags/chrome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://miasnikovas.lt/tags/linux/</link>
-      <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://miasnikovas.lt/tags/linux/</guid>
       <description></description>
     </item>
     

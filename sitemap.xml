@@ -3,21 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://miasnikovas.lt/</loc>
-    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+    <loc>https://miasnikovas.lt/tags/cli/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://miasnikovas.lt/2017/03/email-attachment-detacher/</loc>
-    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+    <loc>https://miasnikovas.lt/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://miasnikovas.lt/tags/linux/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://miasnikovas.lt/posts/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://miasnikovas.lt/tags/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://miasnikovas.lt/2017/03/email-attachment-detacher/</loc>
     <lastmod>2017-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -262,13 +290,6 @@
   </url>
   
   <url>
-    <loc>https://miasnikovas.lt/tags/</loc>
-    <lastmod>2010-07-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://miasnikovas.lt/tags/tomcat/</loc>
     <lastmod>2010-07-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -446,13 +467,6 @@
   <url>
     <loc>https://miasnikovas.lt/categories/pdf/</loc>
     <lastmod>2010-06-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://miasnikovas.lt/tags/linux/</loc>
-    <lastmod>2010-05-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

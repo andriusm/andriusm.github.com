@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Mon, 01 Sep 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Sep 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Certificate Generation with Java Tools</title>
       <link>https://miasnikovas.lt/2008/09/certificate-generation/</link>

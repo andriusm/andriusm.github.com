@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Thu, 08 Apr 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 Apr 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating thumbnails from photos with Python PIL</title>
       <link>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</link>
       <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</guid>
-      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PILand install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
+      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PIL and install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
     </item>
     
     <item>

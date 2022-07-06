@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Sun, 25 Apr 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 25 Apr 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</title>
       <link>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</link>
       <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
-      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
     </item>
     
   </channel>

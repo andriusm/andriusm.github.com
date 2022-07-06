@@ -6,7 +6,7 @@
     
     <title>Blog  | Managing photos using CLI tools</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -29,18 +29,15 @@
 <meta property="og:description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
 DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/" />
+<meta property="og:url" content="https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-03-11T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-03-11T00:00:00+00:00" />
+
 <meta itemprop="name" content="Managing photos using CLI tools">
 <meta itemprop="description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
-DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly.">
-<meta itemprop="datePublished" content="2020-03-11T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-03-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1902">
-
-
-
+DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly."><meta itemprop="datePublished" content="2020-03-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-03-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1903">
 <meta itemprop="keywords" content="linux,CLI," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Managing photos using CLI tools"/>
 <meta name="twitter:description" content="A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&rsquo;s first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect, I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
@@ -144,34 +141,6 @@ if (!doNotTrack) {
         POSTS
       </aside>
       
-
-
-
-
-  <div id="sharing" class="mt3">
-
-    
-    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/" class="facebook no-underline" aria-label="share on Facebook">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
-
-    </a>
-
-    
-    
-    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/&amp;text=Managing%20photos%20using%20CLI%20tools" class="twitter no-underline" aria-label="share on Twitter">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-    </a>
-
-    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/&amp;title=Managing%20photos%20using%20CLI%20tools" class="linkedin no-underline" aria-label="share on LinkedIn">
-      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-    </a>
-  </div>
-
       <h1 class="f1 athelas mt3 mb1">Managing photos using CLI tools</h1>
       
       <p class="tracked">
@@ -193,8 +162,8 @@ library. They were scattered across multiple machines, disks and SD cards. First
 first - I moved all files to one place so it&rsquo;s easier to work with. In retrospect,
 I&rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.</p>
 <h3 id="disclaimer">DISCLAIMER</h3>
-<pre><code>Some of the tools discussed here can delete/overwrite files you didn't intend when
-used incorrectly. If you don't feel comfortable with these tools, I suggest creating a
+<pre tabindex="0"><code>Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when
+used incorrectly. If you don&#39;t feel comfortable with these tools, I suggest creating a
 temporary folder with some sample files for practice. And only when you feel you got the
 hang of it, move on to working on more sensitive files. And even then - backup is your best
 friend.
@@ -203,22 +172,22 @@ friend.
 like copies of unsorted files on multiple disks that I no longer can keep track of. So the
 first thing to address was the duplication issue once I got all the files onto a single
 disk. There&rsquo;s a great CLI tool called <code>fdupes</code> you can install using your package manager:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S fdupes <span style="color:#75715e"># Arch Linux</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install fdupes <span style="color:#75715e"># Ubuntu</span>
-</code></pre></div><p>This tool can scan your files, find duplicates, report the disk space you&rsquo;re wasting due to
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S fdupes <span style="color:#75715e"># Arch Linux</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install fdupes <span style="color:#75715e"># Ubuntu</span>
+</span></span></code></pre></div><p>This tool can scan your files, find duplicates, report the disk space you&rsquo;re wasting due to
 those duplicates and can even remove them for you. And it doesn&rsquo;t just compare dates or
 filenames, but rather if it sees files of the same size no matter the name, it calculates
 MD5 hashes and compares those effectively doing a byte-by-byte comparison. By doing this,
 it&rsquo;s much more reliable in identifying real duplicates.</p>
 <p>Basic usage is pretty simple, you just give it a directory to work on and pass in a few
 params that tells it to check directories recursively and summarize the results</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -mr photos/
-</code></pre></div><p>this will get you an idea of what kind of disk space savings you&rsquo;re looking at</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">11</span> duplicate files <span style="color:#f92672">(</span>in <span style="color:#ae81ff">7</span> sets<span style="color:#f92672">)</span>, occupying 63.2 kilobytes
-</code></pre></div><p>If you&rsquo;d rather see the actual duplicate files do this</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rS photos/
-</code></pre></div><p>you&rsquo;ll know which files have duplicates and where this might be a very long list though</p>
-<pre><code>10402 bytes each:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdupes -mr photos/
+</span></span></code></pre></div><p>this will get you an idea of what kind of disk space savings you&rsquo;re looking at</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">11</span> duplicate files <span style="color:#f92672">(</span>in <span style="color:#ae81ff">7</span> sets<span style="color:#f92672">)</span>, occupying 63.2 kilobytes
+</span></span></code></pre></div><p>If you&rsquo;d rather see the actual duplicate files do this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdupes -rS photos/
+</span></span></code></pre></div><p>you&rsquo;ll know which files have duplicates and where this might be a very long list though</p>
+<pre tabindex="0"><code>10402 bytes each:
 ./.vim/colors/desert.vim
 ./.vim/colors/desert2.vim
 ./.vim/colors/desert3.vim
@@ -229,16 +198,16 @@ params that tells it to check directories recursively and summarize the results<
 </code></pre><p>A couple of useful parameters are <code>-n</code> and <code>-A</code> which exclude zero-length and hidden
 files respectively. Now, let&rsquo;s say you&rsquo;re ready to delete those duplicates, simply add
 a <code>-d</code> parameter like so</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rd photos/
-</code></pre></div><p>this tool will stop and prompt you which file you want to preserve before deleting anything.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdupes -rd photos/
+</span></span></code></pre></div><p>this tool will stop and prompt you which file you want to preserve before deleting anything.
 It can be all you need if you don&rsquo;t have too many duplicates and would like a fine-grained
 control over what you remove. Remember that if there are a few duplicates of the same file
 you will be asked only once to choose the file that will be spared.</p>
 <p>Now, this is all fine and good, but in my case, there were just too many duplicates for
 me to sit around and mash Enter, so I added another parameter <code>-N</code>. Be CAREFUL with this one
 and remember to make backups, when working with data you can&rsquo;t afford to lose.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdupes -rdN photos/
-</code></pre></div><p>This will not ask you anything. It will scan the directories, find duplicates, choose
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fdupes -rdN photos/
+</span></span></code></pre></div><p>This will not ask you anything. It will scan the directories, find duplicates, choose
 the first file to preserve for each duplicate group and delete the others.</p>
 <h2 id="dealing-with-ifiles">Dealing with iFiles</h2>
 <p>Some of the photos I have were not in the good old <code>JPEG</code> format, but rather <code>.HEIC</code> files
@@ -252,9 +221,9 @@ format seems to be only found on iDevices (as far as I know). So, I searched aro
 found something called <code>libheif</code> - it&rsquo;s technically just a library, but it has so-called
 example programs like <code>heif-convert</code> which can convert this format to <code>JPEG</code>. So, let&rsquo;s
 install it!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S libheif <span style="color:#75715e"># Arch Linux</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install libheif-examples <span style="color:#75715e"># Ubuntu</span>
-</code></pre></div><p>If you&rsquo;re using another distro try searching for <code>heif</code> related packages or you could
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S libheif <span style="color:#75715e"># Arch Linux</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install libheif-examples <span style="color:#75715e"># Ubuntu</span>
+</span></span></code></pre></div><p>If you&rsquo;re using another distro try searching for <code>heif</code> related packages or you could
 try to build it from the source - <a href="https://github.com/strukturag/libheif">https://github.com/strukturag/libheif</a></p>
 <p>Once you have the tools, the usage is very straight-forward just specify the input file
 and the output file. You can specify the <code>JPEG</code> output quality by specifying a parameter
@@ -263,11 +232,11 @@ as it seems to be the perfect balance between perceivable quality and file size.
 is one caveat - this tool accepts only one file at a time. So we can&rsquo;t specify in the
 parameters multiple files to be converted like <code>*.HEIC</code>, but that&rsquo;s easily fixable with
 just a few lines of shell script:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> fname in *.HEIC
-<span style="color:#66d9ef">do</span>
-  heif-convert -q <span style="color:#ae81ff">90</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">.jpg&#34;</span>
-<span style="color:#66d9ef">done</span>
-</code></pre></div><p>I&rsquo;m making an assumption here that the current working directory contains the <code>HEIC</code> files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> fname in *.HEIC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  heif-convert -q <span style="color:#ae81ff">90</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$fname<span style="color:#e6db74">.jpg&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>I&rsquo;m making an assumption here that the current working directory contains the <code>HEIC</code> files.</p>
 <h2 id="unifying-file-extensions">Unifying file extensions</h2>
 <p>Like I mentioned, I gathered my files from different machines. Because files are named
 using a counter (which can be reset) on cameras I was facing an interesting issue. Some
@@ -284,14 +253,14 @@ replacement string. If you&rsquo;re not sure you got the pattern and replacement
 you could add option <code>-n</code> which will prevent the renaming from taking place. In combination
 with the verbose option, this allows you to safely test your replacement patterns before
 removing the <code>-n</code> option and performing the action.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rename -vn JPG jpg *.JPG
-</code></pre></div><p>As you can see it&rsquo;s easy to rename things in the current directory by feeding it multiple
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rename -vn JPG jpg *.JPG
+</span></span></code></pre></div><p>As you can see it&rsquo;s easy to rename things in the current directory by feeding it multiple
 files like the example above. But the tool itself does not support recursion, so for my
 use-case of multiple, poorly structured directories, The solution - find all the offending
 files and apply the <code>rename</code> tool for each case.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;.JPG&#39;</span> <span style="color:#e6db74">&#39;_1.JPG&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
-find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;JPG&#39;</span> <span style="color:#e6db74">&#39;jpg&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
-</code></pre></div><p>Note that I use the case-sensitive parameter <code>-name</code> for finding the files with uppercase
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;.JPG&#39;</span> <span style="color:#e6db74">&#39;_1.JPG&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</span></span><span style="display:flex;"><span>find . -name <span style="color:#e6db74">&#39;*.JPG&#39;</span> -exec rename -vo <span style="color:#e6db74">&#39;JPG&#39;</span> <span style="color:#e6db74">&#39;jpg&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</span></span></code></pre></div><p>Note that I use the case-sensitive parameter <code>-name</code> for finding the files with uppercase
 extensions. I also added the <code>-o</code> parameter to <code>rename</code> which means it will not overwrite
 any files if the resulting filename already exists in that directory, it will simply skip
 it (safety first!). The reason why I do two passes for each file is to first rename them
@@ -302,72 +271,72 @@ and putting them in appropriate directories. The idea was simple enough - have a
 photos in directories according to the year they were taken in, and another layer of
 directories specifying the month they were taken in (I prefer numeric values of the months).
 So the final result should look something like the one below.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree -L <span style="color:#ae81ff">2</span>
-
-.
-├── <span style="color:#ae81ff">2008</span>
-│   ├── <span style="color:#ae81ff">02</span>
-│   ├── <span style="color:#ae81ff">03</span>
-│   ├── <span style="color:#ae81ff">05</span>
-│   ├── <span style="color:#ae81ff">06</span>
-│   └── <span style="color:#ae81ff">12</span>
-├── <span style="color:#ae81ff">2009</span>
-│   ├── <span style="color:#ae81ff">04</span>
-│   ├── <span style="color:#ae81ff">05</span>
-│   ├── <span style="color:#ae81ff">06</span>
-│   ├── <span style="color:#ae81ff">07</span>
-...
-</code></pre></div><p>The first thing I need is to be able to extract the EXIF metadata from the files which
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ tree -L <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── <span style="color:#ae81ff">2008</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">02</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">03</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">05</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">06</span>
+</span></span><span style="display:flex;"><span>│   └── <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>├── <span style="color:#ae81ff">2009</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">04</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">05</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">06</span>
+</span></span><span style="display:flex;"><span>│   ├── <span style="color:#ae81ff">07</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>The first thing I need is to be able to extract the EXIF metadata from the files which
 contain the date when the photo was taken. I found that <code>exiv2</code> is a nice little
 tool that does exactly what I need.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S exiv2 <span style="color:#75715e"># Arch Linux</span>
-</code></pre></div><p>Its output is very conveniently laid out for grepping and further processing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ exiv2 IMG_20190101_141739.jpg 
-
-File name       : IMG_20190103_151833.jpg
-File size       : <span style="color:#ae81ff">2921643</span> Bytes
-MIME type       : image/jpeg
-Image size      : <span style="color:#ae81ff">4048</span> x <span style="color:#ae81ff">3036</span>
-Camera make     : Google
-Camera model    : Pixel
-Image timestamp : 2019:01:01 14:17:39
-...
-</code></pre></div><p>Now I had to create a directory structure and place each file in the correct directory.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S exiv2 <span style="color:#75715e"># Arch Linux</span>
+</span></span></code></pre></div><p>Its output is very conveniently laid out for grepping and further processing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ exiv2 IMG_20190101_141739.jpg 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>File name       : IMG_20190103_151833.jpg
+</span></span><span style="display:flex;"><span>File size       : <span style="color:#ae81ff">2921643</span> Bytes
+</span></span><span style="display:flex;"><span>MIME type       : image/jpeg
+</span></span><span style="display:flex;"><span>Image size      : <span style="color:#ae81ff">4048</span> x <span style="color:#ae81ff">3036</span>
+</span></span><span style="display:flex;"><span>Camera make     : Google
+</span></span><span style="display:flex;"><span>Camera model    : Pixel
+</span></span><span style="display:flex;"><span>Image timestamp : 2019:01:01 14:17:39
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>Now I had to create a directory structure and place each file in the correct directory.
 I didn&rsquo;t want to do two passes on a large number of files, so I wrote a script that
 generated a new script for those operations, but I executed them separately as you&rsquo;ll see
 later on. The script <code>exifdata.sh</code> looked like this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env sh
-</span><span style="color:#75715e"></span>
-set -euo pipefail
-
-BASE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../sorted&#34;</span>
-T<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>exiv2 <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> 2&gt;/dev/null | tr <span style="color:#e6db74">&#39;\0&#39;</span> <span style="color:#e6db74">&#39;\n&#39;</span> | grep <span style="color:#e6db74">&#39;Image timestamp&#39;</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f 4<span style="color:#e6db74">`</span>
-
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
-<span style="color:#66d9ef">then</span>
-	YEAR<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 1<span style="color:#e6db74">`</span>
-	MONTH<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 2<span style="color:#e6db74">`</span>
-
-  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$YEAR<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> -a <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$MONTH<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> <span style="color:#f92672">]</span>
-  <span style="color:#66d9ef">then</span>
-    echo <span style="color:#e6db74">&#34;mkdir -p </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
-    echo <span style="color:#e6db74">&#34;mv -i \&#34;</span>$1<span style="color:#e6db74">\&#34; </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
-  <span style="color:#66d9ef">else</span>
-    echo <span style="color:#e6db74">&#34;Could not parse date for </span>$1<span style="color:#e6db74"> : </span>$T<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
-  <span style="color:#66d9ef">fi</span>
-
-<span style="color:#66d9ef">else</span>
-  echo <span style="color:#e6db74">&#34;Could not extract info for </span>$1<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
-<span style="color:#66d9ef">fi</span>
-</code></pre></div><p>Then I applied this script for each file.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -iname <span style="color:#e6db74">&#39;*.jpg&#39;</span> -exec ./exifdata.sh <span style="color:#e6db74">&#34;{}&#34;</span> <span style="color:#ae81ff">\;</span> &gt; complete.sh
-</code></pre></div><p>This created a large file which contained directory creation and file moving commands.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>set -euo pipefail
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>BASE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../sorted&#34;</span>
+</span></span><span style="display:flex;"><span>T<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>exiv2 <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> 2&gt;/dev/null | tr <span style="color:#e6db74">&#39;\0&#39;</span> <span style="color:#e6db74">&#39;\n&#39;</span> | grep <span style="color:#e6db74">&#39;Image timestamp&#39;</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f 4<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>	YEAR<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 1<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>	MONTH<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;</span>$T<span style="color:#e6db74">&#34;</span> | cut -d <span style="color:#e6db74">&#39;:&#39;</span> -f 2<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$YEAR<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> -a <span style="color:#ae81ff">\(</span> -n <span style="color:#e6db74">&#34;</span>$MONTH<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\)</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;mkdir -p </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;mv -i \&#34;</span>$1<span style="color:#e6db74">\&#34; </span>$BASE<span style="color:#e6db74">/</span>$YEAR<span style="color:#e6db74">/</span>$MONTH<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Could not parse date for </span>$1<span style="color:#e6db74"> : </span>$T<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Could not extract info for </span>$1<span style="color:#e6db74">&#34;</span> &gt; /dev/stderr
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><p>Then I applied this script for each file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -iname <span style="color:#e6db74">&#39;*.jpg&#39;</span> -exec ./exifdata.sh <span style="color:#e6db74">&#34;{}&#34;</span> <span style="color:#ae81ff">\;</span> &gt; complete.sh
+</span></span></code></pre></div><p>This created a large file which contained directory creation and file moving commands.
 But obviously, a lot of directory creation commands are duplicates, because a bunch of
 photos are taken in the same year and same month. So instead of executing this whole
 script, I extracted only <code>mkdir</code> commands sorted and removed duplicates like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep mkdir complete.sh | sort | uniq &gt; dirs.sh
-grep -v mkdir complete.sh &gt; move.sh
-</code></pre></div><p>The final step is to review and execute these two files. First the <code>dirs.sh</code> script
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep mkdir complete.sh | sort | uniq &gt; dirs.sh
+</span></span><span style="display:flex;"><span>grep -v mkdir complete.sh &gt; move.sh
+</span></span></code></pre></div><p>The final step is to review and execute these two files. First the <code>dirs.sh</code> script
 creates the required directory structure in a directory that is one level above where all
 the files reside and the script is being run. The second one performs the move operation
 on the files. For file moving step I included the <code>-n</code> parameter which prevents file
@@ -395,7 +364,7 @@ with others.</p>
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -450,7 +419,7 @@ with others.</p>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
-    &copy;  Andrius Miasnikovas 2020 
+    &copy;  Andrius Miasnikovas 2022 
   </a>
     <div>
 

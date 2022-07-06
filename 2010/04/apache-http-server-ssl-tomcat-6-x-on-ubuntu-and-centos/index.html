@@ -6,7 +6,7 @@
     
     <title>Blog  | Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,22 +26,19 @@
     
     
     <meta property="og:title" content="Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS" />
-<meta property="og:description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to." />
+<meta property="og:description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/" />
+<meta property="og:url" content="https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-04-25T00:00:00+00:00" />
 <meta property="article:modified_time" content="2010-04-25T00:00:00+00:00" />
+
 <meta itemprop="name" content="Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS">
-<meta itemprop="description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.">
-<meta itemprop="datePublished" content="2010-04-25T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2010-04-25T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1516">
-
-
-
+<meta itemprop="description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to."><meta itemprop="datePublished" content="2010-04-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2010-04-25T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1520">
 <meta itemprop="keywords" content="apache,httpd,java,linux,server,tomcat,virtualization," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS"/>
-<meta name="twitter:description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to."/>
+<meta name="twitter:description" content="The Environment From time to time I need to do some Apache httpd &#43; Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to."/>
 
       
 <script type="application/javascript">
@@ -133,34 +130,6 @@ if (!doNotTrack) {
         POSTS
       </aside>
       
-
-
-
-
-  <div id="sharing" class="mt3">
-
-    
-    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/" class="facebook no-underline" aria-label="share on Facebook">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
-
-    </a>
-
-    
-    
-    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/&amp;text=Apache%20HTTP%20server%20%28SSL%29%20&#43;%20Tomcat%206.x%20on%20Ubuntu%20and%20CentOS" class="twitter no-underline" aria-label="share on Twitter">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-    </a>
-
-    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/&amp;title=Apache%20HTTP%20server%20%28SSL%29%20&#43;%20Tomcat%206.x%20on%20Ubuntu%20and%20CentOS" class="linkedin no-underline" aria-label="share on LinkedIn">
-      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-    </a>
-  </div>
-
       <h1 class="f1 athelas mt3 mb1">Apache HTTP server (SSL) &#43; Tomcat 6.x on Ubuntu and CentOS</h1>
       
       <p class="tracked">
@@ -179,13 +148,16 @@ if (!doNotTrack) {
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l"><h3 id="the-environment">The Environment</h3>
 <p>From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&rsquo;re still experimenting it&rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&rsquo;m using the free <!-- raw HTML omitted -->VMware player<!-- raw HTML omitted --> to run virtual appliances, a list of which can be found on <!-- raw HTML omitted -->VMware page<!-- raw HTML omitted -->. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to. My preferred versions are the Debian based <!-- raw HTML omitted -->Ubuntu 9.04<!-- raw HTML omitted --> server and the <!-- raw HTML omitted -->CentOS<!-- raw HTML omitted --> which is a community-supported OS based on Red Hat Enterprise Linux. Sometimes you get a pre-installed server for development and you&rsquo;re not sure what kind of Linux flavor is on it. Usually a simple <em>uname -a</em> helps, but sometimes it spits out something vague like</p>
-<pre><code class="language-console" data-lang="console">Linux someserver 2.6.16.27-0.9-smp #1 SMP Tue Feb 13 09:35:18 UTC 2007 i686 i686 i386 GNU/Linux</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>Linux someserver 2.6.16.27-0.9-smp #1 SMP Tue Feb 13 09:35:18 UTC 2007 i686 i686 i386 GNU/Linux
+</span></span></code></pre></div>
 <p>This doesn&rsquo;t really tell you a whole lot about the distribution. What I found is that in these cases you can issue a command</p>
-<pre><code class="language-console" data-lang="console">$ cat /etc/*-release</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ cat /etc/*-release
+</span></span></code></pre></div>
 <p>and you&rsquo;ll get your answer in the form similar to</p>
-<pre><code class="language-console" data-lang="console">LSB_VERSION=&#34;core-2.0-noarch:core-3.0-noarch:core-2.0-ia32:core-3.0-ia32&#34;
-SUSE Linux Enterprise Server 10 (i586)
-VERSION = 10</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>LSB_VERSION=&#34;core-2.0-noarch:core-3.0-noarch:core-2.0-ia32:core-3.0-ia32&#34;
+</span></span><span style="display:flex;"><span>SUSE Linux Enterprise Server 10 (i586)
+</span></span><span style="display:flex;"><span>VERSION = 10
+</span></span></code></pre></div>
 <p>This is just an example of a server response. The following setup instructions are targeted towards the Ubuntu and CentOS servers.</p>
 <h3 id="installing-apache-http-server">Installing Apache HTTP Server</h3>
 <p>When installing the precompiled version of Apache httpd on Ubuntu there are a few versions to choose from:</p>
@@ -196,83 +168,93 @@ VERSION = 10</code></pre>
 <li>apache2-mpm-event</li>
 </ul>
 <p>Each version has been given a different set of parameters when compiling and produced quite different versions of the server. Which one to use is a completely different topic and in the end you might decide that it&rsquo;s better to compile it yourself for the production. Being on the safe side we&rsquo;ll choose the one that is not so speedy, but is considered to be more stable.</p>
-<pre><code class="language-console" data-lang="console"># apt-get install apache2-mpm-prefork</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># apt-get install apache2-mpm-prefork
+</span></span></code></pre></div>
 <p>If you&rsquo;re using the CentOS there is no such choice of the Apache HTTP server, at least I&rsquo;m not aware of it. All you need to do to install it is issue</p>
-<pre><code class="language-console" data-lang="console"># yum groupinstall &#39;Web Server&#39;</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># yum groupinstall <span style="color:#e6db74">&#39;Web Server&#39;</span>
+</span></span></code></pre></div>
 <p>After sucessful installation take a look at the configuration directory structure on the Ubuntu server.</p>
-<pre><code class="language-console" data-lang="console">$ tree /etc/apache2/
-.
-|-- apache2.conf
-|-- conf.d
-|   |-- charset
-|   `-- security
-|-- envvars
-|-- httpd.conf
-|-- mods-available
-|   |-- actions.load
-...
-|   `-- vhost_alias.load
-|-- mods-enabled
-|   |-- alias.load -&gt; ../mods-available/alias.load
-...
-|   `-- status.load -&gt; ../mods-available/status.load
-|-- ports.conf
-|-- sites-available
-|   |-- default
-|   `-- default-ssl
-|-- sites-enabled
-    |-- 000-default -&gt; ../sites-available/default
-    `-- 001-default-ssl -&gt; ../sites-available/default-ssl</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ tree /etc/apache2/
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>|-- apache2.conf
+</span></span><span style="display:flex;"><span>|-- conf.d
+</span></span><span style="display:flex;"><span>|   |-- charset
+</span></span><span style="display:flex;"><span>|   `-- security
+</span></span><span style="display:flex;"><span>|-- envvars
+</span></span><span style="display:flex;"><span>|-- httpd.conf
+</span></span><span style="display:flex;"><span>|-- mods-available
+</span></span><span style="display:flex;"><span>|   |-- actions.load
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>|   `-- vhost_alias.load
+</span></span><span style="display:flex;"><span>|-- mods-enabled
+</span></span><span style="display:flex;"><span>|   |-- alias.load -&gt; ../mods-available/alias.load
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>|   `-- status.load -&gt; ../mods-available/status.load
+</span></span><span style="display:flex;"><span>|-- ports.conf
+</span></span><span style="display:flex;"><span>|-- sites-available
+</span></span><span style="display:flex;"><span>|   |-- default
+</span></span><span style="display:flex;"><span>|   `-- default-ssl
+</span></span><span style="display:flex;"><span>|-- sites-enabled
+</span></span><span style="display:flex;"><span>    |-- 000-default -&gt; ../sites-available/default
+</span></span><span style="display:flex;"><span>    `-- 001-default-ssl -&gt; ../sites-available/default-ssl
+</span></span></code></pre></div>
 <p>This looks quite different compared to the Apache directory structure on CentOS. First of all the directory is not named apache2 like on Ubuntu.</p>
-<pre><code class="language-console" data-lang="console">$ tree /etc/httpd
-.
-|-- conf
-|   |-- httpd.conf
-|   `-- magic
-|-- conf.d
-|   |-- README
-|   |-- manual.conf
-|   |-- perl.conf
-|   |-- php.conf
-|   |-- proxy_ajp.conf
-|   |-- python.conf
-|   |-- squid.conf
-|   |-- ssl.conf
-|   |-- webalizer.conf
-|   `-- welcome.conf
-|-- logs -&gt; ../../var/log/httpd
-|-- modules -&gt; ../../usr/lib/httpd/modules
-`-- run -&gt; ../../var/run</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>$ tree /etc/httpd
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>|-- conf
+</span></span><span style="display:flex;"><span>|   |-- httpd.conf
+</span></span><span style="display:flex;"><span>|   `-- magic
+</span></span><span style="display:flex;"><span>|-- conf.d
+</span></span><span style="display:flex;"><span>|   |-- README
+</span></span><span style="display:flex;"><span>|   |-- manual.conf
+</span></span><span style="display:flex;"><span>|   |-- perl.conf
+</span></span><span style="display:flex;"><span>|   |-- php.conf
+</span></span><span style="display:flex;"><span>|   |-- proxy_ajp.conf
+</span></span><span style="display:flex;"><span>|   |-- python.conf
+</span></span><span style="display:flex;"><span>|   |-- squid.conf
+</span></span><span style="display:flex;"><span>|   |-- ssl.conf
+</span></span><span style="display:flex;"><span>|   |-- webalizer.conf
+</span></span><span style="display:flex;"><span>|   `-- welcome.conf
+</span></span><span style="display:flex;"><span>|-- logs -&gt; ../../var/log/httpd
+</span></span><span style="display:flex;"><span>|-- modules -&gt; ../../usr/lib/httpd/modules
+</span></span><span style="display:flex;"><span>`-- run -&gt; ../../var/run
+</span></span></code></pre></div>
 <p>You can start/stop Apache with the init scripts /etc/init.d/apache2 and <em>/etc/init.d/httpd</em> respectively for the Ubuntu and the CentOS. Take note that on Ubuntu <em>httpd.conf</em> is not the main configuration file for Apache server, it&rsquo;s the <em>/etc/apache2/apache2.conf</em>.</p>
 <h3 id="configuring-ssl">Configuring SSL</h3>
 <p>Loading Apache modules in Ubuntu is easy, you just create a link in <em>mods-enabled</em> directory to a configuration snippet of the required module in the <em>mods-available</em> directory. In our case we need the ssl module.</p>
-<pre><code class="language-console" data-lang="console"># ln -s /etc/apache2/mods-available/ssl.load /etc/apache2/mods-enabled/
-# ln -s /etc/apache2/mods-available/ssl.conf /etc/apache2/mods-enabled/</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># ln -s /etc/apache2/mods-available/ssl.load /etc/apache2/mods-enabled/
+</span></span><span style="display:flex;"><span># ln -s /etc/apache2/mods-available/ssl.conf /etc/apache2/mods-enabled/
+</span></span></code></pre></div>
 <p>This will load the ssl module and provide some default parameters for the module, but we also need another link to a so-called default ssl site which is yet another configuration snippet file.</p>
-<pre><code class="language-console" data-lang="console"># ln -s /etc/apache2/sites-available/default-ssl /etc/apache2/sites-enabled/001-default-ssl</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># ln -s /etc/apache2/sites-available/default-ssl /etc/apache2/sites-enabled/001-default-ssl
+</span></span></code></pre></div>
 <p>Remember to restart Apache after such changes to configuration like module loading. If you&rsquo;re satisfied with the defaults then you&rsquo;re done, the server should be accessible via https protocol. It so happens that with CentOS the setup is even easier because SSL is preconfigured and setup for you right out of the box, so you don&rsquo;t need to do any additional configuration.</p>
 <p>Though this setup will work fine you may wish to generate a new certificate for the server anyway. One of the reasons that come to mind is the <em>Common Name</em> value in the certificate which should be the same as the hostname you&rsquo;re using to access the server. Since this is a development server we&rsquo;ll generate a self-signed certificate which means that the browser will not fully trust our server by default, but personally I don&rsquo;t consider this a big problem for development because one can just choose to trust the generated certificate inside the browser. To generate our certificate simply use the following command</p>
-<pre><code class="language-console" data-lang="console"># openssl req -new -x509 -days 365 -sha1 -newkey rsa:1024 -nodes \
--keyout server.pem -out server.crt -subj&#39;/O=Company/OU=Department/CN=vap.lan&#39;</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># openssl req -new -x509 -days <span style="color:#ae81ff">365</span> -sha1 -newkey rsa:1024 -nodes <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-keyout server.pem -out server.crt -subj&#39;/O=Company/OU=Department/CN=vap.lan&#39;
+</span></span></code></pre></div>
 <p>This outputs the new private key as <em>server.pem</em> and the certificate as <em>server.crt</em> in the current directory. With these options the certificate will be valid for 365 days, you can change this value if you need to. Also remember to replace the <em>vap.lan</em> part of the command with the hostname of your server. Where you actually place the generated files is really up to you, but I prefer to keep them close to Apache&rsquo;s configuration like <em>/etc/apache2/ssl.</em> In CentOS after installing Apache you&rsquo;ll find automatically generated certificate (<em>localhost.crt)</em> and private key (<em>localhost.key)</em> files placed in <em>/etc/pki/tls/certs/</em> and <em>/etc/pki/tls/private/</em> respectively. In Ubuntu the certificate resides in <em>/etc/ssl/certs/</em>, the private key in <em>/etc/ssl/private/</em> and are named <em>ssl-cert-snakeoil.pem</em> and <em>ssl-cert-snakeoil.key</em>.</p>
 <p>Now that you&rsquo;re equiped with the knowledge of the location of these files you may choose to change this or leave it as it is. Two Apache directives are used for this purpose <em>SSLCertificateFile</em> and <em>SSLCertificateKeyFile</em>. In Ubuntu these directives can be found in the default-ssl site configuration mentioned earlier and in CentOS look for them in <em>/etc/httpd/conf.d/ssl.conf</em> file.</p>
 <p>Another thing to mention when configuring SSL remember to check the directives <em>SSLProtocol</em> and <em>SSLCipherSuite</em>. They define what protocols are allowed for the secure socket layer and the set of ciphers that can be used. There are usually a few of them defined since these are negotiable between the server and the browser when establishing connection. It&rsquo;s actually possible to configure the HTTPS connection so that no encryption would be used when sending the data, so make sure you set these setting to something reasonable. I generally use the following.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apache" data-lang="apache">SSLProtocol -all +TLSv1 +SSLv3
-SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>SSLProtocol -all +TLSv1 +SSLv3
+</span></span><span style="display:flex;"><span>SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM</span></span></code></pre></div>
 <p>This uses only the newer protocols and doesn&rsquo;t allow the cipher suite which would send the data as plain text. When selecting the cipher suite also remember that the more secure suite you choose to use, the more expensive becomes the operation of establishing a connection, this applies for both sides.</p>
 <h3 id="tomcat-via-ajp-proxy">Tomcat via AJP Proxy</h3>
 <p>First we&rsquo;ll install Java. In Ubuntu this is done by issuing</p>
-<pre><code class="language-console" data-lang="console"># apt-get install sun-java6-jdk</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># apt-get install sun-java6-jdk
+</span></span></code></pre></div>
 <p>as for the CentOS simply use this</p>
-<pre><code class="language-console" data-lang="console"># yum install java</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># yum install java
+</span></span></code></pre></div>
 <p>When the install is done grab the <!-- raw HTML omitted -->Tomcat 6.x Core binary<!-- raw HTML omitted --> and extract it to a directory of your liking like <em>/home/joe/tomcat6</em>. Even though you can install Tomcat6 using <em>apt-get</em> on Ubuntu I still prefer downloading a copy from the Tomcat website (sometimes one needs to have more than one version of Tomcat). Starting Tomcat is really simple just execute the <em>bin/startup.sh</em> file in the directory where you chose to extract it. Next we&rsquo;ll load a couple of modules for Apache so that it knows how to forward the requests to Tomcat. In Ubuntu again this is done using the links</p>
-<pre><code class="language-console" data-lang="console"># ln -s /etc/apache2/mods-available/proxy.load /etc/apache2/mods-enabled/
-# ln -s /etc/apache2/mods-available/proxy.conf /etc/apache2/mods-enabled/
-# ln -s /etc/apache2/mods-available/proxy_ajp.load /etc/apache2/mods-enabled/</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># ln -s /etc/apache2/mods-available/proxy.load /etc/apache2/mods-enabled/
+</span></span><span style="display:flex;"><span># ln -s /etc/apache2/mods-available/proxy.conf /etc/apache2/mods-enabled/
+</span></span><span style="display:flex;"><span># ln -s /etc/apache2/mods-available/proxy_ajp.load /etc/apache2/mods-enabled/
+</span></span></code></pre></div>
 <p>and in CentOS we don&rsquo;t need to change anything as the module is already loaded for us in <em>/etc/httpd/conf.d/proxy_ajp.conf</em> file. What we&rsquo;ll need to do is add a line to this file and in Ubuntu&rsquo;s case the <em>/etc/apache2/mods-enabled/proxy.conf</em> file</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apache" data-lang="apache">ProxyPass / ajp://localhost:8009/</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>ProxyPass / ajp://localhost:8009/</span></span></code></pre></div>
 <p>This will tell Apache to forward all requests that come to the sever&rsquo;s root or any subdirectory to Tomcat which is listening for them on the default port 8009. The communication between Apache server and Tomcat is done via AJP protocol and that why we need to explicitly specify this, because it&rsquo;s also possible to use http, ftp and other protocols to proxy the requests to other back end servers. I you need to change the Tomcat&rsquo;s AJP port for some reason open the <em>tomcat/conf/server.xml</em> file and edit the connector line where it says something like</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Connector</span> <span style="color:#a6e22e">port=</span><span style="color:#e6db74">&#34;8009&#34;</span> <span style="color:#a6e22e">protocol=</span><span style="color:#e6db74">&#34;AJP/1.3&#34;</span> <span style="color:#960050;background-color:#1e0010">...</span><span style="color:#f92672">&gt;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;Connector</span> <span style="color:#a6e22e">port=</span><span style="color:#e6db74">&#34;8009&#34;</span> <span style="color:#a6e22e">protocol=</span><span style="color:#e6db74">&#34;AJP/1.3&#34;</span> <span style="color:#960050;background-color:#1e0010">...</span><span style="color:#f92672">&gt;</span></span></span></code></pre></div>
 <p>I always try to keep it short, but this was the bare minimum that I thought was necessary to write about the topic. I&rsquo;ll probably continue on the Apache configuration topic in the next post as there are still some things that are left unsaid when configuring a server with an Apache front-end and Tomcat back-end. If you have something to say about my way of doing things or have a question don&rsquo;t hesitate to ask.</p>
 <ul class="pa0">
   
@@ -309,7 +291,7 @@ SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM</code></pre></div>
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -384,7 +366,7 @@ SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM</code></pre></div>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
-    &copy;  Andrius Miasnikovas 2020 
+    &copy;  Andrius Miasnikovas 2022 
   </a>
     <div>
 

@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Tue, 18 May 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/x11/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 18 May 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/x11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux GUI on Your Windows Desktop Through the Magic of Xming</title>
       <link>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</link>
       <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
-      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home page and see the screenshots if it seems difficult to wrap your mind around the concept.</description>
     </item>
     
   </channel>

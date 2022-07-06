@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Thu, 21 Oct 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/security/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 21 Oct 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Private Key PFX to/from JKS Conversion Using OpenSSL and Jetty</title>
       <link>https://miasnikovas.lt/2010/10/private-key-pfx-jks-conversion-using-openssl-and-jetty/</link>
@@ -28,7 +24,7 @@ When dealing with PKI based application security, one usually encounters differe
       <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</guid>
-      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Securityspecifically their resources downloadpage. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
+      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Security specifically their resources download page. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
     </item>
     
     <item>
@@ -37,7 +33,7 @@ When dealing with PKI based application security, one usually encounters differe
       <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</guid>
-      <description>If you&amp;rsquo;re using Google Chrome browserfrom the so-called developer channel(i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
+      <description>If you&amp;rsquo;re using Google Chrome browser from the so-called developer channel (i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
     </item>
     
   </channel>

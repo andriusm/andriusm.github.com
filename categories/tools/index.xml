@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Thu, 31 Jan 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/tools/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 31 Jan 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Tip: Easy Time Lapse Videos with FFmpeg</title>
       <link>https://miasnikovas.lt/2013/01/quick-tip-easy-time-lapse-videos-with-ffmpeg/</link>
@@ -54,7 +50,7 @@
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</guid>
-      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&amp;rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.</description>
+      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small files so you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenter and I suggest you check it out if you don&amp;rsquo;t know it yet.</description>
     </item>
     
     <item>
@@ -72,7 +68,7 @@
       <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
-      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101 and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
     </item>
     
     <item>
@@ -81,7 +77,7 @@
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
-      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorer by Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
     </item>
     
     <item>
@@ -90,7 +86,7 @@
       <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
-      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home page and see the screenshots if it seems difficult to wrap your mind around the concept.</description>
     </item>
     
     <item>
@@ -99,7 +95,7 @@
       <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
-      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous post the next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
     </item>
     
     <item>
@@ -127,7 +123,7 @@
       
       <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
       <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
-The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+The role of the media player or media center was quickly filled by a program called Boxee which is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
     </item>
     
     <item>

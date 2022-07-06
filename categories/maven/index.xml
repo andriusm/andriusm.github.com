@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Fri, 26 Feb 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/maven/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 26 Feb 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/maven/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maven3 alpha and CLI plugin for Maven2</title>
       <link>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</link>
       <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</guid>
-      <description>Today I tried out the new Maven-3.0-alpha-6on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
+      <description>Today I tried out the new Maven-3.0-alpha-6 on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
     </item>
     
     <item>
@@ -38,7 +34,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Expected ro
       <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/02/maven-command-line-tips/</guid>
-      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Mavenparameters in case I forget anything.
+      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Maven parameters in case I forget anything.
 This should be run from a parent POM&amp;rsquo;s directory. It lets you view the POM file that would be in effect if you were building the project. The result is a composite POM containing all your child POMs that you defined as modules in the parent POM.</description>
     </item>
     

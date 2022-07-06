@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Fri, 26 Feb 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 10 Nov 2009 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firefox extension compatibility</title>
       <link>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</link>
       <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</guid>
-      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspidertests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
+      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspider tests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
     </item>
     
   </channel>

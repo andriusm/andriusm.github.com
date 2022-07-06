@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 07 Jan 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 21 Oct 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Private Key PFX to/from JKS Conversion Using OpenSSL and Jetty</title>
       <link>https://miasnikovas.lt/2010/10/private-key-pfx-jks-conversion-using-openssl-and-jetty/</link>
@@ -28,9 +24,9 @@ When dealing with PKI based application security, one usually encounters differe
       <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</guid>
-      <description>Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
+      <description>Recently I watched this webinar about Tomcat 7 presented by Mark Thomas and would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
 Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
- asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.</description>
+asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse The effective deployment descriptor (web.</description>
     </item>
     
     <item>
@@ -39,7 +35,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
-      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101 and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
     </item>
     
     <item>
@@ -48,7 +44,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
-      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
     </item>
     
     <item>
@@ -57,7 +53,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
-      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Spring beans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
     </item>
     
     <item>
@@ -66,7 +62,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
-      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Java out there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Java a try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
     </item>
     
     <item>

@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Tue, 15 Feb 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Feb 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automatic Web Server Monitoring</title>
       <link>https://miasnikovas.lt/2011/02/automatic-web-server-monitoring/</link>
@@ -27,7 +23,7 @@
       <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
-      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home page and see the screenshots if it seems difficult to wrap your mind around the concept.</description>
     </item>
     
     <item>
@@ -36,7 +32,7 @@
       <pubDate>Mon, 17 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/compiling-apache-httpd-from-sources/</guid>
-      <description>This is yet another post on Apache httpd server installation and configuration. I say another because I&amp;rsquo;ve already written about how to install the packaged version of Apachefor two specific linux distros. This time I&amp;rsquo;ll quickly jot down how I configured and compiled Apache for my needs. There are a few reasons to do this. One of the more important ones being to have a newer version of Apache. It seems that prepackaged Apache versions for some linux distributions can be quite out of date.</description>
+      <description>This is yet another post on Apache httpd server installation and configuration. I say another because I&amp;rsquo;ve already written about how to install the packaged version of Apache for two specific linux distros. This time I&amp;rsquo;ll quickly jot down how I configured and compiled Apache for my needs. There are a few reasons to do this. One of the more important ones being to have a newer version of Apache. It seems that prepackaged Apache versions for some linux distributions can be quite out of date.</description>
     </item>
     
     <item>
@@ -45,7 +41,7 @@
       <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
-      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
     </item>
     
   </channel>

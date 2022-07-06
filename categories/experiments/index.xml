@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 28 Mar 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/experiments/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 28 Mar 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/experiments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Experimenting with WebGL</title>
       <link>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</link>
       <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</guid>
-      <description>I was experimenting with WebGLthe other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logoof the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
+      <description>I was experimenting with WebGL the other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logo of the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
     </item>
     
     <item>

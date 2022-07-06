@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 14 Jul 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/free/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 14 Jul 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/free/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fun System Tool for Process Analysis and Debugging</title>
       <link>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</link>
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
-      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorer by Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
     </item>
     
     <item>

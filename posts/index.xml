@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing photos using CLI tools</title>
       <link>https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/</link>
@@ -19,7 +15,7 @@
       
       <guid>https://miasnikovas.lt/2020/03/managing-photos-using-cli-tools/</guid>
       <description>A little while ago I finally got around to bringing order to the mess called my photo library. They were scattered across multiple machines, disks and SD cards. First thing&amp;rsquo;s first - I moved all files to one place so it&amp;rsquo;s easier to work with. In retrospect, I&amp;rsquo;m glad I did this clean up on my nVME disk - this saved me quite a bit of time.
-DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&#39;t intend when used incorrectly.</description>
+DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&amp;#39;t intend when used incorrectly.</description>
     </item>
     
     <item>
@@ -82,7 +78,7 @@ DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&
       <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2012/03/experimenting-with-webgl/</guid>
-      <description>I was experimenting with WebGLthe other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logoof the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
+      <description>I was experimenting with WebGL the other day and it&amp;rsquo;s pretty damn cool. Here&amp;rsquo;s a spinning 3d logo of the company I currently work for as an attempt at animating something in 3D. If you&amp;rsquo;re not in the loop, WebGL is a JavasSript API supported by modern browsers that allows interactive 3D graphics rendering in a browser&amp;rsquo;s window, specifically the canvas tag. The graphics rendering is GPU accelerated which means excellent performance (as long as you&amp;rsquo;re using it wisely).</description>
     </item>
     
     <item>
@@ -136,7 +132,7 @@ DISCLAIMER Some of the tools discussed here can delete/overwrite files you didn&
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2011/01/modifying-treepie-to-display-file-count/</guid>
-      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small filesso you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenterand I suggest you check it out if you don&amp;rsquo;t know it yet. The concept is simple, but the consequences are immense – the program indexes all the files and folders on all volumes connected to your computer i.</description>
+      <description>I&amp;rsquo;ve already talked a bit about managing large amounts of files in my post Disk efficiency when dealing with tons of small files so you can kind of tell that I&amp;rsquo;m a proponent of having as little files on disk as possible (but not less). In my everyday tasks I&amp;rsquo;m using this program called Everything by David Carpenter and I suggest you check it out if you don&amp;rsquo;t know it yet.</description>
     </item>
     
     <item>
@@ -164,9 +160,9 @@ When dealing with PKI based application security, one usually encounters differe
       <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/</guid>
-      <description>Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
+      <description>Recently I watched this webinar about Tomcat 7 presented by Mark Thomas and would like to share my thoughts on the subject and what I&amp;rsquo;ve learned.
 Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
- asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.</description>
+asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse The effective deployment descriptor (web.</description>
     </item>
     
     <item>
@@ -175,7 +171,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/cis-security-benchmarks/</guid>
-      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Securityspecifically their resources downloadpage. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
+      <description>This one is for the security conscious. If you are performing a hardening procedure for your OS, application/web server, other applications you might wonder how are other people doing that and where can you draw the line by saying that it is secure-enough. A great place of resource in such a case is the CIS Security specifically their resources download page. There you&amp;rsquo;ll find a form that allows you to choose and download a whole bunch of security benchmarks for various products like Apache HTTP server, Tomcat, Apple OSX, FreeBSD, Windows OSes, Firefox, MySQL, Oracle and various others.</description>
     </item>
     
     <item>
@@ -184,7 +180,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/improving-architecture-with-structure-101/</guid>
-      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
+      <description>I want to share with you yet another tool this one will help you with the architecture development. The tool is called Structure 101 and you can download a trial version here. That&amp;rsquo;s right, this tool is not free, but it does it&amp;rsquo;s job really well and at the time I can&amp;rsquo;t think of a free alternative that would be just as good. If you do know any good alternative, please, do leave a comment.</description>
     </item>
     
     <item>
@@ -202,7 +198,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/07/fun-system-tool-for-process-analysis-and-debugging/</guid>
-      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorerby Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
+      <description>Over time I used quite an arsenal of various small utilities and tools for Windows that do some specific task. Some of them are outdated, no longer maintained, others I simply forgot because they were rarely used. One tool that I&amp;rsquo;ve been using for a while now is Process Explorer by Mark Russinovich who created many great tools to the Windows platform. If you don&amp;rsquo;t know this tool it&amp;rsquo;s a replacement for the Task Manager with many great features for monitoring processes, file handles, etc.</description>
     </item>
     
     <item>
@@ -211,7 +207,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</guid>
-      <description>If you&amp;rsquo;re using Google Chrome browserfrom the so-called developer channel(i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
+      <description>If you&amp;rsquo;re using Google Chrome browser from the so-called developer channel (i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
     </item>
     
     <item>
@@ -220,7 +216,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Tue, 18 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/linux-gui-on-your-windows-desktop-through-the-magic-of-xming/</guid>
-      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home pageand see the screenshots if it seems difficult to wrap your mind around the concept.</description>
+      <description>I decided to write down a short introduction to Xming. For those not in the know Xming is an implementation of the X Window System for Microsoft Windows operating systems. This means that you can install this software on Windows, run a remote linux program that requires a graphical interface and see the result on your local computer. Visit the Xming home page and see the screenshots if it seems difficult to wrap your mind around the concept.</description>
     </item>
     
     <item>
@@ -229,7 +225,7 @@ Servlet 3.0 The most prominent change is the support of Servlet 3.0 specificatio
       <pubDate>Mon, 17 May 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/05/compiling-apache-httpd-from-sources/</guid>
-      <description>This is yet another post on Apache httpd server installation and configuration. I say another because I&amp;rsquo;ve already written about how to install the packaged version of Apachefor two specific linux distros. This time I&amp;rsquo;ll quickly jot down how I configured and compiled Apache for my needs. There are a few reasons to do this. One of the more important ones being to have a newer version of Apache. It seems that prepackaged Apache versions for some linux distributions can be quite out of date.</description>
+      <description>This is yet another post on Apache httpd server installation and configuration. I say another because I&amp;rsquo;ve already written about how to install the packaged version of Apache for two specific linux distros. This time I&amp;rsquo;ll quickly jot down how I configured and compiled Apache for my needs. There are a few reasons to do this. One of the more important ones being to have a newer version of Apache. It seems that prepackaged Apache versions for some linux distributions can be quite out of date.</description>
     </item>
     
     <item>
@@ -248,7 +244,7 @@ I&amp;rsquo;ve found some really cool free online magazines about BSD operating 
       <pubDate>Sun, 25 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/apache-http-server-ssl-tomcat-6-x-on-ubuntu-and-centos/</guid>
-      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware playerto run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
+      <description>The Environment From time to time I need to do some Apache httpd + Tomcat installations on Linux servers and usually they come in different flavors. While you&amp;rsquo;re still experimenting it&amp;rsquo;s a good idea to use a pre-installed Linux on a virtual machine. I&amp;rsquo;m using the free VMware player to run virtual appliances, a list of which can be found on VMware page. Personally I like the clean Linux installations without any extras, this way you can install anything you need and create multiple virtual machines of the same Linux flavor with different purposes if you need to.</description>
     </item>
     
     <item>
@@ -266,7 +262,7 @@ I&amp;rsquo;ve found some really cool free online magazines about BSD operating 
       <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/04/creating-thumbnails-from-photos-with-python-pil/</guid>
-      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PILand install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
+      <description>This time around I want to share with you a little Python library I found called PIL. If you&amp;rsquo;re a Python developer chances are you already know of it, but I use Python only from time to time, usually to automate some tasks so I was very excited to come across such a library. First thing&amp;rsquo;s first, download PIL and install it. I&amp;rsquo;m using it on a Windows platform so I used the packaged binary version, but you can get the source code and use it on any platform that supports Python.</description>
     </item>
     
     <item>
@@ -275,7 +271,7 @@ I&amp;rsquo;ve found some really cool free online magazines about BSD operating 
       <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/03/task-automation-and-ultimate-control-over-windows/</guid>
-      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous postthe next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
+      <description>This post is a continuation on my quest for applications that help me do more by doing less. After choosing and installing an application launcher mentioned in my previous post the next thing I wanted to do is automate a few tasks that I do several times a day. Each one takes a while and throughout the day this adds up. The worst thing is that sometimes another person distracts you from what you were doing and then it takes a while to get back into it.</description>
     </item>
     
     <item>
@@ -302,7 +298,7 @@ I&amp;rsquo;ve found some really cool free online magazines about BSD operating 
       <pubDate>Fri, 05 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/03/taking-over-the-spring-context-from-a-neighbouring-application-on-tomcat/</guid>
-      <description>A little while ago I was developing a small application from which I wanted to reuse the Springbeans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
+      <description>A little while ago I was developing a small application from which I wanted to reuse the Spring beans that are defined in a context of another application. I thought this might be useful for someone so here&amp;rsquo;s a short explanation of how I achieved this result. Both applications were deployed on Tomcat 6.0.18, but I don&amp;rsquo;t think that minor version number differences would have much of an impact on the technique.</description>
     </item>
     
     <item>
@@ -320,7 +316,7 @@ I&amp;rsquo;ve found some really cool free online magazines about BSD operating 
       <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/02/maven3-alpha-and-cli-plugin-for-maven2/</guid>
-      <description>Today I tried out the new Maven-3.0-alpha-6on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
+      <description>Today I tried out the new Maven-3.0-alpha-6 on a multi-module project which uses profiles inside POM files and profiles.xml file. The first thing I noticed that Maven3 still uses the .m2 directory for local repository. I kind of thought they would change that, but I guess this is good for backward compatibility. Another thing that immediately strikes you is that Maven became more strict. I was getting warning messages because the POM file wasn&amp;rsquo;t living up to Maven&amp;rsquo;s standards of well defined build script.</description>
     </item>
     
     <item>
@@ -340,7 +336,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Expected ro
       <pubDate>Wed, 24 Feb 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/02/maven-command-line-tips/</guid>
-      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Mavenparameters in case I forget anything.
+      <description>In an ever-growing sea of parameters that one needs to memorize for tens or even hundreds of command-line programs I decided to keep a list of some of the more useful and frequently used Maven parameters in case I forget anything.
 This should be run from a parent POM&amp;rsquo;s directory. It lets you view the POM file that would be in effect if you were building the project. The result is a composite POM containing all your child POMs that you defined as modules in the parent POM.</description>
     </item>
     
@@ -351,7 +347,7 @@ This should be run from a parent POM&amp;rsquo;s directory. It lets you view the
       
       <guid>https://miasnikovas.lt/2010/01/internet-tv-and-video-conversion/</guid>
       <description>A little while ago I bought an HDTV and was looking for a nice media player and a conversion tool to help me enjoy it. As I already had paid for the TV, I assumed that free software would be nice. Here&amp;rsquo;s what I found that works for me.
-The role of the media player or media center was quickly filled by a program called Boxeewhich is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
+The role of the media player or media center was quickly filled by a program called Boxee which is generally described as a cross-platform freeware media center and includes features like social networking, lets you view, recommend and rate the videos you watch.</description>
     </item>
     
     <item>
@@ -369,7 +365,7 @@ The role of the media player or media center was quickly filled by a program cal
       <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2009/11/firefox-extension-compatibility/</guid>
-      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspidertests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
+      <description>From time to time I like checking out the bleeding edge version of some software. Firefox is always a good candidate for that, because of the many improvements in performance and features. I downloaded the Firefox 3.7a nightly build from http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/. It&amp;rsquo;s seems pretty stable on my computer and is obviously faster. Sunspider tests confirm my expectations of increased javascript performance which is roughly 40% faster than Firefox 3.5.5 on my machine.</description>
     </item>
     
     <item>
@@ -378,7 +374,7 @@ The role of the media player or media center was quickly filled by a program cal
       <pubDate>Wed, 08 Jul 2009 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2009/07/ssh-with-java/</guid>
-      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Javaout there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Javaa try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
+      <description>Recently I needed to do some server manipulation over the SSH-2 protocol from a Java client program. There are quite a few choices of SSH libraries for Java out there. Usually I prefer BSD license whenever possible, so I thought I&amp;rsquo;ll give Ganymed SSH-2 for Java a try. It turned out to be pretty simple to use. Here&amp;rsquo;s a short example of how to connect to the server using the private key and execute some command.</description>
     </item>
     
     <item>
@@ -389,8 +385,8 @@ The role of the media player or media center was quickly filled by a program cal
       <guid>https://miasnikovas.lt/2008/12/firefox-add-ons/</guid>
       <description>Here I&amp;rsquo;ll just put my most used Firefox add-on list. Actually two lists – one for web development related add-ons and the other for general surfing and enjoying the web.
 Developer&amp;rsquo;s add-ons
- Web Developer Firebug Firecookie YSlow iMacros PageDiff Tamper Data Greasemonkey DOM Inspector InspectThis  Surfing add-ons
- StumbleUpon Delicious Bookmarks Adblock Plus Fire.fm Video DownloadHelper Cooliris Clipmarks Rikaichan Screengrab TwitterFox  There&amp;rsquo;s also this more official list of add-ons for Firefox categorized by the things you do on the web.</description>
+Web Developer Firebug Firecookie YSlow iMacros PageDiff Tamper Data Greasemonkey DOM Inspector InspectThis Surfing add-ons
+StumbleUpon Delicious Bookmarks Adblock Plus Fire.fm Video DownloadHelper Cooliris Clipmarks Rikaichan Screengrab TwitterFox There&amp;rsquo;s also this more official list of add-ons for Firefox categorized by the things you do on the web.</description>
     </item>
     
     <item>

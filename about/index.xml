@@ -6,10 +6,6 @@
     <description>Recent content in About on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Andrius Miasnikovas</copyright>
-    
-	<atom:link href="https://miasnikovas.lt/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Andrius Miasnikovas</copyright><atom:link href="https://miasnikovas.lt/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

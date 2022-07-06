@@ -6,7 +6,7 @@
     
     <title>Blog  | What’s New in Tomcat 7</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,28 +26,25 @@
     
     
     <meta property="og:title" content="What’s New in Tomcat 7" />
-<meta property="og:description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+<meta property="og:description" content="Recently I watched this webinar about Tomcat 7 presented by Mark Thomas and would like to share my thoughts on the subject and what I&rsquo;ve learned.
 Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
- asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web." />
+asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse The effective deployment descriptor (web." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/" />
+<meta property="og:url" content="https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-07-21T00:00:00+00:00" />
 <meta property="article:modified_time" content="2010-07-21T00:00:00+00:00" />
+
 <meta itemprop="name" content="What’s New in Tomcat 7">
-<meta itemprop="description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+<meta itemprop="description" content="Recently I watched this webinar about Tomcat 7 presented by Mark Thomas and would like to share my thoughts on the subject and what I&rsquo;ve learned.
 Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
- asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web.">
-<meta itemprop="datePublished" content="2010-07-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2010-07-21T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="995">
-
-
-
+asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse The effective deployment descriptor (web."><meta itemprop="datePublished" content="2010-07-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2010-07-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="997">
 <meta itemprop="keywords" content="java,jsp,servlet,sever,tomcat," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="What’s New in Tomcat 7"/>
-<meta name="twitter:description" content="Recently I watched this webinar about Tomcat 7presented by Mark Thomasand would like to share my thoughts on the subject and what I&rsquo;ve learned.
+<meta name="twitter:description" content="Recently I watched this webinar about Tomcat 7 presented by Mark Thomas and would like to share my thoughts on the subject and what I&rsquo;ve learned.
 Servlet 3.0 The most prominent change is the support of Servlet 3.0 specification which supports such great features as
- asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse  The effective deployment descriptor (web."/>
+asynchronous servlets – not used by default web-fragment.xml – you can specify parts of the configuration in your libraries which you plan to reuse The effective deployment descriptor (web."/>
 
       
 <script type="application/javascript">
@@ -139,34 +136,6 @@ if (!doNotTrack) {
         POSTS
       </aside>
       
-
-
-
-
-  <div id="sharing" class="mt3">
-
-    
-    <a href="https://www.facebook.com/sharer.php?u=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/" class="facebook no-underline" aria-label="share on Facebook">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
-
-    </a>
-
-    
-    
-    <a href="https://twitter.com/share?url=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/&amp;text=What%e2%80%99s%20New%20in%20Tomcat%207" class="twitter no-underline" aria-label="share on Twitter">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-    </a>
-
-    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://miasnikovas.lt/2010/07/whats-new-in-tomcat-7/&amp;title=What%e2%80%99s%20New%20in%20Tomcat%207" class="linkedin no-underline" aria-label="share on LinkedIn">
-      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-    </a>
-  </div>
-
       <h1 class="f1 athelas mt3 mb1">What’s New in Tomcat 7</h1>
       
       <p class="tracked">
@@ -192,21 +161,21 @@ if (!doNotTrack) {
 </ul>
 <p>The effective deployment descriptor (web.xml) now is the sum total of all the fragment configurations contained in the application&rsquo;s libraries. This means that you need to be more careful when using 3rd party libraries because they can contain some configuration portion that will prevent your application from working like you expected. But to my understanding you can fixate the effective web.xml used and prevent tomcat from scanning all the libraries for configuration fragments. Now deployment descriptors support programmatic configuration i.e. you can decide how to configure an application at startup by considering the environment the server is in and other variables.</p>
 <p>Another interesting thing to note is that before the Servlet 3.0 specification implementation tomcat used two methods of session tracking: cookies and rewriting the URL with the JSESSIONID parameter. The latter in tomcat was mandatory meaning you could not easily switch it off. I actually tried some workarounds, but they produced some side-effects. If anyone knows a proper method to avoid ever seeing the JSESSIONID parameter in Tomcat 6 please let me know. In Tomcat 7 the URL rewriting method is no longer mandatory and a new session tracking method was added based on SSL session. It is more secure, but I believe it needs two-way SSL configured. Don&rsquo;t quote me on this, because I might be wrong about the two-way SSL, will have to check it. While we&rsquo;re at it I can mention that now there&rsquo;s the ability to change the session cookie&rsquo;s default name, domain and path.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;session-config&gt;</span>
-   <span style="color:#f92672">&lt;tracking-mode&gt;</span>COOKIE<span style="color:#f92672">&lt;/tracking-mode&gt;</span>
-<span style="color:#f92672">&lt;/session-config&gt;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;session-config&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;tracking-mode&gt;</span>COOKIE<span style="color:#f92672">&lt;/tracking-mode&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/session-config&gt;</span></span></span></code></pre></div>
 <h3 id="jsp-22">JSP 2.2</h3>
 <p>Not much to talk about other than saying that Tomcat 7 supports it. And maybe worth mentioning that you can now specify the defaults for the content type you&rsquo;re returning and the buffer size. Also there&rsquo;s a nice configuration option  added called <em>error-on-undeclared-namespace</em> which quoting the documentation does the following:</p>
 <blockquote>
 <p>The default behavior when a tag with unknown namespace is used in a JSP page (regular syntax) is to silently ignore it.  If set to true, then an error must be raised during the translation time when an undeclared tag is used in a JSP page.  Disabled (false) by default.</p>
 </blockquote>
 <p>And here&rsquo;s an example of how you would use this option</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;jsp-config&gt;</span>
-    <span style="color:#f92672">&lt;jsp-property-group&gt;</span>
-        <span style="color:#f92672">&lt;url-pattern&gt;</span>*.jsp<span style="color:#f92672">&lt;/url-pattern&gt;</span>
-        <span style="color:#f92672">&lt;error-on-undeclared-namespace&gt;</span>true<span style="color:#f92672">&lt;/error-on-undeclared-namespace&gt;</span>
-    <span style="color:#f92672">&lt;/jsp-property-group&gt;</span>
-<span style="color:#f92672">&lt;/jsp-config&gt;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;jsp-config&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;jsp-property-group&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;url-pattern&gt;</span>*.jsp<span style="color:#f92672">&lt;/url-pattern&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;error-on-undeclared-namespace&gt;</span>true<span style="color:#f92672">&lt;/error-on-undeclared-namespace&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/jsp-property-group&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/jsp-config&gt;</span></span></span></code></pre></div>
 <p>Also note that Tomcat 7 implements EL 2.2 and now is much stricter about the EL specifications, but according to Mark it&rsquo;s unlikely to affect many users unless of course you&rsquo;re doing some kind of hack with it.</p>
 <h3 id="memory-leak-protection">Memory leak protection</h3>
 <p>This is a nice new feature in Tomcat 7 which has been backported to Tomcat 6 and if you&rsquo;re using version 6.0.24 or later, you can enjoy the benefits. It&rsquo;s implemented as a listener which tries to detect and fix the possible memory leaks whenever it can. These are the leak cases that it tries to prevent:</p>
@@ -250,7 +219,7 @@ if (!doNotTrack) {
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -333,7 +302,7 @@ if (!doNotTrack) {
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://miasnikovas.lt/" >
-    &copy;  Andrius Miasnikovas 2020 
+    &copy;  Andrius Miasnikovas 2022 
   </a>
     <div>
 

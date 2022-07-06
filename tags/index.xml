@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CLI</title>
       <link>https://miasnikovas.lt/tags/cli/</link>
@@ -126,15 +122,6 @@
       <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tool</title>
-      <link>https://miasnikovas.lt/tags/tool/</link>
-      <pubDate>Sun, 18 Jul 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://miasnikovas.lt/tags/tool/</guid>
       <description></description>
     </item>
     
@@ -310,15 +297,6 @@
     </item>
     
     <item>
-      <title>image</title>
-      <link>https://miasnikovas.lt/tags/image/</link>
-      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://miasnikovas.lt/tags/image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>images</title>
       <link>https://miasnikovas.lt/tags/images/</link>
       <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
@@ -346,6 +324,15 @@
     </item>
     
     <item>
+      <title>tool</title>
+      <link>https://miasnikovas.lt/tags/tool/</link>
+      <pubDate>Mon, 22 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>launcher</title>
       <link>https://miasnikovas.lt/tags/launcher/</link>
       <pubDate>Sun, 21 Mar 2010 00:00:00 +0000</pubDate>
@@ -369,6 +356,15 @@
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/tags/efficiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image</title>
+      <link>https://miasnikovas.lt/tags/image/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/image/</guid>
       <description></description>
     </item>
     
@@ -414,15 +410,6 @@
       <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/tags/maven/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plugin</title>
-      <link>https://miasnikovas.lt/tags/plugin/</link>
-      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://miasnikovas.lt/tags/plugin/</guid>
       <description></description>
     </item>
     
@@ -477,6 +464,15 @@
       <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin</title>
+      <link>https://miasnikovas.lt/tags/plugin/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://miasnikovas.lt/tags/plugin/</guid>
       <description></description>
     </item>
     

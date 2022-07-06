@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Andrius Miasnikovas</copyright>
-    <lastBuildDate>Mon, 21 Jun 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://miasnikovas.lt/categories/pdf/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Jun 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://miasnikovas.lt/categories/pdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Chrome Integrated PDF Support</title>
       <link>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</link>
       <pubDate>Mon, 21 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>https://miasnikovas.lt/2010/06/google-chrome-integrated-pdf-support/</guid>
-      <description>If you&amp;rsquo;re using Google Chrome browserfrom the so-called developer channel(i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
+      <description>If you&amp;rsquo;re using Google Chrome browser from the so-called developer channel (i.e. beta version) now you can enjoy the improved PDF support. The thing is that with all the buzz around the PDF format (in)security a lot of companies seem to have taken some steps in providing a more secure user experience for PDF viewing. Since most of the attacks using PDF files are targeted towards the Adobe Reader we&amp;rsquo;ve seen a lot of updates for the viewer this year.</description>
     </item>
     
   </channel>
